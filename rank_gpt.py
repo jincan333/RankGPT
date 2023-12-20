@@ -2,12 +2,20 @@ import copy
 from tqdm import tqdm
 import time
 import openai
+from openai import AsyncOpenAI
 import json
 import tiktoken
 try:
     from litellm import completion
 except:
     completion = openai.ChatCompletion.create
+
+global prompt_type
+{0: 'baseline',
+ 1: 'Please think step by step',
+ 2: 'Please think step by step to solve this task. First please rate the relevance between the query and each document from score 0 to 10. Then give the list of sorted identifiers based on their relevance to the search query. All the passages should be included and listed using identifiers and make sure there is no repetition, in descending order of relevance. The output format should be [] > [], e.g., [4] > [2].'
+}
+
 
 class SafeOpenai:
     def __init__(self, keys=None, start_id=None, proxy=None):
@@ -28,7 +36,14 @@ class SafeOpenai:
             try:
                 model = args[0] if len(args) > 0 else kwargs["model"]
                 if "gpt" in model:
-                    completion = openai.ChatCompletion.create(*args, **kwargs, timeout=30)
+                    # client = AsyncOpenAI()
+                    # async def my_function():
+                    #     # Your existing code
+                    #     completion = await client.chat.completions.create(*args, **kwargs, timeout=30)
+                    #     # Rest of your code
+                    # await my_function()
+                    completion = openai.chat.completions.create(*args, **kwargs, timeout=30)
+                    # completion = openai.ChatCompletion.create(*args, **kwargs, timeout=30)
                 elif model in litellm.model_list:
                     completion = completion(*args, **kwargs, api_key=self.api_key, force_timeout=30)
                 break
@@ -41,7 +56,7 @@ class SafeOpenai:
                 openai.api_key = self.key[self.key_id]
                 time.sleep(0.1)
         if return_text:
-            completion = completion['choices'][0]['message']['content']
+            completion = completion.choices[0].message.content
         return completion
 
     def text(self, *args, return_text=False, reduce_length=False, **kwargs):
@@ -154,6 +169,17 @@ def get_post_prompt(query, num):
     return f"Search Query: {query}. \nRank the {num} passages above based on their relevance to the search query. The passages should be listed in descending order using identifiers. The most relevant passages should be listed first. The output format should be [] > [], e.g., [1] > [2]. Only response the ranking results, do not say any word or explain."
 
 
+def get_post_cot_prompt(query, num):
+    if prompt_type == 1:
+        return f"Search Query: {query}. \nRank the {num} passages above based on their relevance to the search query. The passages should be listed in descending order using identifiers. The most relevant passages should be listed first. The output format should be [] > [], e.g., [1] > [2]. Only response the ranking results, do not say any word or explain. Please think step by step to solve this task."
+    elif prompt_type == 2:
+        return f"Search Query: {query}. \nRank the {num} passages above based on their relevance to the search query. The passages should be listed in descending order using identifiers. The most relevant passages should be listed first. The output format should be [] > [], e.g., [1] > [2]. Only response the ranking results, do not say any word or explain. Please think step by step to solve this task. First please rate the relevance between the query and each document from score 0 to 10. Then give the list of sorted identifiers based on their relevance to the search query. All the passages should be included and listed using identifiers and make sure there is no repetition, in descending order of relevance. The output format should be [] > [], e.g., [4] > [2]."
+    elif prompt_type == 3:
+        return f"Search Query: {query}. \nRank the {num} passages above based on their relevance to the search query. The passages should be listed in descending order using identifiers. The most relevant passages should be listed first. The output format should be [] > [], e.g., [1] > [2]. Please think step by step to solve this task."
+    elif prompt_type == 4:
+        return f"Search Query: {query}. \nRank the {num} passages above based on their relevance to the search query. The passages should be listed in descending order using identifiers. The most relevant passages should be listed first. The output format should be [] > [], e.g., [1] > [2]. Please think step by step to solve this task. First please rate the relevance between the query and each document from score 0 to 10. Then give the list of sorted identifiers based on their relevance to the search query. All the passages should be included and listed using identifiers and make sure there is no repetition, in descending order of relevance. The output format should be [] > [], e.g., [4] > [2]."
+
+
 def create_permutation_instruction(item=None, rank_start=0, rank_end=100, model_name='gpt-3.5-turbo'):
     query = item['query']
     num = len(item['hits'][rank_start: rank_end])
@@ -171,18 +197,27 @@ def create_permutation_instruction(item=None, rank_start=0, rank_end=100, model_
             content = ' '.join(content.split()[:int(max_length)])
             messages.append({'role': 'user', 'content': f"[{rank}] {content}"})
             messages.append({'role': 'assistant', 'content': f'Received passage [{rank}].'})
-        messages.append({'role': 'user', 'content': get_post_prompt(query, num)})
+        if prompt_type == 0:
+            messages.append({'role': 'user', 'content': get_post_prompt(query, num)})
+        else:
+            messages.append({'role': 'user', 'content': get_post_cot_prompt(query, num)})
 
         if num_tokens_from_messages(messages, model_name) <= max_tokens(model_name) - 200:
             break
         else:
             max_length -= 1
+    print('*'*100)
+    print('message: ', messages)
+    print('*'*100)
     return messages
 
 
 def run_llm(messages, api_key=None, model_name="gpt-3.5-turbo"):
     agent = SafeOpenai(api_key)
     response = agent.chat(model=model_name, messages=messages, temperature=0, return_text=True)
+    print('*'*100)
+    print('original response: ', response)
+    print('*'*100)
     return response
 
 
@@ -207,6 +242,9 @@ def remove_duplicate(response):
 
 def receive_permutation(item, permutation, rank_start=0, rank_end=100):
     response = clean_response(permutation)
+    print('*'*100)
+    print('clean response: ', response)
+    print('*'*100)
     response = [int(x) - 1 for x in response.split()]
     response = remove_duplicate(response)
     cut_range = copy.deepcopy(item['hits'][rank_start: rank_end])
@@ -219,6 +257,9 @@ def receive_permutation(item, permutation, rank_start=0, rank_end=100):
             item['hits'][j + rank_start]['rank'] = cut_range[j]['rank']
         if 'score' in item['hits'][j + rank_start]:
             item['hits'][j + rank_start]['score'] = cut_range[j]['score']
+    print('*'*100)
+    print('original item: ', item)
+    print('*'*100)
     return item
 
 
@@ -230,8 +271,10 @@ def permutation_pipeline(item=None, rank_start=0, rank_end=100, model_name='gpt-
     return item
 
 
-def sliding_windows(item=None, rank_start=0, rank_end=100, window_size=20, step=10, model_name='gpt-3.5-turbo',
+def sliding_windows(args, item=None, rank_start=0, rank_end=100, window_size=20, step=10, model_name='gpt-3.5-turbo',
                     api_key=None):
+    global prompt_type
+    prompt_type = args.prompt_type
     item = copy.deepcopy(item)
     end_pos = rank_end
     start_pos = rank_end - window_size
@@ -240,6 +283,9 @@ def sliding_windows(item=None, rank_start=0, rank_end=100, window_size=20, step=
         item = permutation_pipeline(item, start_pos, end_pos, model_name=model_name, api_key=api_key)
         end_pos = end_pos - step
         start_pos = start_pos - step
+    print('*'*100)
+    print('slide window item: ', item)
+    print('*'*100)
     return item
 
 
