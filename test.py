@@ -83,6 +83,7 @@ parser = argparse.ArgumentParser(description='LLM Reranker')
 parser.add_argument('--prompt_type', type=int, default=0)
 parser.add_argument('--dataset', type=str, default='dl19')
 parser.add_argument('--model', type=str, default='gpt-3.5-turbo')
+parser.add_argument('--print_messages', type=int, default=1)
 args = parser.parse_args()
 print(json.dumps(vars(args), indent=4))
 
@@ -109,7 +110,6 @@ for data in [args.dataset]:
         new_item = sliding_windows(args, item, rank_start=0, rank_end=100, window_size=20, step=10,
                                    model_name=args.model, api_key=openai_key)
         new_results.append(new_item)
-
     # Evaluate nDCG@10
     from trec_eval import EvalFunction
 
@@ -117,6 +117,8 @@ for data in [args.dataset]:
     output_file = tempfile.NamedTemporaryFile(delete=False).name
     write_eval_file(new_results, output_file)
     EvalFunction.eval(['-c', '-m', 'ndcg_cut.10', THE_TOPICS[data], output_file])
+    EvalFunction.eval(['-c', '-m', 'ndcg_cut.5', THE_TOPICS[data], output_file])
+    EvalFunction.eval(['-c', '-m', 'ndcg_cut.1', THE_TOPICS[data], output_file])
     # Rename the output file to a better name
     shutil.move(output_file, f'eval_{data}.txt')
 

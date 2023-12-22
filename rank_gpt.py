@@ -5,15 +5,20 @@ import openai
 from openai import AsyncOpenAI
 import json
 import tiktoken
+import re
 try:
     from litellm import completion
 except:
     completion = openai.ChatCompletion.create
 
-global prompt_type
+global prompt_type, print_messages
 {0: 'baseline',
- 1: 'Please think step by step',
- 2: 'Please think step by step to solve this task. First please rate the relevance between the query and each document from score 0 to 10. Then give the list of sorted identifiers based on their relevance to the search query. All the passages should be included and listed using identifiers and make sure there is no repetition, in descending order of relevance. The output format should be [] > [], e.g., [4] > [2].'
+ 1: 'Search Query: {query}. \nRank the {num} passages above based on their relevance to the search query. The passages should be listed in descending order using identifiers. The most relevant passages should be listed first. The output format should be [] > [], e.g., [1] > [2]. Only response the ranking results, do not say any word or explain. Please think step by step to solve this task.',
+ 2: 'Search Query: {query}. \nRank the {num} passages above based on their relevance to the search query. The passages should be listed in descending order using identifiers. The most relevant passages should be listed first. The output format should be [] > [], e.g., [1] > [2]. Only response the ranking results, do not say any word or explain. Please think step by step to solve this task. First please rate the relevance between the query and each document from score 0 to 10. Then give the list of sorted identifiers based on their relevance to the search query. All the passages should be included and listed using identifiers and make sure there is no repetition, in descending order of relevance. The output format should be [] > [], e.g., [4] > [2].',
+ 3: 'Search Query: {query}. \nRank the {num} passages above based on their relevance to the search query. The passages should be listed in descending order using identifiers. The most relevant passages should be listed first. The output format should be [] > [], e.g., [1] > [2]. Please think step by step to solve this task.',
+ 4: 'Search Query: {query}. \nRank the {num} passages above based on their relevance to the search query. The passages should be listed in descending order using identifiers. The most relevant passages should be listed first. The output format should be [] > [], e.g., [1] > [2]. Please think step by step to solve this task. First please rate the relevance between the query and each document from score 0 to 10. Then give the list of sorted identifiers based on their relevance to the search query. All the passages should be included and listed using identifiers and make sure there is no repetition, in descending order of relevance. The output format should be [] > [], e.g., [4] > [2].',
+ 5: 'Search Query: {query}. \nRank the {num} passages above based on their relevance to the search query. The passages should be listed in descending order using identifiers. The most relevant passages should be listed first. Use [start] when you begin output the rank and use [end] to indicate the end of the rank. The output format of the rank should be [] > [], e.g., [1] > [2]. Please think step by step to solve this task.',
+ 6: 'Search Query: {query}. \nRank the {num} passages above based on their relevance to the search query. The passages should be listed in descending order using identifiers. The most relevant passages should be listed first. Use [start] when you begin output the rank and use [end] to indicate the end of the rank. The output format of the rank should be [] > [], e.g., [1] > [2]. Please think step by step to solve this task. First please rate the relevance between the query and each document from score 0 to 10. Then give the list of sorted identifiers based on their relevance to the search query. All the passages should be included and listed using identifiers and make sure there is no repetition, in descending order of relevance.',
 }
 
 
@@ -178,6 +183,10 @@ def get_post_cot_prompt(query, num):
         return f"Search Query: {query}. \nRank the {num} passages above based on their relevance to the search query. The passages should be listed in descending order using identifiers. The most relevant passages should be listed first. The output format should be [] > [], e.g., [1] > [2]. Please think step by step to solve this task."
     elif prompt_type == 4:
         return f"Search Query: {query}. \nRank the {num} passages above based on their relevance to the search query. The passages should be listed in descending order using identifiers. The most relevant passages should be listed first. The output format should be [] > [], e.g., [1] > [2]. Please think step by step to solve this task. First please rate the relevance between the query and each document from score 0 to 10. Then give the list of sorted identifiers based on their relevance to the search query. All the passages should be included and listed using identifiers and make sure there is no repetition, in descending order of relevance. The output format should be [] > [], e.g., [4] > [2]."
+    elif prompt_type == 5:
+        return f"Search Query: {query}. \nRank the {num} passages above based on their relevance to the search query. The passages should be listed in descending order using identifiers. The most relevant passages should be listed first. Use [start] when you begin output the rank and use [end] to indicate the end of the rank. The output format of rank should be [] > [], e.g., [1] > [2]. Please think step by step."
+    elif prompt_type == 6:
+        return f"Search Query: {query}. \nRank the {num} passages above based on their relevance to the search query. The passages should be listed in descending order using identifiers. The most relevant passages should be listed first. Please think step by step to solve this task. First please rate the relevance between the query and each document from score 0 to 10. Then give the list of sorted identifiers based on their relevance to the search query. All the passages should be included and listed using identifiers and make sure there is no repetition, in descending order of relevance. At the end of you thought, please summarize the rank and use [start] to begin output the rank and use [end] to indicate the end of the rank. The format of the rank should be [] > [], e.g., [1] > [2]."
 
 
 def create_permutation_instruction(item=None, rank_start=0, rank_end=100, model_name='gpt-3.5-turbo'):
@@ -206,47 +215,69 @@ def create_permutation_instruction(item=None, rank_start=0, rank_end=100, model_
             break
         else:
             max_length -= 1
-    print('*'*100)
-    print('message: ', messages)
-    print('*'*100)
+    if print_messages == 1:
+        print('*'*100)
+        print('message: ', messages)
+        print('*'*100)
     return messages
 
 
 def run_llm(messages, api_key=None, model_name="gpt-3.5-turbo"):
     agent = SafeOpenai(api_key)
     response = agent.chat(model=model_name, messages=messages, temperature=0, return_text=True)
-    print('*'*100)
-    print('original response: ', response)
-    print('*'*100)
+    if print_messages:
+        print('*'*100)
+        print('original response: ', response)
+        print('*'*100)
     return response
 
 
 def clean_response(response: str):
-    new_response = ''
+    if prompt_type != 0:
+        pattern = r'\[start\](.*?)\[end\]'
+        result = re.search(pattern, response, re.DOTALL)
+        if result:
+            extracted_data = result.group(1)
+            response =  extracted_data
+
+    new_response = ''        
     for c in response:
         if not c.isdigit():
             new_response += ' '
         else:
             new_response += c
     new_response = new_response.strip()
+        
     return new_response
 
 
 def remove_duplicate(response):
     new_response = []
+    rep_pasg_cnt = 0
     for c in response:
         if c not in new_response:
             new_response.append(c)
-    return new_response
+        else:
+            rep_pasg_cnt+=1
+    return new_response, rep_pasg_cnt
 
 
 def receive_permutation(item, permutation, rank_start=0, rank_end=100):
+    rep_query_cnt, rep_passage_cnt = 0, 0
+    miss_query_cnt, miss_passage_cnt = 0, 0
     response = clean_response(permutation)
-    print('*'*100)
-    print('clean response: ', response)
-    print('*'*100)
+    if print_messages == 1:
+        print('*'*100)
+        print('clean response: ', response)
+        print('*'*100)
     response = [int(x) - 1 for x in response.split()]
-    response = remove_duplicate(response)
+    response, rep_pasg_cnt = remove_duplicate(response)
+    if rep_pasg_cnt > 0:
+        rep_query_cnt += 1
+        rep_passage_cnt += rep_pasg_cnt
+    if len(response) < rank_end - rank_start:
+        miss_query_cnt += 1
+        miss_passage_cnt += rank_end - rank_start - len(response)
     cut_range = copy.deepcopy(item['hits'][rank_start: rank_end])
     original_rank = [tt for tt in range(len(cut_range))]
     response = [ss for ss in response if ss in original_rank]
@@ -257,9 +288,10 @@ def receive_permutation(item, permutation, rank_start=0, rank_end=100):
             item['hits'][j + rank_start]['rank'] = cut_range[j]['rank']
         if 'score' in item['hits'][j + rank_start]:
             item['hits'][j + rank_start]['score'] = cut_range[j]['score']
-    print('*'*100)
-    print('original item: ', item)
-    print('*'*100)
+    if print_messages == 1:
+        print('*'*100)
+        print('original item: ', item)
+        print('*'*100)
     return item
 
 
@@ -273,8 +305,9 @@ def permutation_pipeline(item=None, rank_start=0, rank_end=100, model_name='gpt-
 
 def sliding_windows(args, item=None, rank_start=0, rank_end=100, window_size=20, step=10, model_name='gpt-3.5-turbo',
                     api_key=None):
-    global prompt_type
+    global prompt_type, print_messages
     prompt_type = args.prompt_type
+    print_messages = args.print_messages
     item = copy.deepcopy(item)
     end_pos = rank_end
     start_pos = rank_end - window_size
@@ -283,9 +316,10 @@ def sliding_windows(args, item=None, rank_start=0, rank_end=100, window_size=20,
         item = permutation_pipeline(item, start_pos, end_pos, model_name=model_name, api_key=api_key)
         end_pos = end_pos - step
         start_pos = start_pos - step
-    print('*'*100)
-    print('slide window item: ', item)
-    print('*'*100)
+    if print_messages == 1:
+        print('*'*100)
+        print('slide window item: ', item)
+        print('*'*100)
     return item
 
 
