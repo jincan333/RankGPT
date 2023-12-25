@@ -1,9 +1,9 @@
 #!/bin/bash
-prefix='test'
-prompt_type=6
+prefix='debug'
+prompt_type=9
 dataset='dl19'
 # gpt-3.5-turbo   gpt-4-0314
-model='gpt-4-0314'
+model='gpt-3.5-turbo'
 print_messages=0
 log_filename=logs/cot_prompt_${prefix}_${prompt_type}_${dataset}_${model}_${print_messages}.log
 nohup python -u test.py \

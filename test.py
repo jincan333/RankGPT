@@ -80,12 +80,17 @@ openai_key = config.get('DEFAULT', 'OPENAI_API_KEY')
 # scifact 
 
 parser = argparse.ArgumentParser(description='LLM Reranker')
-parser.add_argument('--prompt_type', type=int, default=0)
+parser.add_argument('--prompt_type', type=int, default=8)
 parser.add_argument('--dataset', type=str, default='dl19')
 parser.add_argument('--model', type=str, default='gpt-3.5-turbo')
-parser.add_argument('--print_messages', type=int, default=1)
+parser.add_argument('--print_messages', type=int, default=0)
 args = parser.parse_args()
 print(json.dumps(vars(args), indent=4))
+
+args.rep_query_cnt = 0
+args.rep_passage_cnt = 0
+args.miss_query_cnt = 0
+args.miss_passage_cnt = 0
 
 
 for data in [args.dataset]:
@@ -106,10 +111,19 @@ for data in [args.dataset]:
     
     # Run sliding window permutation generation
     new_results = []
-    for item in tqdm(rank_results):
+    for i, item in enumerate(rank_results):
+        print('*'*100)
+        print(f'query {i}/{len(rank_results)}: ')
         new_item = sliding_windows(args, item, rank_start=0, rank_end=100, window_size=20, step=10,
                                    model_name=args.model, api_key=openai_key)
         new_results.append(new_item)
+        print('*'*100)
+    print(
+        'Total Malformed Outputs Statistics:\n',
+       f'Total Repetition Chat Count: {args.rep_query_cnt}, Average Repetition Query: {args.rep_query_cnt / (len(rank_results) * 9)}\n',
+       f'Total Repetition Passage Count: {args.rep_passage_cnt}, Average Repetition Passage: {args.rep_passage_cnt / (len(rank_results)*9*20)}\n',
+       f'Total Missing Chat Count: {args.miss_query_cnt}, Average Missing Query: {args.miss_query_cnt / (len(rank_results)*9)}\n',
+       f'Total Missing Passage Count: {args.miss_passage_cnt}, Average Missing Passage: {args.miss_passage_cnt / (len(rank_results)*9*20)}\n')
     # Evaluate nDCG@10
     from trec_eval import EvalFunction
 
