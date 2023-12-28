@@ -1,6 +1,6 @@
 #!/bin/bash
 prefix='debug'
-prompt_type=9
+prompt_type=13
 dataset='dl19'
 # gpt-3.5-turbo   gpt-4-0314
 model='gpt-3.5-turbo'
