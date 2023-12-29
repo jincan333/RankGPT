@@ -84,6 +84,8 @@ parser.add_argument('--prompt_type', type=int, default=8)
 parser.add_argument('--dataset', type=str, default='dl19')
 parser.add_argument('--model', type=str, default='gpt-3.5-turbo')
 parser.add_argument('--print_messages', type=int, default=0)
+parser.add_argument('--correct_malform', type=int, default=1)
+parser.add_argument('--debug', type=int, default=1)
 args = parser.parse_args()
 print(json.dumps(vars(args), indent=4))
 
@@ -91,6 +93,7 @@ args.rep_query_cnt = 0
 args.rep_passage_cnt = 0
 args.miss_query_cnt = 0
 args.miss_passage_cnt = 0
+args.mismatch_query_cnt = 0
 
 
 for data in [args.dataset]:
@@ -118,12 +121,15 @@ for data in [args.dataset]:
                                    model_name=args.model, api_key=openai_key)
         new_results.append(new_item)
         print('*'*100)
+        if args.debug:
+            break
     print(
         'Total Malformed Outputs Statistics:\n',
        f'Total Repetition Chat Count: {args.rep_query_cnt}, Average Repetition Query: {args.rep_query_cnt / (len(rank_results) * 9)}\n',
        f'Total Repetition Passage Count: {args.rep_passage_cnt}, Average Repetition Passage: {args.rep_passage_cnt / (len(rank_results)*9*20)}\n',
        f'Total Missing Chat Count: {args.miss_query_cnt}, Average Missing Query: {args.miss_query_cnt / (len(rank_results)*9)}\n',
-       f'Total Missing Passage Count: {args.miss_passage_cnt}, Average Missing Passage: {args.miss_passage_cnt / (len(rank_results)*9*20)}\n')
+       f'Total Missing Passage Count: {args.miss_passage_cnt}, Average Missing Passage: {args.miss_passage_cnt / (len(rank_results)*9*20)}\n',
+       f'Total Mismatch Chat Count: {args.mismatch_query_cnt}, Average Mismatch Query: {args.mismatch_query_cnt / (len(rank_results)*9)}\n')
     # Evaluate nDCG@10
     from trec_eval import EvalFunction
 

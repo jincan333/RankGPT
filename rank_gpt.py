@@ -165,16 +165,6 @@ def get_post_prompt(query, num):
     return f"Search Query: {query}. \nRank the {num} passages above based on their relevance to the search query. The passages should be listed in descending order using identifiers. The most relevant passages should be listed first. The output format should be [] > [], e.g., [1] > [2]. Only response the ranking results, do not say any word or explain."
 
 
-prompt_dic = {
-    0: 'baseline',
-    1: 'Search Query: {query}. \nRank the {num} passages above based on their relevance to the search query. The passages should be listed in descending order using identifiers. The most relevant passages should be listed first. The output format should be [] > [], e.g., [1] > [2]. Only response the ranking results, do not say any word or explain. Please think step by step to solve this task.',
-    2: 'Search Query: {query}. \nRank the {num} passages above based on their relevance to the search query. The passages should be listed in descending order using identifiers. The most relevant passages should be listed first. The output format should be [] > [], e.g., [1] > [2]. Only response the ranking results, do not say any word or explain. Please think step by step to solve this task. First please rate the relevance between the query and each document from score 0 to 10. Then give the list of sorted identifiers based on their relevance to the search query. All the passages should be included and listed using identifiers and make sure there is no repetition, in descending order of relevance. The output format should be [] > [], e.g., [4] > [2].',
-    3: 'Search Query: {query}. \nRank the {num} passages above based on their relevance to the search query. The passages should be listed in descending order using identifiers. The most relevant passages should be listed first. The output format should be [] > [], e.g., [1] > [2]. Please think step by step to solve this task.',
-    4: 'Search Query: {query}. \nRank the {num} passages above based on their relevance to the search query. The passages should be listed in descending order using identifiers. The most relevant passages should be listed first. The output format should be [] > [], e.g., [1] > [2]. Please think step by step to solve this task. First please rate the relevance between the query and each document from score 0 to 10. Then give the list of sorted identifiers based on their relevance to the search query. All the passages should be included and listed using identifiers and make sure there is no repetition, in descending order of relevance. The output format should be [] > [], e.g., [4] > [2].',
-    5: 'Search Query: {query}. \nRank the {num} passages above based on their relevance to the search query. The passages should be listed in descending order using identifiers. The most relevant passages should be listed first. Use [start] when you begin output the rank and use [end] to indicate the end of the rank. The output format of the rank should be [] > [], e.g., [1] > [2]. Please think step by step to solve this task.',
-    6: 'Search Query: {query}. \nRank the {num} passages above based on their relevance to the search query. The passages should be listed in descending order using identifiers. The most relevant passages should be listed first. Use [start] when you begin output the rank and use [end] to indicate the end of the rank. The output format of the rank should be [] > [], e.g., [1] > [2]. Please think step by step to solve this task. First please rate the relevance between the query and each document from score 0 to 10. Then give the list of sorted identifiers based on their relevance to the search query. All the passages should be included and listed using identifiers and make sure there is no repetition, in descending order of relevance.',
-}
-
 def get_post_cot_prompt(query, num):
     if prompt_type == 1:
         return f"Search Query: {query}. \nRank the {num} passages above based on their relevance to the search query. The passages should be listed in descending order using identifiers. The most relevant passages should be listed first. The output format should be [] > [], e.g., [1] > [2]. Only response the ranking results, do not say any word or explain. Please think step by step to solve this task."
@@ -202,6 +192,12 @@ def get_post_cot_prompt(query, num):
         return f"Search Query: {query}. \nRank the {num} passages above based on their relevance to the search query. Please think step by step to solve this task. First please rate the relevance between the query and each document from score 0 to 10 and explain the reason of rating the score. Then sort identifiers in descending order based on their relevance to the search query. Finally, summarize the rank. Please use [start] to begin summarize the rank and use [end] to indicate the end of the rank. All the passages should be included and listed using identifiers and make sure there is no repetitious and missing pasages. The format of the summarized rank should be [Start] [] > [] [End], e.g.,[Start] [1] > [2] [End]. In the summarized rank, only response the ranking results."
     elif prompt_type == 13:
         return f"Search Query: {query}. \nRank the {num} passages above based on their relevance to the search query. Please think step by step to solve this task. First please rate the relevance between the query and each document from score 0 to 100 and explain the reason of rating the score. Then sort identifiers in descending order based on their relevance to the search query. Finally, summarize the rank. Please use [start] to begin summarize the rank and use [end] to indicate the end of the rank. All the passages should be included and listed using identifiers and make sure there is no repetitious and missing pasages. The format of the summarized rank should be [Start] [] > [] [End], e.g.,[Start] [1] > [2] [End]. In the summarized rank, only response the ranking results."
+    elif prompt_type == 14:
+        return f"Search Query: {query}. \nRank the {num} passages above based on their relevance to the search query. Please think step by step .... First please explain the reasons why you think the query and each passage are relevant or not. Then rate the relevance between the query and each passage from score 0 to 10. After that, please sort identifiers in descending order based on their relevance to the search query. Finally, please summarize the rank and use [start] to begin the summarization and use [end] to indicate the end of it. All the passages should be included and listed using identifiers and make sure there is no repetitious and missing passages. The format of the summarization should be [Start] [] > [] [End], e.g., [Start] [1] > [2] [End]. In the summarization, only response the ranking results."
+    elif prompt_type == 15:
+        return f"Search Query: {query}. \nRank the {num} passages above based on their relevance to the search query. Please think step by step .... First please explain the reasons why you think the query and each passage are relevant or not. Then rate the relevance between the query and each passage from score 0 to 19 with all passages have different scores. After that, please sort identifiers in descending order based on their relevance to the search query. Finally, please summarize the rank and use [start] to begin the summarization and use [end] to indicate the end of it. All the passages should be included and listed using identifiers and make sure there is no repetitious and missing passages. The format of the summarization should be [Start] [] > [] [End], e.g., [Start] [1] > [2] [End]. In the summarization, only response the ranking results."
+    elif prompt_type == 16:
+        return f"Search Query: {query}. \nRank the {num} passages above based on their relevance to the search query. Please think step by step .... First please explain the reasons why you think the query and each passage are relevant or not. Then rate the relevance between the query and each passage from score 0 to 19 with all passages have distinctive scores. After that, please sort identifiers in descending order based on their relevance to the search query. Finally, please summarize the rank and use [start] to begin the summarization and use [end] to indicate the end of it. All the passages should be included and listed using identifiers and make sure there is no repetitious and missing passages. The format of the summarization should be [Start] [] > [] [End], e.g., [Start] [1] > [2] [End]. In the summarization, only response the ranking results."
 
 
 def create_permutation_instruction(item=None, rank_start=0, rank_end=100, model_name='gpt-3.5-turbo'):
@@ -248,12 +244,15 @@ def run_llm(messages, api_key=None, model_name="gpt-3.5-turbo"):
 
 
 def clean_response(response: str):
+    global current_mismatch_query_cnt
     if prompt_type != 0:
         pattern = r'\[Start\](.*?)\[End\]'
-        result = re.search(pattern, response, re.IGNORECASE)
+        result = re.search(pattern, response, re.DOTALL | re.IGNORECASE)
         if result:
             extracted_data = result.group(1)
             response =  extracted_data
+        else:
+            current_mismatch_query_cnt = 1
 
     new_response = ''        
     for c in response:
@@ -278,9 +277,11 @@ def remove_duplicate(response):
 
 
 def receive_permutation(item, permutation, rank_start=0, rank_end=100):   
-    global rep_query_cnt, rep_passage_cnt, miss_query_cnt, miss_passage_cnt 
+    global correct_malform, rep_query_cnt, rep_passage_cnt, miss_query_cnt, miss_passage_cnt, mismatch_query_cnt, current_mismatch_query_cnt
+    
     current_rep_query_cnt, current_rep_passage_cnt = 0, 0
     current_miss_query_cnt, current_miss_passage_cnt = 0, 0
+    current_mismatch_query_cnt = 0
     response = clean_response(permutation)
     if print_messages == 1:
         print('*'*100)
@@ -297,7 +298,12 @@ def receive_permutation(item, permutation, rank_start=0, rank_end=100):
         current_miss_passage_cnt = rank_end - rank_start - len(response)
         miss_query_cnt += 1
         miss_passage_cnt += current_miss_passage_cnt
-    print(f'current_rep_passage_cnt: {current_rep_passage_cnt}, current_miss_passage_cnt: {current_miss_passage_cnt}')
+    if current_mismatch_query_cnt > 0:
+        mismatch_query_cnt += 1
+    print(f'current_rep_passage_cnt: {current_rep_passage_cnt}, current_miss_passage_cnt: {current_miss_passage_cnt}, current_mismatch_query_cnt: {current_mismatch_query_cnt}')
+    if correct_malform and (current_rep_passage_cnt > 0 or current_miss_passage_cnt > 0 or current_mismatch_query_cnt > 0):
+        return item, 0
+    
     cut_range = copy.deepcopy(item['hits'][rank_start: rank_end])
     original_rank = [tt for tt in range(len(cut_range))]
     response = [ss for ss in response if ss in original_rank]
@@ -312,36 +318,44 @@ def receive_permutation(item, permutation, rank_start=0, rank_end=100):
         print('*'*100)
         print('original item: ', item)
         print('*'*100)
-    if current_rep_passage_cnt > 0 or current_miss_passage_cnt > 0:
+    if current_rep_passage_cnt > 0 or current_miss_passage_cnt > 0 or current_mismatch_query_cnt > 0:
         print(
             'repetition or missing: \n',
            f'original response: {permutation}\n'
            f'original response rank: {clean_response(permutation)}\n',
            f'post response rank: {response}\n')
-    return item
+    return item, 1
 
 
 def permutation_pipeline(item=None, rank_start=0, rank_end=100, model_name='gpt-3.5-turbo', api_key=None):
     global chat_cnt
     messages = create_permutation_instruction(item=item, rank_start=rank_start, rank_end=rank_end,
                                               model_name=model_name) # chan
-    permutation = run_llm(messages, api_key=api_key, model_name=model_name)
-    chat_cnt += 1
-    if chat_cnt == 1:
-        print('*'*100)
-        print('Message Example:\n', messages)
-        print('Permutation Example:\n', permutation)
-        print('*'*100)
-    item = receive_permutation(item, permutation, rank_start=rank_start, rank_end=rank_end)
+    flag = 0
+    cnt = 0
+    while not flag and cnt <= 50:
+        permutation = run_llm(messages, api_key=api_key, model_name=model_name)
+        chat_cnt += 1
+        print(f'chat_cnt: {chat_cnt}')
+        if chat_cnt == 1:
+            print('*'*100)
+            print('Message Example:\n', messages)
+            print('Permutation Example:\n', permutation)
+            print('*'*100)
+        item, flag = receive_permutation(item, permutation, rank_start=rank_start, rank_end=rank_end)
+        cnt+=1
+        if cnt <=3:
+            messages[-1]['content'] = messages[-1]['content'] + 'Please follow the summarization format and do not miss or repeat any passage.'
     return item
 
 
 def sliding_windows(args, item=None, rank_start=0, rank_end=100, window_size=20, step=10, model_name='gpt-3.5-turbo',
                     api_key=None):
-    global prompt_type, print_messages, rep_query_cnt, rep_passage_cnt, miss_query_cnt, miss_passage_cnt
-    rep_query_cnt, rep_passage_cnt, miss_query_cnt, miss_passage_cnt = 0, 0, 0, 0
+    global prompt_type, print_messages, correct_malform, rep_query_cnt, rep_passage_cnt, miss_query_cnt, miss_passage_cnt, mismatch_query_cnt
+    rep_query_cnt, rep_passage_cnt, miss_query_cnt, miss_passage_cnt, mismatch_query_cnt = 0, 0, 0, 0, 0
     prompt_type = args.prompt_type 
     print_messages = args.print_messages
+    correct_malform = args.correct_malform
     item = copy.deepcopy(item)
     end_pos = rank_end
     start_pos = rank_end - window_size
@@ -350,16 +364,20 @@ def sliding_windows(args, item=None, rank_start=0, rank_end=100, window_size=20,
         item = permutation_pipeline(item, start_pos, end_pos, model_name=model_name, api_key=api_key)
         end_pos = end_pos - step
         start_pos = start_pos - step
+        if args.debug:
+            break
     print(
         'current query statistics:\n'
        f'rep_query_cnt: {rep_query_cnt}\n',
        f'rep_passage_cnt: {rep_passage_cnt}\n',
        f'miss_query_cnt: {miss_query_cnt}\n',
-       f'miss_passage_cnt: {miss_passage_cnt}\n')
+       f'miss_passage_cnt: {miss_passage_cnt}\n',
+       f'mismatch_query_cnt: {mismatch_query_cnt}\n')
     args.rep_query_cnt += rep_query_cnt
     args.rep_passage_cnt += rep_passage_cnt
     args.miss_query_cnt += miss_query_cnt
     args.miss_passage_cnt += miss_passage_cnt
+    args.mismatch_query_cnt += mismatch_query_cnt
     if print_messages == 1:
         print('*'*100)
         print('slide window item: ', item)
