@@ -167,7 +167,7 @@ def get_post_prompt(query, num):
 
 def get_post_cot_prompt(query, num):
     if prompt_type == 1:
-        return f"Search Query: {query}. \nRank the {num} passages above based on their relevance to the search query. The passages should be listed in descending order using identifiers. The most relevant passages should be listed first. The output format should be [] > [], e.g., [1] > [2]. Only response the ranking results, do not say any word or explain. Please think step by step to solve this task."
+        return f"Search Query: {query}. \nRank the {num} passages above based on their relevance to the search query. The passages should be listed in descending order using identifiers. The most relevant passages should be listed first. Please use [start] to begin the rank and use [end] to indicate the end of it. The rank format should be [Start] [] > [] [End], e.g., [Start] [1] > [2] [End]. Let's think step by step."
     elif prompt_type == 2:
         return f"Search Query: {query}. \nRank the {num} passages above based on their relevance to the search query. The passages should be listed in descending order using identifiers. The most relevant passages should be listed first. The output format should be [] > [], e.g., [1] > [2]. Only response the ranking results, do not say any word or explain. Please think step by step to solve this task. First please rate the relevance between the query and each document from score 0 to 10. Then give the list of sorted identifiers based on their relevance to the search query. All the passages should be included and listed using identifiers and make sure there is no repetition, in descending order of relevance. The output format should be [] > [], e.g., [4] > [2]."
     elif prompt_type == 3:
@@ -198,6 +198,12 @@ def get_post_cot_prompt(query, num):
         return f"Search Query: {query}. \nRank the {num} passages above based on their relevance to the search query. Please think step by step .... First please explain the reasons why you think the query and each passage are relevant or not. Then rate the relevance between the query and each passage from score 0 to 19 with all passages have different scores. After that, please sort identifiers in descending order based on their relevance to the search query. Finally, please summarize the rank and use [start] to begin the summarization and use [end] to indicate the end of it. All the passages should be included and listed using identifiers and make sure there is no repetitious and missing passages. The format of the summarization should be [Start] [] > [] [End], e.g., [Start] [1] > [2] [End]. In the summarization, only response the ranking results."
     elif prompt_type == 16:
         return f"Search Query: {query}. \nRank the {num} passages above based on their relevance to the search query. Please think step by step .... First please explain the reasons why you think the query and each passage are relevant or not. Then rate the relevance between the query and each passage from score 0 to 19 with all passages have distinctive scores. After that, please sort identifiers in descending order based on their relevance to the search query. Finally, please summarize the rank and use [start] to begin the summarization and use [end] to indicate the end of it. All the passages should be included and listed using identifiers and make sure there is no repetitious and missing passages. The format of the summarization should be [Start] [] > [] [End], e.g., [Start] [1] > [2] [End]. In the summarization, only response the ranking results."
+    elif prompt_type == 17:
+        return f"Search Query: {query}. \nRank the {num} passages above based on their relevance to the search query. Please think step by step .... First please summarize each passage. Then rate the relevance between the query and each passage from score 0 to 19 based on the summarization and the original passages. All passages should have distinctive scores. After that, please sort identifiers in descending order based on their relevance to the search query. Finally, please give the rank and use [start] to begin the rank and use [end] to indicate the end of it. All the passages should be included and listed using identifiers and make sure there is no repetitious and missing passages. The format of the rank should be [Start] [] > [] [End], e.g., [Start] [1] > [2] [End]. In the rank, only response the ranking results."
+    elif prompt_type == 18:
+        return f"Search Query: {query}. \nRank the {num} passages above based on their relevance to the search query. Please think step by step .... First please extract key words from each passage. Then rate the relevance between the query and each passage from score 0 to 19 based on the key words and the original passages. All passages should have distinctive scores. After that, please sort identifiers in descending order based on their relevance to the search query. Finally, please give the rank and use [start] to begin the rank and use [end] to indicate the end of it. All the passages should be included and listed using identifiers and make sure there is no repetitious and missing passages. The format of the rank should be [Start] [] > [] [End], e.g., [Start] [1] > [2] [End]. In the rank, only response the ranking results."
+    elif prompt_type == 19:
+        return f"Search Query: {query}. \nRank the {num} passages above based on their relevance to the search query. Let's think step by step .... First please explain the reasons why you think the query and each passage are relevant or not. Then rate the relevance between the query and each passage from score 0 to 19 with all passages have distinctive scores. After that, please sort identifiers in descending order based on their relevance to the search query. Finally, please summarize the rank and use [start] to begin the summarization and use [end] to indicate the end of it. All the passages should be included and listed using identifiers and make sure there is no repetitious and missing passages. The format of the summarization should be [Start] [] > [] [End], e.g., [Start] [1] > [2] [End]. In the summarization, only response the ranking results."
 
 
 def create_permutation_instruction(item=None, rank_start=0, rank_end=100, model_name='gpt-3.5-turbo'):
@@ -302,6 +308,11 @@ def receive_permutation(item, permutation, rank_start=0, rank_end=100):
         mismatch_query_cnt += 1
     print(f'current_rep_passage_cnt: {current_rep_passage_cnt}, current_miss_passage_cnt: {current_miss_passage_cnt}, current_mismatch_query_cnt: {current_mismatch_query_cnt}')
     if correct_malform and (current_rep_passage_cnt > 0 or current_miss_passage_cnt > 0 or current_mismatch_query_cnt > 0):
+        print(
+            'repetition, missing or mismatch: \n',
+           f'original response: {permutation}\n'
+           f'original response rank: {clean_response(permutation)}\n',
+           f'clean response rank: {response}\n')
         return item, 0
     
     cut_range = copy.deepcopy(item['hits'][rank_start: rank_end])
@@ -320,7 +331,7 @@ def receive_permutation(item, permutation, rank_start=0, rank_end=100):
         print('*'*100)
     if current_rep_passage_cnt > 0 or current_miss_passage_cnt > 0 or current_mismatch_query_cnt > 0:
         print(
-            'repetition or missing: \n',
+            'repetition, missing or mismatch: \n',
            f'original response: {permutation}\n'
            f'original response rank: {clean_response(permutation)}\n',
            f'post response rank: {response}\n')

@@ -1,0 +1,1375 @@
+{
+    "prompt_type": 12,
+    "dataset": "dl19",
+    "model": "gpt-4-0314",
+    "print_messages": 0
+}
+####################
+Evaluation on dl19
+####################
+  0%|          | 0/43 [00:00<?, ?it/s]  2%|▏         | 1/43 [00:00<00:08,  4.80it/s]  9%|▉         | 4/43 [00:00<00:03, 12.22it/s] 16%|█▋        | 7/43 [00:00<00:02, 15.05it/s] 23%|██▎       | 10/43 [00:00<00:01, 16.75it/s] 28%|██▊       | 12/43 [00:00<00:01, 16.33it/s] 35%|███▍      | 15/43 [00:00<00:01, 19.47it/s] 44%|████▍     | 19/43 [00:01<00:01, 23.40it/s] 53%|█████▎    | 23/43 [00:01<00:00, 24.26it/s] 65%|██████▌   | 28/43 [00:01<00:00, 29.91it/s] 74%|███████▍  | 32/43 [00:01<00:00, 28.01it/s] 81%|████████▏ | 35/43 [00:01<00:00, 28.02it/s] 91%|█████████ | 39/43 [00:01<00:00, 29.00it/s]100%|██████████| 43/43 [00:01<00:00, 29.91it/s]100%|██████████| 43/43 [00:01<00:00, 23.57it/s]
+****************************************************************************************************
+query 0/43: 
+****************************************************************************************************
+Message Example:
+ [{'role': 'system', 'content': 'You are RankGPT, an intelligent assistant that can rank passages based on their relevancy to the query.'}, {'role': 'user', 'content': 'I will provide you with 20 passages, each indicated by number identifier []. \nRank the passages based on their relevance to query: how long is life cycle of flea.'}, {'role': 'assistant', 'content': 'Okay, please provide the passages.'}, {'role': 'user', 'content': '[1] The best flea control approach for your home and pet is to interrupt the flea life cycle. Low impact methods for controlling adult fleas, eggs and larvae include regular vacuuming and laundering, along with pet bathing or grooming. If the situation requires a pesticide, opt for low toxicity options.'}, {'role': 'assistant', 'content': 'Received passage [1].'}, {'role': 'user', 'content': '[2] A New Housemate: Fleas and Ticks The flea is a very persistent and resilient pest with a very complicated life cycle. It is even capable of surviving in outdoor temperatures as low as the upper 30s.'}, {'role': 'assistant', 'content': 'Received passage [2].'}, {'role': 'user', 'content': '[3] An Insect Growth Regulator (IGR) breaks the flea lifecycle by preventing a young flea from growing normally, into the next phase -- a biting, breeding adult. The first IGR to come out was Precor. It did a wonderful job of interrupting the flea life cycle in the house, but it breaks down rapidly in sunlight.'}, {'role': 'assistant', 'content': 'Received passage [3].'}, {'role': 'user', 'content': '[4] The Flea Life Cycle. Fleas undergo complete metamorphosis with four stages: egg, larva, pupa, and adult. Environmental variables influence the length of each developmental stage. Fleas prefer a warm, humid environment, with temperatures ranging between 70Â° and 90Â° Fahrenheit and a relative humidity of 75% or more.'}, {'role': 'assistant', 'content': 'Received passage [4].'}, {'role': 'user', 'content': '[5] If you do not have a serious flea problem, you will notice it working within a couple weeks, as the existing fleas and eggs go through their life cycles, coupled of course, with regular bathing, flea combing and vaccuuming. March 22, 2015 at 4:25 am #69234 Report Abuse.'}, {'role': 'assistant', 'content': 'Received passage [5].'}, {'role': 'user', 'content': '[6] Under ideal conditions, the cat flea life cycle takes just 18 days, from egg to adult. Adult fleas (both male and female) require a blood meal prior to mating. They prefer blood from your pet, but in the absence of a canine or feline host, fleas will bite people.'}, {'role': 'assistant', 'content': 'Received passage [6].'}, {'role': 'user', 'content': '[7] The flea life cycle is fairly complex, and understanding the various stages will make it easier to get rid of them. Answer: Collectively, all of the species of fleas are categorized under the order name of Siphonaptera.'}, {'role': 'assistant', 'content': 'Received passage [7].'}, {'role': 'user', 'content': '[8] The cat flea can also maintain its life cycle on other carnivores and on omnivores, but these are only chosen when more acceptable hosts become unavailable. Adult cat fleas do not willingly leave their hosts, and inter-animal transfer of adult fleas is rare except in animals that share sleeping quarters.'}, {'role': 'assistant', 'content': 'Received passage [8].'}, {'role': 'user', 'content': '[9] ZoGuardâ\x84¢ Plus for Dogs. ZoGuardâ\x84¢ Plus is the perfect solution to help protect your dogs against fleas and ticks without breaking your bank. It contains Fipronil and S-methoprene as active ingredients, the same as FRONTLINE Plus. These ingredients effectively break the flea life cycle, kills fleas, ticks, and chewing lice.'}, {'role': 'assistant', 'content': 'Received passage [9].'}, {'role': 'user', 'content': '[10] Cat Owners. Fleas. Fleas are the most common external parasite found on cats (and dogs). (Parasites are freeloaders that live in or on another creature.) Although fleas are more likely to be a problem during warm-weather months, they can also cause problems during cooler seasons due to their ability to continue their life cycle indoors.'}, {'role': 'assistant', 'content': 'Received passage [10].'}, {'role': 'user', 'content': '[11] PS â\x80\x94 knowing a fleas life cycle helps in going to battle with them.. The flea lays eggs and the eggs hatch (and look like tiny worms). The worms (called the larval stage) develop a cocoon type barrier (called the pupal stage) where they transform into an adult flea (like a caterpillar becoming a butterfly).'}, {'role': 'assistant', 'content': 'Received passage [11].'}, {'role': 'user', 'content': '[12] Life cycle and habitat[edit] Fleas are holometabolous insects, going through the four lifecycle stages of egg, larva, pupa, and imago (adult). Adult fleas must feed on blood before they can become capable of reproduction. Flea populations are distributed with about 50% eggs, 35% larvae, 10% pupae, and 5% adults.'}, {'role': 'assistant', 'content': 'Received passage [12].'}, {'role': 'user', 'content': '[13] Fleas prefer a warm, humid environment, with temperatures ranging between 70Â° and 90Â° Fahrenheit and a relative humidity of 75% or more. Under ideal conditions, the cat flea life cycle takes just 18 days, from egg to adult. Adult fleas (both male and female) require a blood meal prior to mating.'}, {'role': 'assistant', 'content': 'Received passage [13].'}, {'role': 'user', 'content': '[14] 1 42% - If worming table does not work can you treat again next day on cats? 2 50% - How long for fleas to die after drops on cats? 3 46% - How long does it take to get rid of fleas once cats have been given flea drops? 4 66% - How long for profender to work kitten?'}, {'role': 'assistant', 'content': 'Received passage [14].'}, {'role': 'user', 'content': '[15] What is the average duration of 1 full SAP life cycle or 1 end-to-end implementation. How long does it take to prepare DEV, QAS and PRD? What is the average duration of 1 full SAP life cycle or 1 end-to-end implementation. How long does it take to prepare DEV, QAS and PRD in any company?'}, {'role': 'assistant', 'content': 'Received passage [15].'}, {'role': 'user', 'content': '[16] Steam cleaners are a great way to get rid of fleas in the home. And as mentioned previously, steam released at the correct temperature for house steam cleaners can get rid of fleas in every stage of its life cycle on contact.'}, {'role': 'assistant', 'content': 'Received passage [16].'}, {'role': 'user', 'content': '[17] 1 Fleas pass through a complete life cycle of four stages. made up of 50% eggs, 30% larvae, 15% pupae and only 5% biting adults. Completion of the life cycle from egg to adult varies from two weeks to eight months.'}, {'role': 'assistant', 'content': 'Received passage [17].'}, {'role': 'user', 'content': '[18] Capstar is safe for dogs, cats, puppies and kittens 4 weeks of age and older. Comfortis. This product, made by Elanco, contains Spinosad for killing fleas. It is a chewable tablet that begins killing fleas within 30 minutes and kills the flea before it is able to lay eggs, thus breaking the flea life cycle. This product should be given with food once a month and remains effective for 30 days. It is recommended for dogs and puppies 14 weeks of age and older.'}, {'role': 'assistant', 'content': 'Received passage [18].'}, {'role': 'user', 'content': '[19] Also food grade diatomaceous earth can be powdered on their coat and bedding to kill fleas. It can also be used for parasites, but should be given for 30 days to kill the whole life cycle. It penetrates the exoskeleton and kills fleas and parasites.'}, {'role': 'assistant', 'content': 'Received passage [19].'}, {'role': 'user', 'content': '[20] Oral flea treatments are given in pill form every 30 days. They work in a similar fashion as the topical treatment, by breaking up the life cycle of the flea and prohibiting flea eggs and larvae from developing. Oral treatments can also be used in conjunction with bathing products to kill adult fleas.at flea products are the only sure way rid your cat and your home of those annoying irritants. General home care will aid in the effectiveness of any cat flea product that you choose. There are flea collars, topical treatments, oral treatments, shampoos and sprays. Any combination of these solutions can be productive.'}, {'role': 'assistant', 'content': 'Received passage [20].'}, {'role': 'user', 'content': 'Search Query: how long is life cycle of flea. \nRank the 20 passages above based on their relevance to the search query. Please think step by step to solve this task. First please rate the relevance between the query and each document from score 0 to 10 and explain the reason of rating the score. Then sort identifiers in descending order based on their relevance to the search query. Finally, summarize the rank. Please use [start] to begin summarize the rank and use [end] to indicate the end of the rank. All the passages should be included and listed using identifiers and make sure there is no repetitious and missing pasages. The format of the summarized rank should be [Start] [] > [] [End], e.g.,[Start] [1] > [2] [End]. In the summarized rank, only response the ranking results.'}]
+Permutation Example:
+ [1] Relevance Score: 2 - The passage discusses flea control methods but does not mention the length of the flea life cycle.
+
+[2] Relevance Score: 3 - The passage mentions that fleas have a complicated life cycle but does not provide the length of the life cycle.
+
+[3] Relevance Score: 2 - The passage discusses Insect Growth Regulators and their effect on the flea life cycle but does not mention the length of the life cycle.
+
+[4] Relevance Score: 5 - The passage discusses the four stages of the flea life cycle and the preferred environmental conditions but does not directly provide the length of the life cycle.
+
+[5] Relevance Score: 2 - The passage mentions the flea life cycle but does not provide the length of the life cycle.
+
+[6] Relevance Score: 10 - The passage directly provides the length of the cat flea life cycle as 18 days under ideal conditions.
+
+[7] Relevance Score: 3 - The passage discusses the complexity of the flea life cycle but does not provide the length of the life cycle.
+
+[8] Relevance Score: 1 - The passage discusses the cat flea's host preferences but does not mention the length of the life cycle.
+
+[9] Relevance Score: 1 - The passage discusses a flea and tick treatment product but does not mention the length of the flea life cycle.
+
+[10] Relevance Score: 2 - The passage mentions fleas and their life cycle but does not provide the length of the life cycle.
+
+[11] Relevance Score: 4 - The passage briefly describes the stages of the flea life cycle but does not provide the length of the life cycle.
+
+[12] Relevance Score: 6 - The passage provides information about the distribution of flea populations in different life cycle stages but does not directly provide the length of the life cycle.
+
+[13] Relevance Score: 10 - The passage directly provides the length of the cat flea life cycle as 18 days under ideal conditions.
+
+[14] Relevance Score: 0 - The passage is not relevant to the query as it discusses worming and flea treatments for cats without mentioning the length of the flea life cycle.
+
+[15] Relevance Score: 0 - The passage is not relevant to the query as it discusses the duration of an SAP life cycle, which is unrelated to fleas.
+
+[16] Relevance Score: 1 - The passage discusses using steam cleaners to get rid of fleas but does not mention the length of the flea life cycle.
+
+[17] Relevance Score: 8 - The passage provides the range of the flea life cycle duration, from two weeks to eight months.
+
+[18] Relevance Score: 1 - The passage discusses flea treatment products but does not mention the length of the flea life cycle.
+
+[19] Relevance Score: 1 - The passage discusses using diatomaceous earth to kill fleas but does not mention the length of the flea life cycle.
+
+[20] Relevance Score: 1 - The passage discusses various flea treatment methods but does not mention the length of the flea life cycle.
+
+[Start] [6] > [13] > [17] > [12] > [4] > [11] > [2] > [7] > [1] > [3] > [5] > [10] > [8] > [9] > [16] > [18] > [19] > [20] > [14] > [15] [End]
+****************************************************************************************************
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 1
+repetition or missing: 
+ original response: [1] Relevance Score: 2 - The passage mentions breaking the flea life cycle but does not provide information on the length of the life cycle.
+
+[2] Relevance Score: 1 - The passage contains questions related to flea treatments but does not address the length of the flea life cycle.
+
+[3] Relevance Score: 1 - The passage discusses the role of fleas in the life cycle of tapeworms but does not provide information on the length of the flea life cycle.
+
+[4] Relevance Score: 2 - The passage mentions interrupting the flea life cycle but does not provide information on the length of the life cycle.
+
+[5] Relevance Score: 10 - The passage directly addresses the query, providing information on the length of the cat flea life cycle and factors that may affect it.
+
+[6] Relevance Score: 9 - The passage describes the four stages of the flea life cycle but does not explicitly mention the length of the life cycle.
+
+[7] Relevance Score: 1 - The passage discusses how long it takes for a flea to drown, which is not relevant to the length of the flea life cycle.
+
+[8] Relevance Score: 4 - The passage briefly mentions the flea life cycle but does not provide information on the length of the life cycle.
+
+[9] Relevance Score: 1 - The passage discusses the life cycle of a different parasite, not the flea life cycle.
+
+[10] Relevance Score: 3 - The passage mentions killing all 4 stages of the flea life cycle but does not provide information on the length of the life cycle.
+
+[11] Relevance Score: 4 - The passage briefly mentions the flea life cycle but does not provide information on the length of the life cycle.
+
+[12] Relevance Score: 6 - The passage discusses the life cycle of the stickfast flea, which is a specific type of flea, and provides information on the length of its life cycle.
+
+[13] Relevance Score: 8 - The passage provides information on the completion of the flea life cycle, which can vary from two weeks to eight months.
+
+[14] Relevance Score: 5 - The passage provides information on the cat flea life cycle under ideal conditions but does not provide a general range for the length of the life cycle.
+
+[15] Relevance Score: 5 - The passage provides information on the cat flea life cycle under ideal conditions but does not provide a general range for the length of the life cycle.
+
+[16] Relevance Score: 7 - The passage provides information on the distribution of flea populations in different life cycle stages but does not explicitly mention the length of the life cycle.
+
+[17] Relevance Score: 7 - The passage provides information on the distribution of flea populations in different life cycle stages but does not explicitly mention the length of the life cycle.
+
+[18] Relevance Score: 3 - The passage mentions sub-adult fleas lying dormant for several months but does not provide information on the length of the flea life cycle.
+
+[19] Relevance Score: 5 - The passage provides information on the flea life cycle under specific environmental conditions but does not provide a general range for the length of the life cycle.
+
+[20] Relevance Score: 2 - The passage discusses the survival of fleas on a host but does not provide information on the length of the flea life cycle.
+
+[Start] [5] > [6] > [13] > [16] > [17] > [14] > [15] > [19] > [8] > [11] > [1] > [4] > [10] > [18] > [20] > [2] > [3] > [7] > [9] [End]
+original response rank: 5     6     13     16     17     14     15     19     8     11     1     4     10     18     20     2     3     7     9
+ post response rank: [4, 5, 12, 15, 16, 13, 14, 18, 7, 10, 0, 3, 9, 17, 19, 1, 2, 6, 8, 11]
+
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 1
+ miss_passage_cnt: 1
+
+****************************************************************************************************
+****************************************************************************************************
+query 1/43: 
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 2/43: 
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 3/43: 
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 4/43: 
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 5/43: 
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 16
+repetition or missing: 
+ original response: [1] - Score: 3 - The passage mentions liquid hydrogen in the context of Jupiter's atmosphere, but does not provide the specific temperature at which hydrogen becomes a liquid.
+
+[2] - Score: 0 - This passage is about trans fats and hydrogenation, not relevant to the temperature at which hydrogen becomes a liquid.
+
+[3] - Score: 0 - This passage is about liquid metal storage and has no relevance to the temperature at which hydrogen becomes a liquid.
+
+[4] - Score: 0 - This passage is about animal fats, plant fats, and hydrogenated vegetable oils, not relevant to the temperature at which hydrogen becomes a liquid.
+
+[5] - Score: 0 - This passage discusses water and hydrogen bonds, not relevant to the temperature at which hydrogen becomes a liquid.
+
+[6] - Score: 0 - This passage is about saturated and unsaturated fats, not relevant to the temperature at which hydrogen becomes a liquid.
+
+[7] - Score: 0 - This passage is about air temperature and water molecules, not relevant to the temperature at which hydrogen becomes a liquid.
+
+[8] - Score: 0 - This passage is about water molecules and their states, not relevant to the temperature at which hydrogen becomes a liquid.
+
+[9] - Score: 7 - This passage mentions that hydrogen becomes a liquid at very low temperatures and high pressure, but does not provide the specific temperature.
+
+[10] - Score: 0 - This passage is about hydrogen fluoride, not relevant to the temperature at which hydrogen becomes a liquid.
+
+[11] - Score: 3 - This passage mentions hydrogen changing from a gas to a liquid in the context of Jupiter, but does not provide the specific temperature at which hydrogen becomes a liquid.
+
+[12] - Score: 8 - This passage provides the boiling point of hydrogen (20K), which is relevant to the temperature at which hydrogen becomes a liquid.
+
+[13] - Score: 0 - This passage is about cryogenics and low temperatures, but does not mention the specific temperature at which hydrogen becomes a liquid.
+
+[14] - Score: 0 - This passage is about elements and their states at room temperature, not relevant to the temperature at which hydrogen becomes a liquid.
+
+[15] - Score: 0 - This passage is about freezing temperatures and water, not relevant to the temperature at which hydrogen becomes a liquid.
+
+[16] - Score: 0 - This passage is about water density and temperature, not relevant to the temperature at which hydrogen becomes a liquid.
+
+[17] - Score: 0 - This passage is about water and carbon dioxide, not relevant to the temperature at which hydrogen becomes a liquid.
+
+[18] - Score: 0 - This passage is about saturated and unsaturated fats, not relevant to the temperature at which hydrogen becomes a liquid.
+
+[19] - Score: 0 - This passage is about water and its state at room temperature, not relevant to the temperature at which hydrogen becomes a liquid.
+
+[20] - Score: 0 - This passage is about hydrogen bonding in water, not relevant to the temperature at which hydrogen becomes a liquid.
+
+[Start] [12] > [9] > [1] > [11] [End]
+original response rank: 12     9     1     11
+ post response rank: [11, 8, 0, 10, 1, 2, 3, 4, 5, 6, 7, 9, 12, 13, 14, 15, 16, 17, 18, 19]
+
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 1
+ miss_passage_cnt: 16
+
+****************************************************************************************************
+****************************************************************************************************
+query 6/43: 
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 7/43: 
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 19
+repetition or missing: 
+ original response: [1] Relevance Score: 0 - The passage discusses hypertension and social phobia, not related to the three percenters.
+
+[2] Relevance Score: 0 - The passage is about Nigeria's ethnic groups, not related to the three percenters.
+
+[3] Relevance Score: 0 - The passage discusses child poverty in America, not related to the three percenters.
+
+[4] Relevance Score: 0 - The passage is about the distribution of Earth's water, not related to the three percenters.
+
+[5] Relevance Score: 0 - The passage discusses patient satisfaction rates for cellulite treatments, not related to the three percenters.
+
+[6] Relevance Score: 0 - The passage is about Mississippi's state income tax rates, not related to the three percenters.
+
+[7] Relevance Score: 0 - The passage discusses term limits for mayors, not related to the three percenters.
+
+[8] Relevance Score: 0 - The passage is about patients with neck wounds, not related to the three percenters.
+
+[9] Relevance Score: 0 - The passage discusses staple foods and their contribution to the world's food energy intake, not related to the three percenters.
+
+[10] Relevance Score: 0 - The passage is about the speech development of three-year-old children, not related to the three percenters.
+
+[11] Relevance Score: 0 - The passage discusses obesity rates in the United States, not related to the three percenters.
+
+[12] Relevance Score: 0 - The passage is about the operation duration of urgent care centers, not related to the three percenters.
+
+[13] Relevance Score: 0 - The passage discusses spending on various categories in different income quintiles, not related to the three percenters.
+
+[14] Relevance Score: 0 - The passage is about AT&T's text notifications for data usage, not related to the three percenters.
+
+[15] Relevance Score: 0 - The passage discusses the Applicable Federal Rates (AFR) for loans, not related to the three percenters.
+
+[16] Relevance Score: 0 - The passage is about the cost of real estate agent commissions, not related to the three percenters.
+
+[17] Relevance Score: 0 - The passage discusses child care assistance eligibility and costs in Florida, not related to the three percenters.
+
+[18] Relevance Score: 0 - The passage is about college students' indecisiveness in choosing a major, not related to the three percenters.
+
+[19] Relevance Score: 0 - The passage discusses the distribution of fresh water on Earth, not related to the three percenters.
+
+[20] Relevance Score: 0 - The passage is about the demographics of assisted living residents, not related to the three percenters.
+
+[Start] None of the passages provided are relevant to the search query "what are the three percenters?". All passages received a relevance score of 0. [End]
+original response rank: 0
+ post response rank: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 1
+ miss_passage_cnt: 19
+
+****************************************************************************************************
+****************************************************************************************************
+query 8/43: 
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 9/43: 
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 10/43: 
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 11/43: 
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 20
+repetition or missing: 
+ original response: [1] Relevance Score: 0 - The passage discusses the area of a trapezoid, not the midsegment.
+[2] Relevance Score: 0 - The passage focuses on finding the area of a trapezoid, not the midsegment.
+[3] Relevance Score: 0 - The passage is about finding the height of a trapezoid, not the midsegment.
+[4] Relevance Score: 0 - The passage discusses the definition and parallel sides of a trapezoid, not the midsegment.
+[5] Relevance Score: 0 - The passage focuses on finding the area of a trapezoid, not the midsegment.
+[6] Relevance Score: 0 - The passage is about solving problems related to trapezoids and kites, but not about finding the midsegment.
+[7] Relevance Score: 0 - The passage discusses the area of a trapezoid, not the midsegment.
+[8] Relevance Score: 0 - The passage discusses the definition of a trapezoid, not the midsegment.
+[9] Relevance Score: 0 - The passage is about the reflectional symmetry of a trapezoid, not the midsegment.
+[10] Relevance Score: 0 - The passage is about finding the area and perimeter of a trapezoid, not the midsegment.
+[11] Relevance Score: 0 - The passage discusses different types of trapezoids, not the midsegment.
+[12] Relevance Score: 0 - The passage is about finding the area of an isosceles trapezoid, not the midsegment.
+[13] Relevance Score: 0 - The passage discusses the definition of a trapezoid, not the midsegment.
+[14] Relevance Score: 0 - The passage discusses the definition and types of trapezoids, not the midsegment.
+[15] Relevance Score: 0 - The passage is about finding the area of a trapezoid, not the midsegment.
+[16] Relevance Score: 0 - The passage discusses various problems related to trapezoids, but not about finding the midsegment.
+[17] Relevance Score: 0 - The passage discusses the definition of a trapezoid, not the midsegment.
+[18] Relevance Score: 0 - The passage is about finding the perimeter of a trapezoid, not the midsegment.
+[19] Relevance Score: 0 - The passage discusses the definition and types of trapezoids, not the midsegment.
+[20] Relevance Score: 0 - The passage is about finding the perimeter of a trapezoid with missing measurements, not the midsegment.
+
+[Start] None of the passages provided are relevant to the search query about finding the midsegment of a trapezoid. [End]
+original response rank: 
+ post response rank: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 20
+repetition or missing: 
+ original response: [1] Relevance Score: 0 - This passage discusses the formula for finding the area of a trapezoid, not the midsegment.
+
+[2] Relevance Score: 0 - This passage focuses on finding a base of a trapezoid given the area, height, and one base, not the midsegment.
+
+[3] Relevance Score: 0 - This passage is about finding the height of a trapezoid given the area and bases, not the midsegment.
+
+[4] Relevance Score: 0 - This passage discusses finding the height and base of a trapezoid given the area and other information, not the midsegment.
+
+[5] Relevance Score: 0 - This passage is about finding a base of a trapezoid given the area, height, and one base, not the midsegment.
+
+[6] Relevance Score: 0 - This passage discusses the triangle midsegment theorem, not the midsegment of a trapezoid.
+
+[7] Relevance Score: 0 - This passage is about the volume of a trapezoidal prism, not the midsegment of a trapezoid.
+
+[8] Relevance Score: 0 - This passage focuses on finding the area of a trapezoid, not the midsegment.
+
+[9] Relevance Score: 0 - This passage discusses the number of vertices in a trapezoidal prism, not the midsegment of a trapezoid.
+
+[10] Relevance Score: 0 - This passage is about finding the oblique side and height of a trapezoid, not the midsegment.
+
+[11] Relevance Score: 0 - This passage discusses finding the coordinates of vertices and slopes in a triangle, not the midsegment of a trapezoid.
+
+[12] Relevance Score: 0 - This passage discusses the properties of a triangle's midsegment, not the midsegment of a trapezoid.
+
+[13] Relevance Score: 0 - This passage is about calculating the area of a trapezoid, not the midsegment.
+
+[14] Relevance Score: 0 - This passage discusses finding the area of a trapezoid, not the midsegment.
+
+[15] Relevance Score: 0 - This passage is about finding the lengths of the sides of a trapezoid, not the midsegment.
+
+[16] Relevance Score: 0 - This passage discusses finding the volume of a trapezoidal prism, not the midsegment of a trapezoid.
+
+[17] Relevance Score: 0 - This passage is about finding the area of a trapezoid using the Pythagorean Theorem, not the midsegment.
+
+[18] Relevance Score: 0 - This passage discusses finding the area of a shaded trapezoid, not the midsegment.
+
+[19] Relevance Score: 0 - This passage discusses the number of vertices in a trapezoidal pyramid, not the midsegment of a trapezoid.
+
+[20] Relevance Score: 0 - This passage discusses the definition of a trapezoid, not the midsegment.
+
+[Start] None of the passages provided are relevant to the search query about finding the midsegment of a trapezoid. [End]
+original response rank: 
+ post response rank: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 20
+repetition or missing: 
+ original response: [1] Score: 0 - The passage discusses the triangle midsegment theorem, which is not relevant to finding the midsegment of a trapezoid.
+
+[2] Score: 0 - This passage is also about the triangle midsegment theorem and not relevant to the query.
+
+[3] Score: 0 - The passage focuses on finding the area of a trapezoid, not the midsegment.
+
+[4] Score: 0 - This passage is another repetition of the triangle midsegment theorem and not relevant to the query.
+
+[5] Score: 0 - The passage discusses finding the lengths of segments in a triangle, not a trapezoid.
+
+[6] Score: 0 - This passage is about calculating the area of a trapezoid, not finding the midsegment.
+
+[7] Score: 0 - The passage focuses on finding the area of a trapezoid, not the midsegment.
+
+[8] Score: 0 - This passage is also about finding the area of a trapezoid, not the midsegment.
+
+[9] Score: 0 - The passage discusses the triangle midsegment theorem, which is not relevant to finding the midsegment of a trapezoid.
+
+[10] Score: 0 - The passage focuses on finding the area of a trapezoid, not the midsegment.
+
+[11] Score: 0 - This passage is also about finding the area of a trapezoid, not the midsegment.
+
+[12] Score: 0 - The passage discusses finding a base or height of a trapezoid given other information, not the midsegment.
+
+[13] Score: 0 - This passage is about finding the height of a trapezoid, not the midsegment.
+
+[14] Score: 0 - The passage discusses finding the height or base of a trapezoid, not the midsegment.
+
+[15] Score: 0 - This passage is about finding a base of a trapezoid, not the midsegment.
+
+[16] Score: 0 - The passage discusses the triangle midsegment theorem, which is not relevant to finding the midsegment of a trapezoid.
+
+[17] Score: 0 - The passage is about calculating the volume of a trapezoidal prism, not finding the midsegment of a trapezoid.
+
+[18] Score: 0 - The passage focuses on finding the area of a trapezoid, not the midsegment.
+
+[19] Score: 0 - This passage discusses the number of vertices in a trapezoidal prism, not the midsegment of a trapezoid.
+
+[20] Score: 0 - The passage discusses calculating various properties of trapezoids, but not the midsegment.
+
+[Start] None of the passages provided are relevant to the search query. [End]
+original response rank: 
+ post response rank: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 3
+ miss_passage_cnt: 60
+
+****************************************************************************************************
+****************************************************************************************************
+query 12/43: 
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 13/43: 
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 14/43: 
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 15/43: 
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 16/43: 
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 19
+repetition or missing: 
+ original response: Relevance scores and reasons:
+[1] - Score: 0 - The passage is about pearl fishing and pearl-gray color, not related to Robert Gray.
+[2] - Score: 0 - The passage is about Jackie Gray, not Robert Gray.
+[3] - Score: 0 - The passage is about Barry Allen, not Robert Gray.
+[4] - Score: 0 - The passage is about Emma Roberts, not Robert Gray.
+[5] - Score: 0 - The passage is about Freddie Gray, not Robert Gray.
+[6] - Score: 0 - The passage is about James Gray, not Robert Gray.
+[7] - Score: 0 - The passage is about the painting of Dorian Gray, not Robert Gray.
+[8] - Score: 0 - The passage is about Ken Gray, not Robert Gray.
+[9] - Score: 0 - The passage is about Carol Taylor Gray and C Boyden Gray, not Robert Gray.
+[10] - Score: 0 - The passage is about Robert Stack, not Robert Gray.
+[11] - Score: 0 - The passage is about Gray and Juvia, fictional characters, not Robert Gray.
+[12] - Score: 0 - The passage is about Gray Malin, not Robert Gray.
+[13] - Score: 0 - The passage is about a movie, not Robert Gray.
+[14] - Score: 0 - The passage is about Robert E. Lee, not Robert Gray.
+[15] - Score: 1 - The passage is about the name Robert, but it doesn't provide specific information about Robert Gray.
+[16] - Score: 0 - The passage is about Robert Bentley and Robert Coyiuto Jr, not Robert Gray.
+[17] - Score: 0 - The passage is about Robert Wash, not Robert Gray.
+[18] - Score: 0 - The passage is about Robert McReynolds, not Robert Gray.
+[19] - Score: 0 - The passage is about Thurrock and Grays, not Robert Gray.
+[20] - Score: 0 - The passage is about various inventors, not Robert Gray.
+
+Ranking:
+[Start] [15] [End]
+original response rank: 15
+ post response rank: [14, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 15, 16, 17, 18, 19]
+
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 16
+repetition or missing: 
+ original response: [1] - Score: 10 - The passage directly talks about Captain Robert Gray and his discoveries, which is highly relevant to the search query.
+
+[2] - Score: 10 - This passage discusses Robert Gray as the founder of Shasta travel trailers, which is also highly relevant to the search query.
+
+[3] - Score: 0 - This passage is about Daniel Boone and does not mention Robert Gray.
+
+[4] - Score: 0 - This passage discusses gray-asexual individuals and does not mention Robert Gray.
+
+[5] - Score: 0 - This passage is about Emma Watson and Emma Roberts, not Robert Gray.
+
+[6] - Score: 0 - This passage discusses wolves, coyotes, and dogs, not Robert Gray.
+
+[7] - Score: 0 - This passage is about a fictional character named Gray Fullbuster, not Robert Gray.
+
+[8] - Score: 0 - This passage is about Jackie Gray, not Robert Gray.
+
+[9] - Score: 0 - This passage is about Pennywise the Dancing Clown, not Robert Gray.
+
+[10] - Score: 8 - This passage mentions Captain Robert Gray in the context of Oregon's history, which is relevant to the search query.
+
+[11] - Score: 8 - This passage is similar to passage [10], mentioning Captain Robert Gray in the context of Oregon's history.
+
+[12] - Score: 0 - This passage discusses various scientists and mathematicians, but does not mention Robert Gray.
+
+[13] - Score: 0 - This passage is about Robert Downey Jr., not Robert Gray.
+
+[14] - Score: 0 - This passage is also about Robert Downey Jr., not Robert Gray.
+
+[15] - Score: 0 - This passage is about General Robert E. Lee's horse, not Robert Gray.
+
+[16] - Score: 0 - This passage is about Freddie Gray, not Robert Gray.
+
+[17] - Score: 0 - This passage is about Robert Pattinson, not Robert Gray.
+
+[18] - Score: 0 - This passage is about Dorian Gray, not Robert Gray.
+
+[19] - Score: 0 - This passage is about Matthew Gray Gubler, not Robert Gray.
+
+[20] - Score: 0 - This passage is about American Crew Classic Gray Shampoo, not Robert Gray.
+
+[Start] [1] > [2] > [10] > [11] [End]
+original response rank: 1     2     10     11
+ post response rank: [0, 1, 9, 10, 2, 3, 4, 5, 6, 7, 8, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 2
+ miss_passage_cnt: 35
+
+****************************************************************************************************
+****************************************************************************************************
+query 17/43: 
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 18/43: 
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 19/43: 
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 20/43: 
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 1
+repetition or missing: 
+ original response: [1] Relevance Score: 1 - The passage discusses bullying and suicide among young people, but does not specifically address military suicide.
+
+[2] Relevance Score: 2 - The passage mentions suicide among young people and untreated depression, but does not directly address military suicide.
+
+[3] Relevance Score: 1 - The passage provides general statistics on suicide in the United States, but does not specifically address military suicide.
+
+[4] Relevance Score: 7 - The passage discusses SAMHSA addressing critical issues such as suicide risk, trauma, and homelessness that impact members of the military with behavioral health conditions.
+
+[5] Relevance Score: 4 - The passage provides statistics on causes of death in the United States military, including suicide, but does not discuss the causes of military suicide.
+
+[6] Relevance Score: 2 - The passage lists risk factors for suicide in general, but does not specifically address military suicide.
+
+[7] Relevance Score: 1 - The passage discusses teen suicide statistics, but does not specifically address military suicide.
+
+[8] Relevance Score: 1 - The passage provides statistics on suicide among different age groups, but does not specifically address military suicide.
+
+[9] Relevance Score: 1 - The passage provides general statistics on suicide, but does not specifically address military suicide.
+
+[10] Relevance Score: 1 - The passage provides statistics on suicide among different age groups, but does not specifically address military suicide.
+
+[11] Relevance Score: 8 - The passage discusses the increase in suicide rates among soldiers who served in Iraq and Afghanistan, as well as those who never deployed.
+
+[12] Relevance Score: 6 - The passage mentions that suicide is the leading cause of death among active-duty soldiers and that military officials are struggling to address the problem.
+
+[13] Relevance Score: 5 - The passage provides suicide rates for men in the Army National Guard and full-time troops across the U.S. military.
+
+[14] Relevance Score: 5 - The passage provides statistics on suicides in the active duty Navy, Air Force, and Army.
+
+[15] Relevance Score: 4 - The passage discusses the statistic of 22 military veteran suicides per day, but does not discuss the causes of military suicide.
+
+[16] Relevance Score: 3 - The passage compares military suicide rates to civilian suicide rates, but does not discuss the causes of military suicide.
+
+[17] Relevance Score: 3 - The passage discusses the potential link between relaxed enlistment standards and issues such as suicides, sexual assaults, and other bad behavior in the military.
+
+[18] Relevance Score: 1 - The passage discusses common causes of suicide in general, but does not specifically address military suicide.
+
+[19] Relevance Score: 2 - The passage discusses arguments against including transgender people in the military due to high incidence of depression and suicide, but does not specifically address causes of military suicide.
+
+[20] Relevance Score: 2 - The passage discusses the relationship between mental illness and suicide, but does not specifically address military suicide.
+
+[Start] [11] > [4] > [12] > [13] > [14] > [5] > [15] > [17] > [16] > [2] > [6] > [19] > [20] > [1] > [3] > [7] > [8] > [9] > [10] [End]
+original response rank: 11     4     12     13     14     5     15     17     16     2     6     19     20     1     3     7     8     9     10
+ post response rank: [10, 3, 11, 12, 13, 4, 14, 16, 15, 1, 5, 18, 19, 0, 2, 6, 7, 8, 9, 17]
+
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 1
+ miss_passage_cnt: 1
+
+****************************************************************************************************
+****************************************************************************************************
+query 21/43: 
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 22/43: 
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 23/43: 
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 24/43: 
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 25/43: 
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 26/43: 
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 27/43: 
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 28/43: 
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 29/43: 
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 30/43: 
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 31/43: 
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 18
+repetition or missing: 
+ original response: [1] Relevance Score: 0 - The passage talks about the introduction, mission, vision, and values of The Salvation Army in the UK and Republic of Ireland, but does not mention when it was founded.
+
+[2] Relevance Score: 0 - The passage discusses the Salvation Army Ray & Joan Kroc Corps Community Center, but does not mention the founding date.
+
+[3] Relevance Score: 0 - The passage talks about music ministries within The Salvation Army, but does not mention when it was founded.
+
+[4] Relevance Score: 0 - The passage discusses the Corporate Angel Tree Partner program, but does not mention the founding date of The Salvation Army.
+
+[5] Relevance Score: 0 - The passage talks about the Salvation Army's involvement in emigration, but does not mention when it was founded.
+
+[6] Relevance Score: 0 - The passage discusses the trademark of the phrase "sharing is caring" by The Salvation Army, but does not mention the founding date.
+
+[7] Relevance Score: 0 - The passage talks about Salvation Army officers and their roles, but does not mention when the organization was founded.
+
+[8] Relevance Score: 0 - The passage discusses the growth and mission of The Salvation Army, but does not mention the founding date.
+
+[9] Relevance Score: 0 - The passage talks about shopping at a Salvation Army store, but does not mention when the organization was founded.
+
+[10] Relevance Score: 0 - The passage discusses the roles of Salvation Army officers in leading programs, but does not mention the founding date.
+
+[11] Relevance Score: 0 - The passage talks about cleaning cupro fabric found in Salvation Army clothing, but does not mention when the organization was founded.
+
+[12] Relevance Score: 8 - The passage mentions the founders of The Salvation Army, William and Catherine Booth, and their connection to evangelicalism, but does not directly state the founding date.
+
+[13] Relevance Score: 0 - The passage talks about the amount of unwanted clothing at a Salvation Army location, but does not mention the founding date.
+
+[14] Relevance Score: 0 - The passage discusses the symbols of The Salvation Army, but does not mention when it was founded.
+
+[15] Relevance Score: 0 - The passage talks about donating to The Salvation Army New Jersey Division, but does not mention the founding date.
+
+[16] Relevance Score: 0 - The passage discusses Adult Rehabilitation Centers and their financing, but does not mention when The Salvation Army was founded.
+
+[17] Relevance Score: 0 - The passage talks about Salvation Army brass bands, but does not mention the founding date.
+
+[18] Relevance Score: 0 - The passage discusses The Salvation Army's substance abuse program, but does not mention the founding date.
+
+[19] Relevance Score: 0 - The passage talks about donating vehicles to The Salvation Army, but does not mention the founding date.
+
+[20] Relevance Score: 10 - The passage directly states that The Salvation Army was founded in 1865 by William and Catherine Booth in London's East End.
+
+[Start] [20] > [12] [End]
+original response rank: 20     12
+ post response rank: [19, 11, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 13, 14, 15, 16, 17, 18]
+
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 1
+ miss_passage_cnt: 18
+
+****************************************************************************************************
+****************************************************************************************************
+query 32/43: 
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 13
+repetition or missing: 
+ original response: Relevance scores and reasons:
+
+[1] - Score: 0 - The passage is about Swiss Franc currency, not related to popular food in Switzerland.
+[2] - Score: 0 - The passage is about popular Canadian foods, not related to Switzerland.
+[3] - Score: 0 - The passage is about Swiss Franc currency, not related to popular food in Switzerland.
+[4] - Score: 0 - The passage is about Swiss Franc currency, not related to popular food in Switzerland.
+[5] - Score: 8 - The passage mentions Swiss dishes and traditional food in Switzerland, but does not specifically mention the most popular food.
+[6] - Score: 1 - The passage briefly mentions popular foods around the world, but does not specifically mention Switzerland.
+[7] - Score: 0 - The passage is about popular Indian dishes, not related to Switzerland.
+[8] - Score: 1 - The passage briefly mentions popular foods around the world, but does not specifically mention Switzerland.
+[9] - Score: 0 - The passage is about International Baccalaureate (IB) education, not related to popular food in Switzerland.
+[10] - Score: 8 - The passage mentions Swiss dishes and traditional food in Switzerland, but does not specifically mention the most popular food.
+[11] - Score: 8 - The passage mentions Swiss dishes and traditional food in Switzerland, but does not specifically mention the most popular food.
+[12] - Score: 6 - The passage talks about traditional food in the Ticino area of Switzerland, but does not mention the most popular food in the entire country.
+[13] - Score: 0 - The passage is about things Switzerland is famous for, but does not mention popular food.
+[14] - Score: 2 - The passage mentions the cost of food in Switzerland, but does not discuss the most popular food.
+[15] - Score: 0 - The passage is about ranking foods by popularity, but does not mention Switzerland or its popular food.
+[16] - Score: 0 - The passage is about ranking foods by popularity, but does not mention Switzerland or its popular food.
+[17] - Score: 0 - The passage is about ranking foods by popularity, but does not mention Switzerland or its popular food.
+[18] - Score: 0 - The passage is about ranking foods by popularity, but does not mention Switzerland or its popular food.
+[19] - Score: 0 - The passage is about ranking foods by popularity, but does not mention Switzerland or its popular food.
+[20] - Score: 0 - The passage is about the popularity of ice hockey, not related to popular food in Switzerland.
+
+Summarized rank:
+[Start] [5] > [10] > [11] > [12] > [14] > [6] > [8] [End]
+original response rank: 5     10     11     12     14     6     8
+ post response rank: [4, 9, 10, 11, 13, 5, 7, 0, 1, 2, 3, 6, 8, 12, 14, 15, 16, 17, 18, 19]
+
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 1
+ miss_passage_cnt: 13
+
+****************************************************************************************************
+****************************************************************************************************
+query 33/43: 
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 34/43: 
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 35/43: 
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 36/43: 
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 1
+repetition or missing: 
+ original response: [1] Relevance Score: 10 - This passage directly discusses contour plowing and its ability to reduce soil erosion.
+
+[2] Relevance Score: 0 - This passage is about chin surgery and has no relevance to contour plowing.
+
+[3] Relevance Score: 0 - This passage discusses the concept of an acre and its relation to plowing, but not contour plowing specifically.
+
+[4] Relevance Score: 1 - This passage mentions plowing and disc harrows, but does not specifically discuss contour plowing.
+
+[5] Relevance Score: 0 - This passage is about light-contour vs standard-contour barrels and is not related to contour plowing.
+
+[6] Relevance Score: 0 - This passage discusses a seeder and plow-frame, but not contour plowing.
+
+[7] Relevance Score: 0 - This passage is about the history of John Deere's plow-making, but not contour plowing.
+
+[8] Relevance Score: 0 - This passage provides a definition of contour but does not discuss contour plowing.
+
+[9] Relevance Score: 10 - This passage directly discusses contour plowing and its ability to reduce soil erosion.
+
+[10] Relevance Score: 3 - This passage mentions plowing and erosion, but does not specifically discuss contour plowing.
+
+[11] Relevance Score: 0 - This passage is about the Contour App and has no relevance to contour plowing.
+
+[12] Relevance Score: 0 - This passage discusses the width and length of glaciers and has no relevance to contour plowing.
+
+[13] Relevance Score: 0 - This passage is about attaching and detaching a plow, but not contour plowing.
+
+[14] Relevance Score: 0 - This passage is about a snow plow attachment for a golf cart and has no relevance to contour plowing.
+
+[15] Relevance Score: 0 - This passage is about BodyTite, a body reshaping procedure, and has no relevance to contour plowing.
+
+[16] Relevance Score: 0 - This passage is about cervical pillows and has no relevance to contour plowing.
+
+[17] Relevance Score: 0 - This passage is about the steel plow and the reaper, but not contour plowing.
+
+[18] Relevance Score: 4 - This passage discusses conservation tillage systems, which can include contour plowing, but does not specifically mention contour plowing.
+
+[19] Relevance Score: 0 - This passage is about choosing the size of a snow plow and has no relevance to contour plowing.
+
+[20] Relevance Score: 0 - This passage provides a definition of contour but does not discuss contour plowing.
+
+[Start] [1] > [9] > [18] > [10] > [4] > [20] > [17] > [16] > [15] > [14] > [13] > [12] > [11] > [8] > [7] > [6] > [5] > [3] > [2] [End]
+original response rank: 1     9     18     10     4     20     17     16     15     14     13     12     11     8     7     6     5     3     2
+ post response rank: [0, 8, 17, 9, 3, 19, 16, 15, 14, 13, 12, 11, 10, 7, 6, 5, 4, 2, 1, 18]
+
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 1
+ miss_passage_cnt: 1
+
+****************************************************************************************************
+****************************************************************************************************
+query 37/43: 
+Request timed out.
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+Request timed out.
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 38/43: 
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 39/43: 
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 16
+repetition or missing: 
+ original response: [1] - Score: 0 - The passage is about Australia's federation and has no relevance to the US entering WW1.
+[2] - Score: 0 - The passage discusses the use of tanks in WW1 but does not mention the US entering the war.
+[3] - Score: 0 - The passage talks about trench warfare in WW1 but does not mention the US entering the war.
+[4] - Score: 0 - The passage is about Manifest Destiny and does not mention the US entering WW1.
+[5] - Score: 0 - The passage discusses gas attacks in WW1 but does not mention the US entering the war.
+[6] - Score: 0 - The passage is about Eisenhower's involvement in WW1 and WW2 but does not mention the US entering WW1.
+[7] - Score: 0 - The passage is about the importance of farmers and does not mention the US entering WW1.
+[8] - Score: 8 - The passage discusses the reasons for the US entering WW1, including isolationist foreign policy and propaganda.
+[9] - Score: 0 - The passage is about Michelangelo's work in the Sistine Chapel and has no relevance to the US entering WW1.
+[10] - Score: 0 - The passage is a repetition of passage [1] and has no relevance to the US entering WW1.
+[11] - Score: 6 - The passage mentions events that forced the US into WW1, such as the Sussex Pledge and the Lusitania sinking.
+[12] - Score: 4 - The passage briefly mentions President Woodrow Wilson declaring US neutrality in WW1 but does not explain why the US entered the war.
+[13] - Score: 2 - The passage briefly mentions the US entering WW1 but does not provide any reasons for it.
+[14] - Score: 0 - The passage is a general introduction to WW1 and does not mention the US entering the war.
+[15] - Score: 0 - The passage is a repetition of passage [14] and has no relevance to the US entering WW1.
+[16] - Score: 0 - The passage provides a general overview of WW1 but does not mention the US entering the war.
+[17] - Score: 0 - The passage discusses gas protection methods in WW1 but does not mention the US entering the war.
+[18] - Score: 0 - The passage is about life in the trenches during WW1 but does not mention the US entering the war.
+[19] - Score: 0 - The passage is about Freud and has no relevance to the US entering WW1.
+[20] - Score: 0 - The passage is about the US entering WWII, not WW1.
+
+[Start] [8] > [11] > [12] > [13] [End]
+original response rank: 8     11     12     13
+ post response rank: [7, 10, 11, 12, 0, 1, 2, 3, 4, 5, 6, 8, 9, 13, 14, 15, 16, 17, 18, 19]
+
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 1
+ miss_passage_cnt: 16
+
+****************************************************************************************************
+****************************************************************************************************
+query 40/43: 
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 41/43: 
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+Request timed out.
+Request timed out.
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 42/43: 
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+
+****************************************************************************************************
+Total Malformed Outputs Statistics:
+ Total Repetition Chat Count: 0, Average Repetition Query: 0.0
+ Total Repetition Passage Count: 0, Average Repetition Passage: 0.0
+ Total Missing Chat Count: 13, Average Missing Query: 0.03359173126614987
+ Total Missing Passage Count: 180, Average Missing Passage: 0.023255813953488372
+
+Downloading https://search.maven.org/remotecontent?filepath=uk/ac/gla/dcs/terrierteam/jtreceval/0.0.5/jtreceval-0.0.5-jar-with-dependencies.jar to /data4/hop20001/.cache/pyserini/eval/jtreceval-0.0.5-jar-with-dependencies.jar...
+/data4/hop20001/.cache/pyserini/eval/jtreceval-0.0.5-jar-with-dependencies.jar already exists!
+Skipping download.
+Trunc /tmp/tmpf08fyb79
+Running command: ['java', '-jar', '/data4/hop20001/.cache/pyserini/eval/jtreceval-0.0.5-jar-with-dependencies.jar', '-m', 'ndcg_cut.10', '/tmp/tmpf08fyb79', '/tmp/tmpbdsi2c4d']
+Results:
+ndcg_cut_10           	all	0.7415
+Downloading https://search.maven.org/remotecontent?filepath=uk/ac/gla/dcs/terrierteam/jtreceval/0.0.5/jtreceval-0.0.5-jar-with-dependencies.jar to /data4/hop20001/.cache/pyserini/eval/jtreceval-0.0.5-jar-with-dependencies.jar...
+/data4/hop20001/.cache/pyserini/eval/jtreceval-0.0.5-jar-with-dependencies.jar already exists!
+Skipping download.
+Trunc /tmp/tmprn8np0ly
+Running command: ['java', '-jar', '/data4/hop20001/.cache/pyserini/eval/jtreceval-0.0.5-jar-with-dependencies.jar', '-m', 'ndcg_cut.5', '/tmp/tmprn8np0ly', '/tmp/tmpbdsi2c4d']
+Results:
+ndcg_cut_5            	all	0.7756
+Downloading https://search.maven.org/remotecontent?filepath=uk/ac/gla/dcs/terrierteam/jtreceval/0.0.5/jtreceval-0.0.5-jar-with-dependencies.jar to /data4/hop20001/.cache/pyserini/eval/jtreceval-0.0.5-jar-with-dependencies.jar...
+/data4/hop20001/.cache/pyserini/eval/jtreceval-0.0.5-jar-with-dependencies.jar already exists!
+Skipping download.
+Trunc /tmp/tmpukosxttb
+Running command: ['java', '-jar', '/data4/hop20001/.cache/pyserini/eval/jtreceval-0.0.5-jar-with-dependencies.jar', '-m', 'ndcg_cut.1', '/tmp/tmpukosxttb', '/tmp/tmpbdsi2c4d']
+Results:
+ndcg_cut_1            	all	0.8101

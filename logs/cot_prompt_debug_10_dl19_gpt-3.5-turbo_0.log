@@ -1,0 +1,1288 @@
+{
+    "prompt_type": 10,
+    "dataset": "dl19",
+    "model": "gpt-3.5-turbo",
+    "print_messages": 0
+}
+####################
+Evaluation on dl19
+####################
+  0%|          | 0/43 [00:00<?, ?it/s]  2%|▏         | 1/43 [00:00<00:09,  4.66it/s]  9%|▉         | 4/43 [00:00<00:03, 11.38it/s] 14%|█▍        | 6/43 [00:00<00:02, 13.84it/s] 19%|█▊        | 8/43 [00:00<00:02, 14.77it/s] 26%|██▌       | 11/43 [00:00<00:02, 15.38it/s] 30%|███       | 13/43 [00:00<00:01, 16.19it/s] 37%|███▋      | 16/43 [00:01<00:01, 18.60it/s] 47%|████▋     | 20/43 [00:01<00:01, 21.77it/s] 53%|█████▎    | 23/43 [00:01<00:00, 21.30it/s] 65%|██████▌   | 28/43 [00:01<00:00, 27.30it/s] 72%|███████▏  | 31/43 [00:01<00:00, 26.24it/s] 79%|███████▉  | 34/43 [00:01<00:00, 26.62it/s] 88%|████████▊ | 38/43 [00:01<00:00, 29.45it/s] 98%|█████████▊| 42/43 [00:01<00:00, 27.24it/s]100%|██████████| 43/43 [00:01<00:00, 21.86it/s]
+****************************************************************************************************
+query 0/43: 
+****************************************************************************************************
+Message Example:
+ [{'role': 'system', 'content': 'You are RankGPT, an intelligent assistant that can rank passages based on their relevancy to the query.'}, {'role': 'user', 'content': 'I will provide you with 20 passages, each indicated by number identifier []. \nRank the passages based on their relevance to query: how long is life cycle of flea.'}, {'role': 'assistant', 'content': 'Okay, please provide the passages.'}, {'role': 'user', 'content': '[1] The best flea control approach for your home and pet is to interrupt the flea life cycle. Low impact methods for controlling adult fleas, eggs and larvae include regular vacuuming and laundering, along with pet bathing or grooming. If the situation requires a pesticide, opt for low toxicity options.'}, {'role': 'assistant', 'content': 'Received passage [1].'}, {'role': 'user', 'content': '[2] A New Housemate: Fleas and Ticks The flea is a very persistent and resilient pest with a very complicated life cycle. It is even capable of surviving in outdoor temperatures as low as the upper 30s.'}, {'role': 'assistant', 'content': 'Received passage [2].'}, {'role': 'user', 'content': '[3] An Insect Growth Regulator (IGR) breaks the flea lifecycle by preventing a young flea from growing normally, into the next phase -- a biting, breeding adult. The first IGR to come out was Precor. It did a wonderful job of interrupting the flea life cycle in the house, but it breaks down rapidly in sunlight.'}, {'role': 'assistant', 'content': 'Received passage [3].'}, {'role': 'user', 'content': '[4] The Flea Life Cycle. Fleas undergo complete metamorphosis with four stages: egg, larva, pupa, and adult. Environmental variables influence the length of each developmental stage. Fleas prefer a warm, humid environment, with temperatures ranging between 70Â° and 90Â° Fahrenheit and a relative humidity of 75% or more.'}, {'role': 'assistant', 'content': 'Received passage [4].'}, {'role': 'user', 'content': '[5] If you do not have a serious flea problem, you will notice it working within a couple weeks, as the existing fleas and eggs go through their life cycles, coupled of course, with regular bathing, flea combing and vaccuuming. March 22, 2015 at 4:25 am #69234 Report Abuse.'}, {'role': 'assistant', 'content': 'Received passage [5].'}, {'role': 'user', 'content': '[6] Under ideal conditions, the cat flea life cycle takes just 18 days, from egg to adult. Adult fleas (both male and female) require a blood meal prior to mating. They prefer blood from your pet, but in the absence of a canine or feline host, fleas will bite people.'}, {'role': 'assistant', 'content': 'Received passage [6].'}, {'role': 'user', 'content': '[7] The flea life cycle is fairly complex, and understanding the various stages will make it easier to get rid of them. Answer: Collectively, all of the species of fleas are categorized under the order name of Siphonaptera.'}, {'role': 'assistant', 'content': 'Received passage [7].'}, {'role': 'user', 'content': '[8] The cat flea can also maintain its life cycle on other carnivores and on omnivores, but these are only chosen when more acceptable hosts become unavailable. Adult cat fleas do not willingly leave their hosts, and inter-animal transfer of adult fleas is rare except in animals that share sleeping quarters.'}, {'role': 'assistant', 'content': 'Received passage [8].'}, {'role': 'user', 'content': '[9] ZoGuardâ\x84¢ Plus for Dogs. ZoGuardâ\x84¢ Plus is the perfect solution to help protect your dogs against fleas and ticks without breaking your bank. It contains Fipronil and S-methoprene as active ingredients, the same as FRONTLINE Plus. These ingredients effectively break the flea life cycle, kills fleas, ticks, and chewing lice.'}, {'role': 'assistant', 'content': 'Received passage [9].'}, {'role': 'user', 'content': '[10] Cat Owners. Fleas. Fleas are the most common external parasite found on cats (and dogs). (Parasites are freeloaders that live in or on another creature.) Although fleas are more likely to be a problem during warm-weather months, they can also cause problems during cooler seasons due to their ability to continue their life cycle indoors.'}, {'role': 'assistant', 'content': 'Received passage [10].'}, {'role': 'user', 'content': '[11] PS â\x80\x94 knowing a fleas life cycle helps in going to battle with them.. The flea lays eggs and the eggs hatch (and look like tiny worms). The worms (called the larval stage) develop a cocoon type barrier (called the pupal stage) where they transform into an adult flea (like a caterpillar becoming a butterfly).'}, {'role': 'assistant', 'content': 'Received passage [11].'}, {'role': 'user', 'content': '[12] Life cycle and habitat[edit] Fleas are holometabolous insects, going through the four lifecycle stages of egg, larva, pupa, and imago (adult). Adult fleas must feed on blood before they can become capable of reproduction. Flea populations are distributed with about 50% eggs, 35% larvae, 10% pupae, and 5% adults.'}, {'role': 'assistant', 'content': 'Received passage [12].'}, {'role': 'user', 'content': '[13] Fleas prefer a warm, humid environment, with temperatures ranging between 70Â° and 90Â° Fahrenheit and a relative humidity of 75% or more. Under ideal conditions, the cat flea life cycle takes just 18 days, from egg to adult. Adult fleas (both male and female) require a blood meal prior to mating.'}, {'role': 'assistant', 'content': 'Received passage [13].'}, {'role': 'user', 'content': '[14] 1 42% - If worming table does not work can you treat again next day on cats? 2 50% - How long for fleas to die after drops on cats? 3 46% - How long does it take to get rid of fleas once cats have been given flea drops? 4 66% - How long for profender to work kitten?'}, {'role': 'assistant', 'content': 'Received passage [14].'}, {'role': 'user', 'content': '[15] What is the average duration of 1 full SAP life cycle or 1 end-to-end implementation. How long does it take to prepare DEV, QAS and PRD? What is the average duration of 1 full SAP life cycle or 1 end-to-end implementation. How long does it take to prepare DEV, QAS and PRD in any company?'}, {'role': 'assistant', 'content': 'Received passage [15].'}, {'role': 'user', 'content': '[16] Steam cleaners are a great way to get rid of fleas in the home. And as mentioned previously, steam released at the correct temperature for house steam cleaners can get rid of fleas in every stage of its life cycle on contact.'}, {'role': 'assistant', 'content': 'Received passage [16].'}, {'role': 'user', 'content': '[17] 1 Fleas pass through a complete life cycle of four stages. made up of 50% eggs, 30% larvae, 15% pupae and only 5% biting adults. Completion of the life cycle from egg to adult varies from two weeks to eight months.'}, {'role': 'assistant', 'content': 'Received passage [17].'}, {'role': 'user', 'content': '[18] Capstar is safe for dogs, cats, puppies and kittens 4 weeks of age and older. Comfortis. This product, made by Elanco, contains Spinosad for killing fleas. It is a chewable tablet that begins killing fleas within 30 minutes and kills the flea before it is able to lay eggs, thus breaking the flea life cycle. This product should be given with food once a month and remains effective for 30 days. It is recommended for dogs and puppies 14 weeks of age and older.'}, {'role': 'assistant', 'content': 'Received passage [18].'}, {'role': 'user', 'content': '[19] Also food grade diatomaceous earth can be powdered on their coat and bedding to kill fleas. It can also be used for parasites, but should be given for 30 days to kill the whole life cycle. It penetrates the exoskeleton and kills fleas and parasites.'}, {'role': 'assistant', 'content': 'Received passage [19].'}, {'role': 'user', 'content': '[20] Oral flea treatments are given in pill form every 30 days. They work in a similar fashion as the topical treatment, by breaking up the life cycle of the flea and prohibiting flea eggs and larvae from developing. Oral treatments can also be used in conjunction with bathing products to kill adult fleas.at flea products are the only sure way rid your cat and your home of those annoying irritants. General home care will aid in the effectiveness of any cat flea product that you choose. There are flea collars, topical treatments, oral treatments, shampoos and sprays. Any combination of these solutions can be productive.'}, {'role': 'assistant', 'content': 'Received passage [20].'}, {'role': 'user', 'content': 'Search Query: how long is life cycle of flea. \nRank the 20 passages above based on their relevance to the search query. Please think step by step to solve this task. First please rate the relevance between the query and each document from score 0 to 10. Then sort identifiers in descending order based on their relevance to the search query. Finally, summarize the rank. Please use [start] to begin summarize the rank and use [end] to indicate the end of the rank. All the passages should be included and listed using identifiers and make sure there is no repetitious and missing pasages. The format of the summarized rank should be [Start] [] > [] [End], e.g.,[Start] [1] > [2] [End]. In the summarized rank, only response the ranking results, do not say any other explain.'}]
+Permutation Example:
+ [Start] [6] > [13] > [4] > [1] > [3] > [7] > [8] > [11] > [12] > [2] > [10] > [5] > [9] > [16] > [17] > [18] > [19] > [20] > [14] > [15] [End]
+****************************************************************************************************
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 1
+repetition or missing: 
+ original response: Sure! Here are the relevance scores for each passage:
+
+[1] - 8
+[2] - 6
+[3] - 7
+[4] - 6
+[5] - 9
+[6] - 9
+[7] - 4
+[8] - 7
+[9] - 2
+[10] - 8
+[11] - 7
+[12] - 6
+[13] - 8
+[14] - 9
+[15] - 8
+[16] - 9
+[17] - 5
+[18] - 8
+[19] - 6
+[20] - 9
+
+Based on the relevance scores, the summarized rank is:
+[Start] [5] > [6] > [14] > [16] > [20] > [13] > [10] > [1] > [8] > [18] > [3] > [11] > [2] > [4] > [12] > [19] > [17] > [7] > [9] [End]
+original response rank: 5     6     14     16     20     13     10     1     8     18     3     11     2     4     12     19     17     7     9
+ post response rank: [4, 5, 13, 15, 19, 12, 9, 0, 7, 17, 2, 10, 1, 3, 11, 18, 16, 6, 8, 14]
+
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 1
+repetition or missing: 
+ original response: Sure, here is the summarized rank based on the relevance of each passage to the search query:
+
+[Start] [15] > [3] > [9] > [11] > [2] > [12] > [6] > [13] > [19] > [5] > [14] > [1] > [4] > [7] > [10] > [16] > [17] > [18] > [20] [End]
+original response rank: 15     3     9     11     2     12     6     13     19     5     14     1     4     7     10     16     17     18     20
+ post response rank: [14, 2, 8, 10, 1, 11, 5, 12, 18, 4, 13, 0, 3, 6, 9, 15, 16, 17, 19, 7]
+
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 2
+ miss_passage_cnt: 2
+
+****************************************************************************************************
+****************************************************************************************************
+query 1/43: 
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 1
+repetition or missing: 
+ original response: [1] - 8
+[2] - 9
+[3] - 4
+[4] - 7
+[5] - 6
+[6] - 5
+[7] - 8
+[8] - 7
+[9] - 7
+[10] - 6
+[11] - 9
+[12] - 8
+[13] - 8
+[14] - 9
+[15] - 7
+[16] - 8
+[17] - 9
+[18] - 8
+[19] - 9
+[20] - 9
+
+[Start] [2] > [19] > [17] > [14] > [11] > [18] > [1] > [12] > [13] > [7] > [8] > [9] > [4] > [5] > [10] > [20] > [15] > [6] > [3] [End]
+original response rank: 2     19     17     14     11     18     1     12     13     7     8     9     4     5     10     20     15     6     3
+ post response rank: [1, 18, 16, 13, 10, 17, 0, 11, 12, 6, 7, 8, 3, 4, 9, 19, 14, 5, 2, 15]
+
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 1
+ miss_passage_cnt: 1
+
+****************************************************************************************************
+****************************************************************************************************
+query 2/43: 
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 3/43: 
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 1
+repetition or missing: 
+ original response: Sure! Here are the relevance scores for each passage based on their relevance to the search query "what is durable medical equipment consist of":
+
+[1] - 5
+[2] - 10
+[3] - 10
+[4] - 10
+[5] - 10
+[6] - 10
+[7] - 5
+[8] - 8
+[9] - 7
+[10] - 10
+[11] - 10
+[12] - 8
+[13] - 10
+[14] - 10
+[15] - 10
+[16] - 10
+[17] - 10
+[18] - 9
+[19] - 10
+[20] - 6
+
+[Start] [2] > [3] > [4] > [5] > [6] > [10] > [11] > [13] > [14] > [15] > [16] > [17] > [18] > [9] > [12] > [8] > [20] > [1] > [7] [End]
+original response rank: 2     3     4     5     6     10     11     13     14     15     16     17     18     9     12     8     20     1     7
+ post response rank: [1, 2, 3, 4, 5, 9, 10, 12, 13, 14, 15, 16, 17, 8, 11, 7, 19, 0, 6, 18]
+
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 1
+ miss_passage_cnt: 1
+
+****************************************************************************************************
+****************************************************************************************************
+query 4/43: 
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 1
+repetition or missing: 
+ original response: Here is the summarized rank of the passages based on their relevance to the query "what is wifi vs bluetooth":
+
+[Start]
+[12] > [8] > [3] > [13] > [17] > [1] > [14] > [2] > [4] > [6] > [9] > [10] > [11] > [15] > [16] > [19] > [7] > [18] > [20]
+[End]
+original response rank: 12     8     3     13     17     1     14     2     4     6     9     10     11     15     16     19     7     18     20
+ post response rank: [11, 7, 2, 12, 16, 0, 13, 1, 3, 5, 8, 9, 10, 14, 15, 18, 6, 17, 19, 4]
+
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 1
+ miss_passage_cnt: 1
+
+****************************************************************************************************
+****************************************************************************************************
+query 5/43: 
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 1
+repetition or missing: 
+ original response: Here is the summarized rank of the passages based on their relevance to the search query:
+
+[Start] [11] > [6] > [2] > [12] > [10] > [5] > [3] > [1] > [8] > [9] > [14] > [15] > [18] > [19] > [20] > [7] > [17] > [13] > [4] [End]
+original response rank: 11     6     2     12     10     5     3     1     8     9     14     15     18     19     20     7     17     13     4
+ post response rank: [10, 5, 1, 11, 9, 4, 2, 0, 7, 8, 13, 14, 17, 18, 19, 6, 16, 12, 3, 15]
+
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 1
+ miss_passage_cnt: 1
+
+****************************************************************************************************
+****************************************************************************************************
+query 6/43: 
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 1
+repetition or missing: 
+ original response: Sure, here is the summarized rank based on the relevance of the passages to the search query "what are the social determinants of health":
+
+[Start] [10] > [11] > [1] > [4] > [9] > [15] > [14] > [19] > [3] > [17] > [5] > [18] > [13] > [8] > [16] > [20] > [7] > [12] > [6] [End]
+original response rank: 10     11     1     4     9     15     14     19     3     17     5     18     13     8     16     20     7     12     6
+ post response rank: [9, 10, 0, 3, 8, 14, 13, 18, 2, 16, 4, 17, 12, 7, 15, 19, 6, 11, 5, 1]
+
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 1
+ miss_passage_cnt: 1
+
+****************************************************************************************************
+****************************************************************************************************
+query 7/43: 
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 1
+repetition or missing: 
+ original response: [1] - 2
+[2] - 6
+[3] - 10
+[4] - 1
+[5] - 1
+[6] - 1
+[7] - 1
+[8] - 1
+[9] - 8
+[10] - 1
+[11] - 10
+[12] - 10
+[13] - 10
+[14] - 7
+[15] - 1
+[16] - 10
+[17] - 1
+[18] - 1
+[19] - 1
+[20] - 1
+
+[Start] [3] > [16] > [13] > [12] > [11] > [2] > [14] > [19] > [9] > [20] > [4] > [5] > [6] > [7] > [8] > [10] > [15] > [17] > [18] [End]
+original response rank: 3     16     13     12     11     2     14     19     9     20     4     5     6     7     8     10     15     17     18
+ post response rank: [2, 15, 12, 11, 10, 1, 13, 18, 8, 19, 3, 4, 5, 6, 7, 9, 14, 16, 17, 0]
+
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 1
+ miss_passage_cnt: 1
+
+****************************************************************************************************
+****************************************************************************************************
+query 8/43: 
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 9/43: 
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 10/43: 
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 1
+repetition or missing: 
+ original response: Sure! Here is the summarized rank based on the relevance of each passage to the search query:
+
+[Start] [11] > [8] > [12] > [1] > [3] > [2] > [5] > [9] > [4] > [6] > [7] > [13] > [15] > [16] > [14] > [18] > [19] > [20] > [17] [End]
+original response rank: 11     8     12     1     3     2     5     9     4     6     7     13     15     16     14     18     19     20     17
+ post response rank: [10, 7, 11, 0, 2, 1, 4, 8, 3, 5, 6, 12, 14, 15, 13, 17, 18, 19, 16, 9]
+
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 1
+ miss_passage_cnt: 1
+
+****************************************************************************************************
+****************************************************************************************************
+query 11/43: 
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 12/43: 
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 13/43: 
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 14/43: 
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 15/43: 
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 16/43: 
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 1
+repetition or missing: 
+ original response: Sure! Here is the summarized rank based on the relevance of each passage to the query "who is robert gray":
+
+[Start] [1] > [2] > [10] > [11] > [12] > [13] > [15] > [16] > [18] > [19] > [20] > [14] > [8] > [7] > [6] > [5] > [4] > [3] > [9] [End]
+original response rank: 1     2     10     11     12     13     15     16     18     19     20     14     8     7     6     5     4     3     9
+ post response rank: [0, 1, 9, 10, 11, 12, 14, 15, 17, 18, 19, 13, 7, 6, 5, 4, 3, 2, 8, 16]
+
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 1
+repetition or missing: 
+ original response: Sure, here is the summarized rank based on the relevance of each passage to the query "who is robert gray":
+
+[Start] [11] > [13] > [15] > [8] > [10] > [18] > [19] > [1] > [6] > [5] > [17] > [7] > [20] > [9] > [12] > [14] > [3] > [2] > [4] [End]
+original response rank: 11     13     15     8     10     18     19     1     6     5     17     7     20     9     12     14     3     2     4
+ post response rank: [10, 12, 14, 7, 9, 17, 18, 0, 5, 4, 16, 6, 19, 8, 11, 13, 2, 1, 3, 15]
+
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 2
+ miss_passage_cnt: 2
+
+****************************************************************************************************
+****************************************************************************************************
+query 17/43: 
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 1
+repetition or missing: 
+ original response: Here is the summarized rank based on the relevance of the passages to the search query "rsa definition key":
+
+[Start] [11] > [5] > [12] > [13] > [15] > [1] > [2] > [3] > [4] > [6] > [7] > [8] > [9] > [10] > [14] > [17] > [18] > [19] > [20] [End]
+original response rank: 11     5     12     13     15     1     2     3     4     6     7     8     9     10     14     17     18     19     20
+ post response rank: [10, 4, 11, 12, 14, 0, 1, 2, 3, 5, 6, 7, 8, 9, 13, 16, 17, 18, 19, 15]
+
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 1
+ miss_passage_cnt: 1
+
+****************************************************************************************************
+****************************************************************************************************
+query 18/43: 
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 1
+repetition or missing: 
+ original response: [Start] [7] > [11] > [15] > [1] > [2] > [3] > [4] > [5] > [9] > [10] > [13] > [17] > [19] > [20] > [6] > [8] > [12] > [14] > [16] [End]
+original response rank: 7     11     15     1     2     3     4     5     9     10     13     17     19     20     6     8     12     14     16
+ post response rank: [6, 10, 14, 0, 1, 2, 3, 4, 8, 9, 12, 16, 18, 19, 5, 7, 11, 13, 15, 17]
+
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 1
+ miss_passage_cnt: 1
+
+****************************************************************************************************
+****************************************************************************************************
+query 19/43: 
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 20/43: 
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 21/43: 
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 22/43: 
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 23/43: 
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 1
+repetition or missing: 
+ original response: Sure, I will rate the relevance between the query and each document and then provide the summarized rank. Here are the relevance scores for each passage:
+
+[1] - 2
+[2] - 1
+[3] - 8
+[4] - 1
+[5] - 6
+[6] - 1
+[7] - 5
+[8] - 7
+[9] - 4
+[10] - 9
+[11] - 9
+[12] - 7
+[13] - 10
+[14] - 3
+[15] - 8
+[16] - 6
+[17] - 5
+[18] - 1
+[19] - 2
+[20] - 4
+
+[Start] [13] > [11] > [10] > [3] > [15] > [8] > [17] > [7] > [5] > [16] > [9] > [20] > [12] > [14] > [1] > [19] > [4] > [2] > [18] [End]
+original response rank: 13     11     10     3     15     8     17     7     5     16     9     20     12     14     1     19     4     2     18
+ post response rank: [12, 10, 9, 2, 14, 7, 16, 6, 4, 15, 8, 19, 11, 13, 0, 18, 3, 1, 17, 5]
+
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 1, current_miss_passage_cnt: 1
+repetition or missing: 
+ original response: Sure, here is the summarized rank based on the relevance of each passage to the search query "anthropological definition of environment":
+
+[Start] [10] > [15] > [4] > [7] > [10] > [12] > [17] > [19] > [11] > [13] > [2] > [3] > [6] > [8] > [9] > [14] > [5] > [18] > [20] > [1] [End]
+original response rank: 10     15     4     7     10     12     17     19     11     13     2     3     6     8     9     14     5     18     20     1
+ post response rank: [9, 14, 3, 6, 11, 16, 18, 10, 12, 1, 2, 5, 7, 8, 13, 4, 17, 19, 0, 15]
+
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 1
+repetition or missing: 
+ original response: Sure, I will rate the relevance between the query and each document and then provide the summarized rank. Here are the relevance scores for each passage:
+
+[1] - 8
+[2] - 9
+[3] - 4
+[4] - 6
+[5] - 7
+[6] - 5
+[7] - 2
+[8] - 7
+[9] - 6
+[10] - 9
+[11] - 8
+[12] - 8
+[13] - 9
+[14] - 9
+[15] - 9
+[16] - 7
+[17] - 8
+[18] - 9
+[19] - 6
+[20] - 9
+
+[Start] [2] > [15] > [13] > [18] > [10] > [20] > [11] > [12] > [17] > [1] > [8] > [4] > [5] > [16] > [9] > [19] > [3] > [6] > [7] [End]
+original response rank: 2     15     13     18     10     20     11     12     17     1     8     4     5     16     9     19     3     6     7
+ post response rank: [1, 14, 12, 17, 9, 19, 10, 11, 16, 0, 7, 3, 4, 15, 8, 18, 2, 5, 6, 13]
+
+current_rep_passage_cnt: 1, current_miss_passage_cnt: 0
+repetition or missing: 
+ original response: Sure, here is the summarized rank based on the relevance of each passage to the search query "anthropological definition of environment":
+
+[Start] [10] > [15] > [1] > [10] > [11] > [5] > [6] > [7] > [12] > [13] > [14] > [2] > [3] > [4] > [8] > [9] > [16] > [17] > [18] > [19] > [20] [End]
+original response rank: 10     15     1     10     11     5     6     7     12     13     14     2     3     4     8     9     16     17     18     19     20
+ post response rank: [9, 14, 0, 10, 4, 5, 6, 11, 12, 13, 1, 2, 3, 7, 8, 15, 16, 17, 18, 19]
+
+current query statistics:
+rep_query_cnt: 2
+ rep_passage_cnt: 2
+ miss_query_cnt: 3
+ miss_passage_cnt: 3
+
+****************************************************************************************************
+****************************************************************************************************
+query 24/43: 
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 1
+repetition or missing: 
+ original response: Here is the summarized rank based on the relevance of the passages to the search query "axon terminals or synaptic knob definition":
+
+[Start] [5] > [7] > [1] > [4] > [2] > [6] > [3] > [11] > [12] > [9] > [10] > [14] > [15] > [16] > [17] > [18] > [13] > [19] > [20] [End]
+original response rank: 5     7     1     4     2     6     3     11     12     9     10     14     15     16     17     18     13     19     20
+ post response rank: [4, 6, 0, 3, 1, 5, 2, 10, 11, 8, 9, 13, 14, 15, 16, 17, 12, 18, 19, 7]
+
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 1, current_miss_passage_cnt: 1
+repetition or missing: 
+ original response: [1] - 9
+[2] - 8
+[3] - 9
+[4] - 7
+[5] - 8
+[6] - 9
+[7] - 7
+[8] - 8
+[9] - 9
+[10] - 9
+[11] - 8
+[12] - 9
+[13] - 9
+[14] - 9
+[15] - 9
+[16] - 9
+[17] - 8
+[18] - 8
+[19] - 9
+[20] - 8
+
+[Start] [9] > [3] > [6] > [9] > [10] > [12] > [13] > [14] > [15] > [16] > [19] > [2] > [5] > [8] > [11] > [17] > [18] > [20] > [4] > [7] [End]
+original response rank: 9     3     6     9     10     12     13     14     15     16     19     2     5     8     11     17     18     20     4     7
+ post response rank: [8, 2, 5, 9, 11, 12, 13, 14, 15, 18, 1, 4, 7, 10, 16, 17, 19, 3, 6, 0]
+
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current query statistics:
+rep_query_cnt: 1
+ rep_passage_cnt: 1
+ miss_query_cnt: 2
+ miss_passage_cnt: 2
+
+****************************************************************************************************
+****************************************************************************************************
+query 25/43: 
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 26/43: 
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 1
+repetition or missing: 
+ original response: Sure, here is the summarized rank based on the relevance of each passage to the query "causes of left ventricular hypertrophy":
+
+[Start] [11] > [3] > [13] > [14] > [6] > [9] > [16] > [4] > [5] > [12] > [15] > [1] > [19] > [2] > [17] > [8] > [10] > [18] > [20] [End]
+original response rank: 11     3     13     14     6     9     16     4     5     12     15     1     19     2     17     8     10     18     20
+ post response rank: [10, 2, 12, 13, 5, 8, 15, 3, 4, 11, 14, 0, 18, 1, 16, 7, 9, 17, 19, 6]
+
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 1
+ miss_passage_cnt: 1
+
+****************************************************************************************************
+****************************************************************************************************
+query 27/43: 
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 28/43: 
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 1, current_miss_passage_cnt: 3
+repetition or missing: 
+ original response: Sure, here is the summarized rank based on the relevance of each passage to the search query "what is theraderm used for":
+
+[Start] [5] > [10] > [15] > [1] > [3] > [5] > [7] > [8] > [9] > [11] > [12] > [13] > [14] > [16] > [17] > [18] > [19] > [20] [End]
+
+Please note that the passages [2], [4], [6], and [21] were not included in the rank as they were not relevant to the search query.
+original response rank: 5     10     15     1     3     5     7     8     9     11     12     13     14     16     17     18     19     20
+ post response rank: [4, 9, 14, 0, 2, 6, 7, 8, 10, 11, 12, 13, 15, 16, 17, 18, 19, 1, 3, 5]
+
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current query statistics:
+rep_query_cnt: 1
+ rep_passage_cnt: 1
+ miss_query_cnt: 1
+ miss_passage_cnt: 3
+
+****************************************************************************************************
+****************************************************************************************************
+query 29/43: 
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 1
+repetition or missing: 
+ original response: Here is the summarized rank of the passages based on their relevance to the search query "what is an aml surveillance analyst":
+
+[Start] [1] > [3] > [9] > [6] > [13] > [11] > [10] > [5] > [7] > [17] > [15] > [16] > [19] > [20] > [4] > [14] > [12] > [8] > [2] [End]
+original response rank: 1     3     9     6     13     11     10     5     7     17     15     16     19     20     4     14     12     8     2
+ post response rank: [0, 2, 8, 5, 12, 10, 9, 4, 6, 16, 14, 15, 18, 19, 3, 13, 11, 7, 1, 17]
+
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 1
+repetition or missing: 
+ original response: Here is the summarized rank based on the relevance of each passage to the search query "what is an aml surveillance analyst":
+
+[Start] [1] > [2] > [4] > [9] > [13] > [11] > [3] > [6] > [7] > [12] > [14] > [15] > [17] > [18] > [19] > [20] > [5] > [8] > [10] [End]
+original response rank: 1     2     4     9     13     11     3     6     7     12     14     15     17     18     19     20     5     8     10
+ post response rank: [0, 1, 3, 8, 12, 10, 2, 5, 6, 11, 13, 14, 16, 17, 18, 19, 4, 7, 9, 15]
+
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 2
+ miss_passage_cnt: 2
+
+****************************************************************************************************
+****************************************************************************************************
+query 30/43: 
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 31/43: 
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 32/43: 
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 1
+repetition or missing: 
+ original response: [Start] [8] > [2] > [11] > [5] > [1] > [6] > [3] > [12] > [13] > [9] > [14] > [15] > [10] > [16] > [17] > [4] > [19] > [20] > [18] [End]
+original response rank: 8     2     11     5     1     6     3     12     13     9     14     15     10     16     17     4     19     20     18
+ post response rank: [7, 1, 10, 4, 0, 5, 2, 11, 12, 8, 13, 14, 9, 15, 16, 3, 18, 19, 17, 6]
+
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 1
+repetition or missing: 
+ original response: [Start] [10] > [11] > [14] > [15] > [16] > [17] > [20] > [5] > [12] > [1] > [2] > [3] > [6] > [7] > [8] > [9] > [13] > [18] > [19] [End]
+original response rank: 10     11     14     15     16     17     20     5     12     1     2     3     6     7     8     9     13     18     19
+ post response rank: [9, 10, 13, 14, 15, 16, 19, 4, 11, 0, 1, 2, 5, 6, 7, 8, 12, 17, 18, 3]
+
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 1
+repetition or missing: 
+ original response: [1] - 7
+[2] - 9
+[3] - 2
+[4] - 6
+[5] - 4
+[6] - 8
+[7] - 9
+[8] - 1
+[9] - 5
+[10] - 3
+[11] - 7
+[12] - 10
+[13] - 7
+[14] - 8
+[15] - 6
+[16] - 4
+[17] - 5
+[18] - 3
+[19] - 5
+[20] - 6
+
+[Start] [12] > [2] > [7] > [6] > [1] > [11] > [14] > [15] > [20] > [4] > [9] > [17] > [19] > [5] > [16] > [18] > [10] > [8] > [3] [End]
+original response rank: 12     2     7     6     1     11     14     15     20     4     9     17     19     5     16     18     10     8     3
+ post response rank: [11, 1, 6, 5, 0, 10, 13, 14, 19, 3, 8, 16, 18, 4, 15, 17, 9, 7, 2, 12]
+
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 3
+ miss_passage_cnt: 3
+
+****************************************************************************************************
+****************************************************************************************************
+query 33/43: 
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 1, current_miss_passage_cnt: 1
+repetition or missing: 
+ original response: [Start] [2] > [3] > [4] > [5] > [7] > [10] > [11] > [12] > [13] > [14] > [15] > [16] > [17] > [18] > [19] > [1] > [9] > [20] > [5] > [6] [End]
+original response rank: 2     3     4     5     7     10     11     12     13     14     15     16     17     18     19     1     9     20     5     6
+ post response rank: [1, 2, 3, 4, 6, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 0, 8, 19, 5, 7]
+
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current query statistics:
+rep_query_cnt: 1
+ rep_passage_cnt: 1
+ miss_query_cnt: 1
+ miss_passage_cnt: 1
+
+****************************************************************************************************
+****************************************************************************************************
+query 34/43: 
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 35/43: 
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 36/43: 
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 37/43: 
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 2
+repetition or missing: 
+ original response: Sure! Here is the summarized rank based on the relevance of each passage to the search query "does legionella pneumophila cause pneumonia":
+
+[Start] [2] > [5] > [7] > [11] > [12] > [13] > [14] > [15] > [17] > [1] > [3] > [8] > [9] > [10] > [16] > [18] > [19] > [20] [End]
+original response rank: 2     5     7     11     12     13     14     15     17     1     3     8     9     10     16     18     19     20
+ post response rank: [1, 4, 6, 10, 11, 12, 13, 14, 16, 0, 2, 7, 8, 9, 15, 17, 18, 19, 3, 5]
+
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 1
+ miss_passage_cnt: 2
+
+****************************************************************************************************
+****************************************************************************************************
+query 38/43: 
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 39/43: 
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 40/43: 
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 1
+repetition or missing: 
+ original response: [Start] [11] > [4] > [1] > [6] > [12] > [5] > [3] > [7] > [8] > [9] > [10] > [13] > [14] > [15] > [16] > [17] > [18] > [19] > [20] [End]
+original response rank: 11     4     1     6     12     5     3     7     8     9     10     13     14     15     16     17     18     19     20
+ post response rank: [10, 3, 0, 5, 11, 4, 2, 6, 7, 8, 9, 12, 13, 14, 15, 16, 17, 18, 19, 1]
+
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 1
+ miss_passage_cnt: 1
+
+****************************************************************************************************
+****************************************************************************************************
+query 41/43: 
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 17
+repetition or missing: 
+ original response: Sure! Here are the relevance scores for each passage based on their relevance to the query "who formed the commonwealth of independent states":
+
+[1] - 0
+[2] - 0
+[3] - 0
+[4] - 0
+[5] - 0
+[6] - 10
+[7] - 0
+[8] - 0
+[9] - 0
+[10] - 0
+[11] - 10
+[12] - 10
+[13] - 0
+[14] - 0
+[15] - 0
+[16] - 0
+[17] - 0
+[18] - 0
+[19] - 0
+[20] - 0
+
+[Start] [6] > [11] > [12] [End]
+original response rank: 6     11     12
+ post response rank: [5, 10, 11, 0, 1, 2, 3, 4, 6, 7, 8, 9, 12, 13, 14, 15, 16, 17, 18, 19]
+
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 17
+repetition or missing: 
+ original response: Sure! Here are the relevance scores for each passage based on their relevance to the query "who formed the commonwealth of independent states":
+
+[1] - 0
+[2] - 0
+[3] - 0
+[4] - 0
+[5] - 0
+[6] - 10
+[7] - 0
+[8] - 0
+[9] - 0
+[10] - 0
+[11] - 0
+[12] - 10
+[13] - 10
+[14] - 0
+[15] - 0
+[16] - 0
+[17] - 0
+[18] - 0
+[19] - 0
+[20] - 0
+
+[Start] [6] > [12] > [13] [End]
+original response rank: 6     12     13
+ post response rank: [5, 11, 12, 0, 1, 2, 3, 4, 6, 7, 8, 9, 10, 13, 14, 15, 16, 17, 18, 19]
+
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 15
+repetition or missing: 
+ original response: Sure! Here are the relevance scores for each passage based on their relevance to the search query "who formed the commonwealth of independent states":
+
+[1] - 0
+[2] - 7
+[3] - 0
+[4] - 0
+[5] - 0
+[6] - 0
+[7] - 10
+[8] - 0
+[9] - 0
+[10] - 0
+[11] - 10
+[12] - 10
+[13] - 0
+[14] - 0
+[15] - 0
+[16] - 0
+[17] - 0
+[18] - 0
+[19] - 0
+[20] - 7
+
+Based on the relevance scores, the summarized rank is:
+[Start] [11] > [12] > [7] > [2] > [20] [End]
+original response rank: 11     12     7     2     20
+ post response rank: [10, 11, 6, 1, 19, 0, 2, 3, 4, 5, 7, 8, 9, 12, 13, 14, 15, 16, 17, 18]
+
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 1
+repetition or missing: 
+ original response: Sure! Here are the relevance scores for each passage based on their relevance to the search query:
+
+[1] - 8
+[2] - 2
+[3] - 2
+[4] - 4
+[5] - 1
+[6] - 3
+[7] - 4
+[8] - 10
+[9] - 2
+[10] - 1
+[11] - 10
+[12] - 10
+[13] - 10
+[14] - 1
+[15] - 7
+[16] - 1
+[17] - 3
+[18] - 1
+[19] - 5
+[20] - 6
+
+[Start] [8] > [11] > [12] > [13] > [15] > [20] > [19] > [4] > [7] > [1] > [17] > [6] > [9] > [3] > [18] > [10] > [16] > [2] > [14] [End]
+original response rank: 8     11     12     13     15     20     19     4     7     1     17     6     9     3     18     10     16     2     14
+ post response rank: [7, 10, 11, 12, 14, 19, 18, 3, 6, 0, 16, 5, 8, 2, 17, 9, 15, 1, 13, 4]
+
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 4
+ miss_passage_cnt: 50
+
+****************************************************************************************************
+****************************************************************************************************
+query 42/43: 
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+
+****************************************************************************************************
+Total Malformed Outputs Statistics:
+ Total Repetition Chat Count: 5, Average Repetition Query: 0.012919896640826873
+ Total Repetition Passage Count: 5, Average Repetition Passage: 0.0006459948320413437
+ Total Missing Chat Count: 32, Average Missing Query: 0.082687338501292
+ Total Missing Passage Count: 81, Average Missing Passage: 0.010465116279069767
+
+Downloading https://search.maven.org/remotecontent?filepath=uk/ac/gla/dcs/terrierteam/jtreceval/0.0.5/jtreceval-0.0.5-jar-with-dependencies.jar to /data4/hop20001/.cache/pyserini/eval/jtreceval-0.0.5-jar-with-dependencies.jar...
+/data4/hop20001/.cache/pyserini/eval/jtreceval-0.0.5-jar-with-dependencies.jar already exists!
+Skipping download.
+Trunc /tmp/tmpyrgk5yvl
+Running command: ['java', '-jar', '/data4/hop20001/.cache/pyserini/eval/jtreceval-0.0.5-jar-with-dependencies.jar', '-m', 'ndcg_cut.10', '/tmp/tmpyrgk5yvl', '/tmp/tmp0pr18kh1']
+Results:
+ndcg_cut_10           	all	0.6430
+Downloading https://search.maven.org/remotecontent?filepath=uk/ac/gla/dcs/terrierteam/jtreceval/0.0.5/jtreceval-0.0.5-jar-with-dependencies.jar to /data4/hop20001/.cache/pyserini/eval/jtreceval-0.0.5-jar-with-dependencies.jar...
+/data4/hop20001/.cache/pyserini/eval/jtreceval-0.0.5-jar-with-dependencies.jar already exists!
+Skipping download.
+Trunc /tmp/tmpbqrxadtm
+Running command: ['java', '-jar', '/data4/hop20001/.cache/pyserini/eval/jtreceval-0.0.5-jar-with-dependencies.jar', '-m', 'ndcg_cut.5', '/tmp/tmpbqrxadtm', '/tmp/tmp0pr18kh1']
+Results:
+ndcg_cut_5            	all	0.6603
+Downloading https://search.maven.org/remotecontent?filepath=uk/ac/gla/dcs/terrierteam/jtreceval/0.0.5/jtreceval-0.0.5-jar-with-dependencies.jar to /data4/hop20001/.cache/pyserini/eval/jtreceval-0.0.5-jar-with-dependencies.jar...
+/data4/hop20001/.cache/pyserini/eval/jtreceval-0.0.5-jar-with-dependencies.jar already exists!
+Skipping download.
+Trunc /tmp/tmpziisccg1
+Running command: ['java', '-jar', '/data4/hop20001/.cache/pyserini/eval/jtreceval-0.0.5-jar-with-dependencies.jar', '-m', 'ndcg_cut.1', '/tmp/tmpziisccg1', '/tmp/tmp0pr18kh1']
+Results:
+ndcg_cut_1            	all	0.6744

@@ -1,0 +1,1999 @@
+{
+    "prompt_type": 17,
+    "dataset": "dl19",
+    "model": "gpt-4-0314",
+    "print_messages": 0,
+    "correct_malform": 1,
+    "debug": 0
+}
+####################
+Evaluation on dl19
+####################
+  0%|          | 0/43 [00:00<?, ?it/s]  2%|▏         | 1/43 [00:00<00:07,  5.36it/s]  9%|▉         | 4/43 [00:00<00:02, 13.74it/s] 16%|█▋        | 7/43 [00:00<00:02, 17.17it/s] 23%|██▎       | 10/43 [00:00<00:01, 18.90it/s] 28%|██▊       | 12/43 [00:00<00:01, 17.76it/s] 35%|███▍      | 15/43 [00:00<00:01, 20.48it/s] 44%|████▍     | 19/43 [00:00<00:00, 24.48it/s] 53%|█████▎    | 23/43 [00:01<00:00, 25.45it/s] 65%|██████▌   | 28/43 [00:01<00:00, 31.55it/s] 74%|███████▍  | 32/43 [00:01<00:00, 30.26it/s] 84%|████████▎ | 36/43 [00:01<00:00, 31.12it/s] 93%|█████████▎| 40/43 [00:01<00:00, 31.34it/s]100%|██████████| 43/43 [00:01<00:00, 25.55it/s]
+****************************************************************************************************
+query 0/43: 
+chat_cnt: 1
+****************************************************************************************************
+Message Example:
+ [{'role': 'system', 'content': 'You are RankGPT, an intelligent assistant that can rank passages based on their relevancy to the query.'}, {'role': 'user', 'content': 'I will provide you with 20 passages, each indicated by number identifier []. \nRank the passages based on their relevance to query: how long is life cycle of flea.'}, {'role': 'assistant', 'content': 'Okay, please provide the passages.'}, {'role': 'user', 'content': '[1] The best flea control approach for your home and pet is to interrupt the flea life cycle. Low impact methods for controlling adult fleas, eggs and larvae include regular vacuuming and laundering, along with pet bathing or grooming. If the situation requires a pesticide, opt for low toxicity options.'}, {'role': 'assistant', 'content': 'Received passage [1].'}, {'role': 'user', 'content': '[2] A New Housemate: Fleas and Ticks The flea is a very persistent and resilient pest with a very complicated life cycle. It is even capable of surviving in outdoor temperatures as low as the upper 30s.'}, {'role': 'assistant', 'content': 'Received passage [2].'}, {'role': 'user', 'content': '[3] An Insect Growth Regulator (IGR) breaks the flea lifecycle by preventing a young flea from growing normally, into the next phase -- a biting, breeding adult. The first IGR to come out was Precor. It did a wonderful job of interrupting the flea life cycle in the house, but it breaks down rapidly in sunlight.'}, {'role': 'assistant', 'content': 'Received passage [3].'}, {'role': 'user', 'content': '[4] The Flea Life Cycle. Fleas undergo complete metamorphosis with four stages: egg, larva, pupa, and adult. Environmental variables influence the length of each developmental stage. Fleas prefer a warm, humid environment, with temperatures ranging between 70Â° and 90Â° Fahrenheit and a relative humidity of 75% or more.'}, {'role': 'assistant', 'content': 'Received passage [4].'}, {'role': 'user', 'content': '[5] If you do not have a serious flea problem, you will notice it working within a couple weeks, as the existing fleas and eggs go through their life cycles, coupled of course, with regular bathing, flea combing and vaccuuming. March 22, 2015 at 4:25 am #69234 Report Abuse.'}, {'role': 'assistant', 'content': 'Received passage [5].'}, {'role': 'user', 'content': '[6] Under ideal conditions, the cat flea life cycle takes just 18 days, from egg to adult. Adult fleas (both male and female) require a blood meal prior to mating. They prefer blood from your pet, but in the absence of a canine or feline host, fleas will bite people.'}, {'role': 'assistant', 'content': 'Received passage [6].'}, {'role': 'user', 'content': '[7] The flea life cycle is fairly complex, and understanding the various stages will make it easier to get rid of them. Answer: Collectively, all of the species of fleas are categorized under the order name of Siphonaptera.'}, {'role': 'assistant', 'content': 'Received passage [7].'}, {'role': 'user', 'content': '[8] The cat flea can also maintain its life cycle on other carnivores and on omnivores, but these are only chosen when more acceptable hosts become unavailable. Adult cat fleas do not willingly leave their hosts, and inter-animal transfer of adult fleas is rare except in animals that share sleeping quarters.'}, {'role': 'assistant', 'content': 'Received passage [8].'}, {'role': 'user', 'content': '[9] ZoGuardâ\x84¢ Plus for Dogs. ZoGuardâ\x84¢ Plus is the perfect solution to help protect your dogs against fleas and ticks without breaking your bank. It contains Fipronil and S-methoprene as active ingredients, the same as FRONTLINE Plus. These ingredients effectively break the flea life cycle, kills fleas, ticks, and chewing lice.'}, {'role': 'assistant', 'content': 'Received passage [9].'}, {'role': 'user', 'content': '[10] Cat Owners. Fleas. Fleas are the most common external parasite found on cats (and dogs). (Parasites are freeloaders that live in or on another creature.) Although fleas are more likely to be a problem during warm-weather months, they can also cause problems during cooler seasons due to their ability to continue their life cycle indoors.'}, {'role': 'assistant', 'content': 'Received passage [10].'}, {'role': 'user', 'content': '[11] PS â\x80\x94 knowing a fleas life cycle helps in going to battle with them.. The flea lays eggs and the eggs hatch (and look like tiny worms). The worms (called the larval stage) develop a cocoon type barrier (called the pupal stage) where they transform into an adult flea (like a caterpillar becoming a butterfly).'}, {'role': 'assistant', 'content': 'Received passage [11].'}, {'role': 'user', 'content': '[12] Life cycle and habitat[edit] Fleas are holometabolous insects, going through the four lifecycle stages of egg, larva, pupa, and imago (adult). Adult fleas must feed on blood before they can become capable of reproduction. Flea populations are distributed with about 50% eggs, 35% larvae, 10% pupae, and 5% adults.'}, {'role': 'assistant', 'content': 'Received passage [12].'}, {'role': 'user', 'content': '[13] Fleas prefer a warm, humid environment, with temperatures ranging between 70Â° and 90Â° Fahrenheit and a relative humidity of 75% or more. Under ideal conditions, the cat flea life cycle takes just 18 days, from egg to adult. Adult fleas (both male and female) require a blood meal prior to mating.'}, {'role': 'assistant', 'content': 'Received passage [13].'}, {'role': 'user', 'content': '[14] 1 42% - If worming table does not work can you treat again next day on cats? 2 50% - How long for fleas to die after drops on cats? 3 46% - How long does it take to get rid of fleas once cats have been given flea drops? 4 66% - How long for profender to work kitten?'}, {'role': 'assistant', 'content': 'Received passage [14].'}, {'role': 'user', 'content': '[15] What is the average duration of 1 full SAP life cycle or 1 end-to-end implementation. How long does it take to prepare DEV, QAS and PRD? What is the average duration of 1 full SAP life cycle or 1 end-to-end implementation. How long does it take to prepare DEV, QAS and PRD in any company?'}, {'role': 'assistant', 'content': 'Received passage [15].'}, {'role': 'user', 'content': '[16] Steam cleaners are a great way to get rid of fleas in the home. And as mentioned previously, steam released at the correct temperature for house steam cleaners can get rid of fleas in every stage of its life cycle on contact.'}, {'role': 'assistant', 'content': 'Received passage [16].'}, {'role': 'user', 'content': '[17] 1 Fleas pass through a complete life cycle of four stages. made up of 50% eggs, 30% larvae, 15% pupae and only 5% biting adults. Completion of the life cycle from egg to adult varies from two weeks to eight months.'}, {'role': 'assistant', 'content': 'Received passage [17].'}, {'role': 'user', 'content': '[18] Capstar is safe for dogs, cats, puppies and kittens 4 weeks of age and older. Comfortis. This product, made by Elanco, contains Spinosad for killing fleas. It is a chewable tablet that begins killing fleas within 30 minutes and kills the flea before it is able to lay eggs, thus breaking the flea life cycle. This product should be given with food once a month and remains effective for 30 days. It is recommended for dogs and puppies 14 weeks of age and older.'}, {'role': 'assistant', 'content': 'Received passage [18].'}, {'role': 'user', 'content': '[19] Also food grade diatomaceous earth can be powdered on their coat and bedding to kill fleas. It can also be used for parasites, but should be given for 30 days to kill the whole life cycle. It penetrates the exoskeleton and kills fleas and parasites.'}, {'role': 'assistant', 'content': 'Received passage [19].'}, {'role': 'user', 'content': '[20] Oral flea treatments are given in pill form every 30 days. They work in a similar fashion as the topical treatment, by breaking up the life cycle of the flea and prohibiting flea eggs and larvae from developing. Oral treatments can also be used in conjunction with bathing products to kill adult fleas.at flea products are the only sure way rid your cat and your home of those annoying irritants. General home care will aid in the effectiveness of any cat flea product that you choose. There are flea collars, topical treatments, oral treatments, shampoos and sprays. Any combination of these solutions can be productive.'}, {'role': 'assistant', 'content': 'Received passage [20].'}, {'role': 'user', 'content': 'Search Query: how long is life cycle of flea. \nRank the 20 passages above based on their relevance to the search query. Please think step by step .... First please summarize each passage. Then rate the relevance between the query and each passage from score 0 to 19 based on the summarization and the original passages. All passages should have distinctive scores. After that, please sort identifiers in descending order based on their relevance to the search query. Finally, please give the rank and use [start] to begin the rank and use [end] to indicate the end of it. All the passages should be included and listed using identifiers and make sure there is no repetitious and missing passages. The format of the rank should be [Start] [] > [] [End], e.g., [Start] [1] > [2] [End]. In the rank, only response the ranking results.'}]
+Permutation Example:
+ [1] Flea control methods for home and pet.
+[2] Flea's persistence and resilience in various temperatures.
+[3] Insect Growth Regulator (IGR) for interrupting flea life cycle.
+[4] Flea life cycle stages and preferred environmental conditions.
+[5] Flea control effectiveness with regular bathing and vacuuming.
+[6] Cat flea life cycle takes 18 days under ideal conditions.
+[7] Flea life cycle complexity and species categorization.
+[8] Cat flea host preferences and transfer between animals.
+[9] ZoGuard Plus for flea and tick protection in dogs.
+[10] Fleas as common external parasites in cats.
+[11] Flea life cycle stages and transformation.
+[12] Flea life cycle stages and population distribution.
+[13] Cat flea life cycle duration and environmental preferences.
+[14] Questions about flea treatment effectiveness.
+[15] Duration of SAP life cycle implementation (unrelated).
+[16] Steam cleaners for eliminating fleas in the home.
+[17] Flea life cycle duration varies from two weeks to eight months.
+[18] Capstar and Comfortis for flea treatment in pets.
+[19] Diatomaceous earth for killing fleas and parasites.
+[20] Oral flea treatments and general home care for flea control.
+
+Relevance scores:
+[6] 19
+[13] 18
+[17] 17
+[4] 16
+[12] 15
+[11] 14
+[7] 13
+[1] 12
+[3] 11
+[5] 10
+[20] 9
+[18] 8
+[19] 7
+[16] 6
+[9] 5
+[10] 4
+[8] 3
+[2] 2
+[14] 1
+[15] 0
+
+Ranking:
+[Start] [6] > [13] > [17] > [4] > [12] > [11] > [7] > [1] > [3] > [5] > [20] > [18] > [19] > [16] > [9] > [10] > [8] > [2] > [14] > [15] [End]
+****************************************************************************************************
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 2
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 3
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 4
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 5
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 6
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 7
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 8
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 9
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+ mismatch_query_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 1/43: 
+chat_cnt: 10
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 11
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 12
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 13
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 14
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 15
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 16
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 17
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 18
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+ mismatch_query_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 2/43: 
+chat_cnt: 19
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 20
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 1, current_mismatch_query_cnt: 0
+repetition, missing or mismatch: 
+ original response: [1] TCPA Omnibus Declaratory Ruling and Order related to the Telephone Consumer Protection Act of 1991.
+[2] The Declaratory Act was a reaction of British Parliament to the failure of the Stamp Act.
+[3] Coat of Arms of Britain and the Declaratory Act copied from the Irish Declaratory Act.
+[4] The Declaratory Act, also known as the American Colonies Act 1766, accompanied the repeal of the Stamp Act 1765.
+[5] Definition of motion for summary judgment in the Legal Dictionary.
+[6] Definition of 'Judgment Lien' and its relation to property or assets of a debtor.
+[7] Definition of a verdict as a decision, opinion, or judgment on a disputed issue.
+[8] Definitions of important terms related to America: 1763-1776, including the Declaratory Act.
+[9] Declaratory as an adjective relating to the use of or having the nature of a declaration.
+[10] Definition of judgment day as a day of final judgment.
+[11] Litigation Guarantee designed for issuance to an attorney representing the plaintiff in an action affecting land, including declaratory relief.
+[12] Injunctive relief not granted unless a declaratory decree was violated or declaratory relief was unavailable.
+[13] Declaratory Act passed by Parliament on the same day the Stamp Act was repealed.
+[14] Parliament repealed the Stamp Act and declared the Declaratory Act.
+[15] Declaratory Act passed by the British parliament immediately after the Stamp Act was repealed in 1766.
+[16] The Declaratory Act was a measure issued by British Parliament asserting its authority to make laws binding the colonists.
+[17] Judgment and judgement as nouns with different definitions, including legal determination from a court of law.
+[18] Judgment and judgement as nouns with different definitions, including legal determination from a court of law (duplicate of passage 17).
+[19] Full Definition of JUDGMENT, including a formal decision given by a court.
+[20] Difference between Judgment and Judgement, both nouns with different definitions, including legal determination from a court of law.
+
+Relevance Scores:
+[1] 0
+[2] 1
+[3] 2
+[4] 3
+[5] 4
+[6] 5
+[7] 6
+[8] 7
+[9] 19
+[10] 8
+[11] 18
+[12] 17
+[13] 9
+[14] 10
+[15] 11
+[16] 12
+[17] 13
+[18] 14
+[19] 15
+[20] 16
+
+Ranking:
+[Start] [9] > [11] > [12] > [20] > [19] > [18] > [17] > [16] > [15] > [14] > [13] > [8] > [7] > [6] > [5] > [4] > [3] > [2] > [1] [End]
+original response rank: 9     11     12     20     19     18     17     16     15     14     13     8     7     6     5     4     3     2     1
+ clean response rank: [8, 10, 11, 19, 18, 17, 16, 15, 14, 13, 12, 7, 6, 5, 4, 3, 2, 1, 0]
+
+Request timed out.
+Request timed out.
+Request timed out.
+Request timed out.
+chat_cnt: 21
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 22
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 23
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 24
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 25
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 26
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 27
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 28
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 1
+ miss_passage_cnt: 1
+ mismatch_query_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 3/43: 
+chat_cnt: 29
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 30
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 31
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 32
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 33
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 34
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 35
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 36
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 37
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+ mismatch_query_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 4/43: 
+chat_cnt: 38
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 39
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 40
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 41
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 1, current_mismatch_query_cnt: 0
+repetition, missing or mismatch: 
+ original response: Summaries:
+[1] Laptop connects to Wi-Fi but has orange button due to disabled Bluetooth.
+[2] Bluetooth hardware combined with Wi-Fi, creating a Facebook shortcut icon.
+[3] Pairing process for Bluetooth audio receiver, AirPlay uses home Wi-Fi for streaming.
+[4] Android feature transfers content via Wi-Fi, Wi-Fi Direct, Bluetooth, or NFC.
+[5] Bluetooth audio receiver vs. AirPlay, AirPlay supports greater bandwidth.
+[6] Android feature transfers content via Wi-Fi, Wi-Fi Direct, Bluetooth, or NFC.
+[7] Bose SoundTouch 10, a Wi-Fi multi-room speaker with Bluetooth capabilities.
+[8] Wi-Fi Direct vs. Bluetooth 4.0 speed comparison, both use 802.11 standard.
+[9] Wi-Fi Direct vs. Bluetooth 4.0 speed comparison, both use 802.11 standard.
+[10] List of differences between various technologies, including Wi-Fi and Bluetooth.
+[11] Wireless vs. Bluetooth headphones, comparing range.
+[12] Bluetooth as a wireless technology, operates on 2.4GHz frequency band.
+[13] Wi-Fi router cannot be connected to devices using Bluetooth.
+[14] List of questions about Bluetooth technology and its features.
+[15] Explanation of Bluetooth technology and its development.
+[16] Wifislax and Wifiway, Linux distributions for Wi-Fi, RFID, and Bluetooth security.
+[17] Wi-Fi and Bluetooth dongles for computers without built-in connectivity.
+[18] Wi-Fi jammer that cuts off wireless LAN networks and Bluetooth communication.
+[19] Pairing phone with Google Glass via Bluetooth, using phone's connection or Wi-Fi.
+[20] RF radiation consists of cell signal, Bluetooth, and Wi-Fi; ELF radiation from phone hardware.
+
+Relevance scores:
+[1] 0
+[2] 1
+[3] 10
+[4] 11
+[5] 14
+[6] 12
+[7] 4
+[8] 19
+[9] 18
+[10] 15
+[11] 6
+[12] 8
+[13] 9
+[14] 3
+[15] 2
+[16] 5
+[17] 7
+[18] 13
+[19] 16
+[20] 17
+
+Ranking:
+[Start] [8] > [9] > [10] > [5] > [19] > [20] > [6] > [4] > [3] > [13] > [12] > [11] > [17] > [16] > [7] > [14] > [15] > [2] > [1] [End]
+original response rank: 8     9     10     5     19     20     6     4     3     13     12     11     17     16     7     14     15     2     1
+ clean response rank: [7, 8, 9, 4, 18, 19, 5, 3, 2, 12, 11, 10, 16, 15, 6, 13, 14, 1, 0]
+
+chat_cnt: 42
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 43
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 44
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 45
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 46
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 47
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 1
+ miss_passage_cnt: 1
+ mismatch_query_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 5/43: 
+chat_cnt: 48
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 49
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 50
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 51
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 52
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 53
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 54
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 55
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 56
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+ mismatch_query_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 6/43: 
+chat_cnt: 57
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 58
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 59
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 60
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 61
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 62
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 63
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 64
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 65
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+ mismatch_query_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 7/43: 
+chat_cnt: 66
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 67
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 68
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 69
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 70
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 71
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 72
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 73
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 74
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+ mismatch_query_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 8/43: 
+chat_cnt: 75
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 76
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 77
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 78
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 79
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 80
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 81
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 82
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 83
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+ mismatch_query_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 9/43: 
+chat_cnt: 84
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 85
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 86
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 87
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 88
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 89
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 90
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 91
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 92
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+ mismatch_query_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 10/43: 
+chat_cnt: 93
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 18, current_mismatch_query_cnt: 0
+repetition, missing or mismatch: 
+ original response: Passage summaries:
+[1] Discusses shark habitats, including warm waters and cold waters.
+[2] Provides information about tiger sharks and their habitat.
+[3] Describes the importance of smell for sharks.
+[4] Discusses the habitat of whale sharks.
+[5] Provides information about basking sharks and their habitat.
+[6] Describes the olfactory capabilities of sharks.
+[7] Explains how some sharks can maintain warm body temperatures.
+[8] Discusses shark lifespans and migration tracking.
+[9] Provides information about copper sharks and their habitat.
+[10] Describes the habitat of Greenland sharks.
+[11] Provides information about oceanic whitetip sharks and their habitat.
+[12] Describes the habitat and range of oceanic whitetip sharks.
+[13] Provides information about tiger sharks and their habitat.
+[14] Provides information about basking sharks and their habitat.
+[15] Discusses the speed of mako and great white sharks and their ability to detect blood.
+[16] Compares growth rates and metabolic rates of various animals, including sharks.
+[17] Provides information about tiger sharks and their habitat.
+[18] Discusses bull sharks and their habitat.
+[19] Describes research suggesting that sharks are color-blind.
+[20] Provides information about tiger sharks and their habitat in the Caribbean.
+
+Relevance scores:
+[1] 0
+[2] 0
+[3] 0
+[4] 0
+[5] 0
+[6] 0
+[7] 19
+[8] 0
+[9] 0
+[10] 0
+[11] 0
+[12] 0
+[13] 0
+[14] 0
+[15] 0
+[16] 1
+[17] 0
+[18] 0
+[19] 0
+[20] 0
+
+Ranking:
+[Start] [7] > [16] [End]
+original response rank: 7     16
+ clean response rank: [6, 15]
+
+chat_cnt: 94
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 95
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 96
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 97
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 98
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 99
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 100
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 101
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 102
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 1
+ miss_passage_cnt: 18
+ mismatch_query_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 11/43: 
+chat_cnt: 103
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 104
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 105
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 106
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 107
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 108
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 109
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 110
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 111
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+ mismatch_query_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 12/43: 
+chat_cnt: 112
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 113
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 114
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 115
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 116
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 117
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 118
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 119
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 120
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+ mismatch_query_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 13/43: 
+chat_cnt: 121
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 122
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 123
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 124
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 125
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 126
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 127
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 128
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 129
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+ mismatch_query_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 14/43: 
+chat_cnt: 130
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 131
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 132
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 133
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 134
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 135
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 136
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 137
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 138
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+ mismatch_query_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 15/43: 
+chat_cnt: 139
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 140
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 19, current_mismatch_query_cnt: 0
+repetition, missing or mismatch: 
+ original response: [1] Spastic Diplegia Cerebral Palsy: A type of cerebral palsy with muscle stiffness, diagnosed around age three.
+[2] Spastic Cerebral Palsy: Most common type, with stiff muscles and awkward movements, including spastic hemiplegia/hemiparesis.
+[3] Spastic Cerebral Palsy: Most common type, characterized by stiff muscles and jerky movements.
+[4] Cerebral Palsy Information: A condition resulting from brain damage, causing chronic movement and posture disorders.
+[5] Quadriplegia and Cerebral Palsy: A form of cerebral palsy with lack of ability to move or feel both arms and legs.
+[6] Spastic Quadriplegia Cerebral Palsy: Most severe form of spastic cerebral palsy, affecting the whole body.
+[7] Causes of Cerebral Palsy: Brain injury or malformation occurring before, during, or after birth.
+[8] Cerebral Palsy: A movement disorder affecting muscle control, caused by brain trauma.
+[9] Spastic Cerebral Palsy: Most common form, affecting 70-80% of patients, with spastic diplegia affecting legs more than arms.
+[10] Brain Damage and Cerebral Palsy: Damage to different parts of the brain causes different types of cerebral palsy.
+[11] Symptoms of Cerebral Palsy: Relating to abnormal control of muscles, categorized by type of movement disturbance.
+[12] Types of Cerebral Palsy: Classified by movement affected, body parts affected, and severity of symptoms.
+[13] Ataxic Cerebral Palsy: Least common type, with difficulty in balance, spatial awareness, and unsteady movement.
+[14] Dyskinetic Athetoid Cerebral Palsy: Involuntary movement caused by damage to the basal ganglia.
+[15] Spastic and Non-Spastic Cerebral Palsy: Characterized by increased muscle tone or a mixture of both types.
+[16] Hypertonic Cerebral Palsy: Heightened muscle tension, rigidity, and stiffness caused by brain damage.
+[17] Spasticity in Cerebral Palsy: Most common type, causing stiff and inflexible muscles.
+[18] Spasticity in Legs or All Limbs: Characteristic of some forms of cerebral palsy.
+[19] Spastic Tetraplegia: Spasticity of all limbs, characteristic of some forms of cerebral palsy.
+[20] Cerebral Palsy: A chronic disability characterized by abnormal control of movement and posture.
+
+Relevance Scores:
+[1] 0
+[2] 0
+[3] 0
+[4] 0
+[5] 0
+[6] 0
+[7] 0
+[8] 0
+[9] 0
+[10] 0
+[11] 0
+[12] 0
+[13] 0
+[14] 19
+[15] 0
+[16] 0
+[17] 0
+[18] 0
+[19] 0
+[20] 0
+
+Ranking:
+[Start] [14] [End]
+original response rank: 14
+ clean response rank: [13]
+
+chat_cnt: 141
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 19, current_mismatch_query_cnt: 0
+repetition, missing or mismatch: 
+ original response: [1] Spastic Diplegia Cerebral Palsy: A type of cerebral palsy with muscle stiffness as the main issue.
+[2] Spastic Cerebral Palsy: The most common type, with stiff muscles and awkward movements, including spastic hemiplegia/hemiparesis.
+[3] Spastic Cerebral Palsy: Characterized by stiff muscles and jerky movements due to hypertonia.
+[4] Cerebral Palsy Information: A condition resulting from brain damage that affects movement and posture.
+[5] Quadriplegia and Cerebral Palsy: A form of cerebral palsy affecting all four limbs and the trunk, with compounded disabilities.
+[6] Spastic Quadriplegia Cerebral Palsy: The most severe form of spastic cerebral palsy, affecting the entire body.
+[7] Causes of Cerebral Palsy: Brain injury or malformation occurring before, during, or after birth.
+[8] Cerebral Palsy: A movement disorder affecting muscle control, caused by brain trauma.
+[9] Spastic Cerebral Palsy: The most common form, affecting 70-80% of patients, with spastic diplegia mainly affecting the legs.
+[10] Brain Damage and Cerebral Palsy: Different types of cerebral palsy are caused by damage to various parts of the brain.
+[11] Symptoms of Cerebral Palsy: Relating to abnormal control of muscles, categorized by the type of movement disturbance.
+[12] Types of Cerebral Palsy: Classified by movement affected, body parts affected, and severity of symptoms.
+[13] Ataxic Cerebral Palsy: The least common type, with symptoms including difficulty with balance and unsteady movement.
+[14] Dyskinetic Athetoid Cerebral Palsy: Involuntary movement caused by damage to the basal ganglia.
+[15] Spastic and Non-Spastic Cerebral Palsy: Characterized by increased muscle tone or a mixture of both types.
+[16] Hypertonic Cerebral Palsy: Heightened muscle tension, rigidity, and stiffness caused by brain damage.
+[17] Spasticity in Cerebral Palsy: The most common type, causing muscles to be stiff and inflexible.
+[18] Spasticity in Legs or All Limbs: Characteristic of some forms of cerebral palsy.
+[19] Spastic Tetraplegia: Spasticity of all limbs with soft-tissue contracture and disuse muscle atrophy in cerebral palsy.
+[20] Cerebral Palsy: A chronic disability characterized by abnormal control of movement and posture.
+
+Relevance Scores:
+[1] 0
+[2] 0
+[3] 0
+[4] 0
+[5] 0
+[6] 0
+[7] 0
+[8] 0
+[9] 0
+[10] 0
+[11] 0
+[12] 0
+[13] 0
+[14] 19
+[15] 0
+[16] 0
+[17] 0
+[18] 0
+[19] 0
+[20] 0
+
+Ranking:
+[Start] [14] [End]
+original response rank: 14
+ clean response rank: [13]
+
+chat_cnt: 142
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 143
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 144
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 145
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 146
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 147
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 148
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 149
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 2
+ miss_passage_cnt: 38
+ mismatch_query_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 16/43: 
+chat_cnt: 150
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 151
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 19, current_mismatch_query_cnt: 0
+repetition, missing or mismatch: 
+ original response: Summaries:
+[1] Biography of Robert Downey Jr.
+[2] Family life of Robert Downey Jr.
+[3] General Robert E. Lee's horse, Traveller.
+[4] Natural philosophers and mathematicians who investigated electricity.
+[5] Oregon's history and Captain Robert Gray's exploration.
+[6] Freddie Gray's background.
+[7] Robert Pattinson's role in Twilight.
+[8] The Picture of Dorian Gray's plot.
+[9] Matthew Gray Gubler's net worth.
+[10] American Crew Classic Gray Shampoo.
+[11] Origin and meaning of the name Robert.
+[12] Creation of the Flash character by Robert Kanigher.
+[13] Jackie Gray, a student who died in a car crash.
+[14] Definition of Pearl-gray color.
+[15] Protests in Baltimore after Freddie Gray's death.
+[16] James Gray and the missing Latimer case.
+[17] The Picture of Dorian Gray's 1945 film adaptation.
+[18] Ken Gray, an American football player.
+[19] Carol Taylor Gray, the former wife of White House counsel C Boyden Gray.
+[20] Biography of Robert Stack.
+
+Relevance scores:
+[1] 0
+[2] 0
+[3] 0
+[4] 0
+[5] 19
+[6] 0
+[7] 0
+[8] 0
+[9] 0
+[10] 0
+[11] 0
+[12] 0
+[13] 0
+[14] 0
+[15] 0
+[16] 0
+[17] 0
+[18] 0
+[19] 0
+[20] 0
+
+Ranking:
+[Start] [5] [End]
+original response rank: 5
+ clean response rank: [4]
+
+chat_cnt: 152
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 153
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 154
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 155
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 156
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 157
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 158
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 159
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 1
+ miss_passage_cnt: 19
+ mismatch_query_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 17/43: 
+chat_cnt: 160
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 161
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 162
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 163
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 164
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 165
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 166
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 167
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 168
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+ mismatch_query_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 18/43: 
+chat_cnt: 169
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 170
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 171
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 172
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 173
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 174
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 175
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 176
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 177
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 2, current_mismatch_query_cnt: 0
+repetition, missing or mismatch: 
+ original response: Summaries:
+[1] Incorrect Medicare payments for mechanical ventilation claims.
+[2] Correct Medicare payments for mechanical ventilation claims.
+[3] Estimating home ventilator prevalence in the United States using Medicare claims data.
+[4] Medical definition of mechanical ventilation.
+[5] Definition of ventilation in the English dictionary.
+[6] Mechanical ventilation as a method of forced or induced ventilation using HVAC systems.
+[7] Definition of mechanical ventilation and its two types: positive and negative pressure ventilation.
+[8] Description of a medical ventilator.
+[9] Review of common modes of mechanical ventilation and new technologies.
+[10] Importance of knowledge and understanding of mechanical ventilation in critical care.
+[11] CMS implementing a new length-of-stay edit for continuous invasive mechanical ventilation.
+[12] Treatment of ARDS with mechanical ventilation in an ICU.
+[13] Mechanical ventilation in healthcare settings, supporting or controlling breathing.
+[14] Mechanical ventilation in healthcare settings, supporting or controlling breathing (duplicate of [13]).
+[15] Mechanical ventilation as artificial ventilation using mechanical means.
+[16] Mechanical ventilation as artificial ventilation using mechanical means (duplicate of [15]).
+[17] Ventilators as medical devices providing mechanical ventilation, categorized by interface used.
+[18] Mechanical ventilation as a means to inflate and deflate lungs when ventilatory abilities are diminished.
+[19] Mechanical device for artificial ventilation of the lungs, replacing or supplementing natural breathing.
+[20] Mechanical ventilation as a life support treatment, used in ICU for patients unable to breathe on their own.
+
+Relevance scores:
+[1] 2
+[2] 3
+[3] 4
+[4] 11
+[5] 0
+[6] 5
+[7] 12
+[8] 6
+[9] 7
+[10] 8
+[11] 19
+[12] 9
+[13] 10
+[14] 10 (duplicate)
+[15] 13
+[16] 13 (duplicate)
+[17] 14
+[18] 15
+[19] 16
+[20] 17
+
+Ranking:
+[Start] [11] > [20] > [19] > [18] > [17] > [15] > [7] > [4] > [13] > [12] > [10] > [9] > [8] > [6] > [3] > [2] > [1] > [5] [End]
+original response rank: 11     20     19     18     17     15     7     4     13     12     10     9     8     6     3     2     1     5
+ clean response rank: [10, 19, 18, 17, 16, 14, 6, 3, 12, 11, 9, 8, 7, 5, 2, 1, 0, 4]
+
+chat_cnt: 178
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 1
+ miss_passage_cnt: 2
+ mismatch_query_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 19/43: 
+chat_cnt: 179
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 180
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 181
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 182
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 183
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 184
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 185
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 186
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 187
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+ mismatch_query_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 20/43: 
+chat_cnt: 188
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 189
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 190
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 191
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 192
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 193
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 194
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 195
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 1, current_mismatch_query_cnt: 0
+repetition, missing or mismatch: 
+ original response: Summaries:
+[1] Study finds no connection between military suicide and deployment; higher rates among those who left early or were involuntarily discharged.
+[2] Suicides among troops have become the second leading cause of death in the military.
+[3] Insurance companies have a suicide clause and may not pay out for military suicides.
+[4] Horse therapy helps children of military suicide victims.
+[5] Understanding the causes of suicide, including bullying, is important for prevention.
+[6] Suicide rate among veterans and military service members exceeds the national rate.
+[7] Recent veterans have a 50% higher suicide rate than non-military civilians.
+[8] Suicide prevention is a major objective of the Battle Buddy system; military suicides increased in 2006.
+[9] (Duplicate of [7]) Recent veterans have a 50% higher suicide rate than non-military civilians.
+[10] Military suicides surpassed combat deaths in 2012.
+[11] Military suicide rate has nearly doubled since 2005; higher rates among those who left early or were involuntarily discharged.
+[12] Military suicide rates surpassed civilian rates in 2008; substance use involved in many suicides.
+[13] Suicide rates doubled for soldiers who served in Iraq and Afghanistan and tripled for those who never deployed.
+[14] Record 349 military suicides in 2012, more than combat deaths in Afghanistan.
+[15] Suicides became the top means of dying for troops in 2012 and 2013.
+[16] Relaxed enlistment standards may be linked to increased suicides and other issues in the military.
+[17] Suicide is the leading cause of death in the US military for 2012-2013.
+[18] Suicides among military personnel who had been deployed for fewer days; longer deployments associated with lower suicide risk.
+[19] Suicide is the leading cause of death among active-duty soldiers; more soldiers killed themselves than died in combat in 2010.
+[20] More veterans and active-duty soldiers committed suicide than were killed in combat in 2012; Army had the highest number of suicides.
+
+Relevance scores:
+[1] 16
+[2] 11
+[3] 0
+[4] 1
+[5] 2
+[6] 9
+[7] 12
+[8] 10
+[9] (Duplicate of [7])
+[10] 14
+[11] 17
+[12] 15
+[13] 19
+[14] 13
+[15] 8
+[16] 6
+[17] 7
+[18] 18
+[19] 5
+[20] 4
+
+Ranking:
+[Start] [13] > [18] > [11] > [12] > [1] > [10] > [14] > [7] > [2] > [8] > [6] > [15] > [17] > [16] > [20] > [19] > [5] > [4] > [3] [End]
+original response rank: 13     18     11     12     1     10     14     7     2     8     6     15     17     16     20     19     5     4     3
+ clean response rank: [12, 17, 10, 11, 0, 9, 13, 6, 1, 7, 5, 14, 16, 15, 19, 18, 4, 3, 2]
+
+chat_cnt: 196
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 1, current_mismatch_query_cnt: 0
+repetition, missing or mismatch: 
+ original response: [1] Study finds no connection between military suicide and deployment; higher rates among those who left before completing enlistment or were involuntarily discharged.
+[2] Suicides among troops have become the second leading cause of death in the military.
+[3] Insurance companies may not pay out for military suicides within two years of policy being in force.
+[4] Horse therapy helps children of military suicide victims.
+[5] Understanding causes of suicide, including bullying, is important for prevention.
+[6] Suicide rate among veterans and military service members exceeds the national rate for the general population.
+[7] Recent veterans have a 50% higher suicide rate than non-military civilians.
+[8] Suicide prevention is a major objective of the Battle Buddy system; Army suicides increased in 2006.
+[9] (Duplicate of [7]) Recent veterans have a 50% higher suicide rate than non-military civilians.
+[10] Military suicides surpassed combat deaths in 2012.
+[11] Military suicide rate has nearly doubled since 2005; higher rates among those who left before completing enlistment or were involuntarily discharged.
+[12] Military suicide rates surpassed civilian rates in 2008; substance use involved in many suicides.
+[13] Suicide rates doubled for soldiers who served in Iraq and Afghanistan and tripled for those who never deployed.
+[14] Military suicides reached a record 349 in 2012, surpassing combat deaths.
+[15] Suicides became the top means of dying for troops in 2012 and 2013.
+[16] Relaxed enlistment standards may be linked to increased suicides, sexual assaults, and other bad behavior.
+[17] Suicide is the leading cause of death in the military for 2012-2013.
+[18] Fewer days deployed and shorter deployments associated with higher risk of suicide.
+[19] Suicide is the leading cause of death among active-duty soldiers; more soldiers killed themselves than died in combat in 2010.
+[20] More soldiers committed suicide than were killed in combat in 2012; Army had the highest number of suicides among service branches.
+
+Relevance scores:
+[1] 17
+[2] 11
+[3] 0
+[4] 1
+[5] 2
+[6] 9
+[7] 14
+[8] 10
+[9] (Duplicate of [7])
+[10] 12
+[11] 16
+[12] 15
+[13] 18
+[14] 13
+[15] 8
+[16] 6
+[17] 7
+[18] 19
+[19] 5
+[20] 4
+
+Ranking:
+[Start] [18] > [13] > [11] > [12] > [1] > [7] > [14] > [10] > [2] > [6] > [8] > [15] > [17] > [19] > [20] > [16] > [5] > [4] > [3] [End]
+original response rank: 18     13     11     12     1     7     14     10     2     6     8     15     17     19     20     16     5     4     3
+ clean response rank: [17, 12, 10, 11, 0, 6, 13, 9, 1, 5, 7, 14, 16, 18, 19, 15, 4, 3, 2]
+
+chat_cnt: 197
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 1, current_mismatch_query_cnt: 0
+repetition, missing or mismatch: 
+ original response: [1] Study finds no connection between military suicide and deployment; higher rates among those who left before completing enlistment or were involuntarily discharged.
+[2] Suicides among troops have become the second leading cause of death in the military.
+[3] Insurance companies may not pay out for military suicides within two years of policy being in force.
+[4] Horse therapy helps children of military suicide victims.
+[5] Understanding causes of suicide, including bullying, is important for prevention.
+[6] Suicide rate among veterans and military service members exceeds the national rate for the general population.
+[7] Recent veterans have a 50% higher suicide rate than non-military civilians.
+[8] Suicide prevention is a major objective of the Battle Buddy system; Army suicides increased in 2006.
+[9] (Duplicate of [7]) Recent veterans have a 50% higher suicide rate than non-military civilians.
+[10] Military suicides surpassed combat deaths in 2012.
+[11] Military suicide rate has nearly doubled since 2005; higher rates among those who left before completing enlistment or were involuntarily discharged.
+[12] Military suicide rates surpassed civilian rates in 2008; substance use involved in many suicides.
+[13] Suicide rates doubled for soldiers who served in Iraq and Afghanistan and tripled for those who never deployed.
+[14] Record 349 military suicides in 2012, more than combat deaths in Afghanistan.
+[15] Suicides became the top means of dying for troops in 2012 and 2013.
+[16] Relaxed enlistment standards may be linked to increased suicides, sexual assaults, and other bad behavior.
+[17] Suicide is the leading cause of death in the military for 2012-2013.
+[18] Fewer deployment days and shorter deployments associated with higher risk of suicide.
+[19] Suicide is the leading cause of death among active-duty soldiers; more soldiers killed themselves than died in combat in 2010.
+[20] More veterans and active-duty soldiers committed suicide than were killed in combat in 2012; Army had the highest number of suicides.
+
+Relevance scores:
+[1] 17
+[2] 9
+[3] 0
+[4] 1
+[5] 2
+[6] 8
+[7] 11
+[8] 12
+[9] (Duplicate of [7])
+[10] 10
+[11] 18
+[12] 14
+[13] 16
+[14] 7
+[15] 6
+[16] 13
+[17] 5
+[18] 15
+[19] 4
+[20] 3
+
+Ranking:
+[Start] [11] > [1] > [13] > [18] > [12] > [16] > [8] > [7] > [2] > [10] > [6] > [14] > [15] > [17] > [19] > [20] > [5] > [4] > [3] [End]
+original response rank: 11     1     13     18     12     16     8     7     2     10     6     14     15     17     19     20     5     4     3
+ clean response rank: [10, 0, 12, 17, 11, 15, 7, 6, 1, 9, 5, 13, 14, 16, 18, 19, 4, 3, 2]
+
+chat_cnt: 198
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 199
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 3
+ miss_passage_cnt: 3
+ mismatch_query_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 21/43: 
+chat_cnt: 200
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 201
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 202
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 203
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 204
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 205
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 206
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 207
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 208
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+ mismatch_query_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 22/43: 
+chat_cnt: 209
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 210
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 211
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 212
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 213
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 214
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 215
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 216
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 217
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+ mismatch_query_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 23/43: 
+chat_cnt: 218
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 219
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 220
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 1, current_mismatch_query_cnt: 0
+repetition, missing or mismatch: 
+ original response: Summaries:
+[1] Career and educational options for anthropology majors.
+[2] Forensic anthropology and its application to legal issues.
+[3] Forensic anthropology in criminal investigations.
+[4] Importance of kinship in social anthropology.
+[5] Public anthropology project on unity, history, and environment.
+[6] Blue Zones: anthropological concept of the world's longest-lived people and their environments.
+[7] Linguistic anthropology as the study of human language and communication.
+[8] Various topics in anthropology and sociology.
+[9] Blue Zones: anthropological concept of the world's longest-lived people and their environments.
+[10] Cultural anthropology as the study of cultural variation among humans.
+[11] Four major fields of anthropology: biological, cultural, linguistic, and archaeology.
+[12] Anthropology studies various aspects of humans within past and present societies.
+[13] Anthropology divisions and definitions.
+[14] Development of cultural anthropology in the United States and social anthropology in the United Kingdom.
+[15] Biological anthropology and political economy in anthropology.
+[16] Four major fields of anthropology and their research interests and techniques.
+[17] Anthropological studies and their relation to the science of anthropology.
+[18] Four major fields of anthropology and their research interests and techniques.
+[19] Four major fields of anthropology and their research interests and techniques.
+[20] Definitions of various terms in anthropology.
+
+Relevance scores:
+[1] 0
+[2] 1
+[3] 2
+[4] 3
+[5] 4
+[6] 19
+[7] 5
+[8] 6
+[9] 18
+[10] 7
+[11] 8
+[12] 9
+[13] 10
+[14] 11
+[15] 12
+[16] 13
+[17] 14
+[18] 15
+[19] 16
+[20] 17
+
+Ranking:
+[Start] [6] > [9] > [5] > [20] > [19] > [18] > [16] > [15] > [14] > [13] > [12] > [11] > [10] > [8] > [7] > [4] > [3] > [2] > [1] [End]
+original response rank: 6     9     5     20     19     18     16     15     14     13     12     11     10     8     7     4     3     2     1
+ clean response rank: [5, 8, 4, 19, 18, 17, 15, 14, 13, 12, 11, 10, 9, 7, 6, 3, 2, 1, 0]
+
+chat_cnt: 221
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 222
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 223
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 224
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 225
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 226
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 227
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 1
+ miss_passage_cnt: 1
+ mismatch_query_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 24/43: 
+chat_cnt: 228
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 229
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 230
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 231
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 232
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 233
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 234
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 235
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 236
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+ mismatch_query_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 25/43: 
+chat_cnt: 237
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 238
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 239
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 240
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 241
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 242
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 243
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 244
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 245
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+ mismatch_query_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 26/43: 
+chat_cnt: 246
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 247
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 248
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 249
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 250
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 251
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 252
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 253
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 254
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+ mismatch_query_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 27/43: 
+chat_cnt: 255
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 256
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 257
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 258
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 259
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 260
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 261
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 262
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 263
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+ mismatch_query_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 28/43: 
+chat_cnt: 264
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 265
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 266
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 267
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 19, current_mismatch_query_cnt: 0
+repetition, missing or mismatch: 
+ original response: [1] - Accessibility request for assistive technology users.
+[2] - Explanation of the abbreviation "scil." in legal terms.
+[3] - Information about doxycycline hyclate, an antibiotic.
+[4] - Sending email messages to a recipient's phone based on their carrier.
+[5] - Process mapping for better customer focus and satisfaction.
+[6] - Paint types used for suncatchers.
+[7] - Information about the pill Celexa.
+[8] - Various facts about water usage and organisms in treatment plants.
+[9] - Hormone produced by the thyroid gland.
+[10] - Radiometric dating methods and assumptions.
+[11] - Ichthammol ointment uses and related terms.
+[12] - Different mediums for 2D art.
+[13] - Hibachi chefs' techniques and materials.
+[14] - Original materials used to make telephones, iTouch, and digital cameras.
+[15] - Career options for geography degree holders.
+[16] - Checking device usage of COM ports from the Device Manager.
+[17] - The preamble of the US Constitution.
+[18] - Gel staining a fiberglass door to make it look like wood.
+[19] - Information about the pill "roxane."
+[20] - Paint types used for suncatchers (duplicate of [6]).
+
+Relevance scores:
+[1] - 0
+[2] - 0
+[3] - 0
+[4] - 0
+[5] - 0
+[6] - 0
+[7] - 0
+[8] - 0
+[9] - 0
+[10] - 0
+[11] - 19
+[12] - 0
+[13] - 0
+[14] - 0
+[15] - 0
+[16] - 0
+[17] - 0
+[18] - 0
+[19] - 0
+[20] - 0
+
+Ranking:
+[Start] [11] [End]
+original response rank: 11
+ clean response rank: [10]
+
+chat_cnt: 268
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 269
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 270
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 271
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 272
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 273
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 1
+ miss_passage_cnt: 19
+ mismatch_query_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 29/43: 
+chat_cnt: 274
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 275
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 16, current_mismatch_query_cnt: 0
+repetition, missing or mismatch: 
+ original response: Summarizing the passages:
+
+[1] VYXEOS is a treatment for adults with newly-diagnosed therapy-related acute myeloid leukemia (t-AML) or AML with myelodysplasia-related changes (AML-MRC).
+[2] Adult acute myeloid leukemia (AML) is a type of cancer affecting the blood and bone marrow.
+[3] Finding surveillance recording equipment on eBay.
+[4] Acute myelogenous leukemia with certain genetic abnormalities.
+[5] Skills needed to become a data analyst and related questions.
+[6] U.S. Department of the Treasury issued final rules under the Bank Secrecy Act (BSA) to clarify and strengthen customer due diligence (CDD) requirements.
+[7] AML as a treatment side effect for various cancers.
+[8] Identifying current issues in the field of AML treatment and reviewing treatment options.
+[9] Acute myelogenous leukemia (AML) is the most common form of leukemia.
+[10] AML is a fast-growing cancer of the blood and bone marrow.
+[11] LinkedIn Groups and blog covering Anti-Money Laundering (AML) and Counter Terrorist Financing (CTF) for AML Investigators.
+[12] AML Compliance Services anti-money laundering audit review process.
+[13] Market research analyst job description.
+[14] AML laws, rules, and orders are subject to change.
+[15] Heredity or genetic factors related to AML.
+[16] Major types of leukemia, including AML.
+[17] Types of leukemia, including AML.
+[18] Major types of leukemia and their symptoms and risk factors.
+[19] French-American-British (FAB) classification of AML.
+[20] AML prognosis and cure rates.
+
+Relevance scores (0-19):
+
+[1] 0
+[2] 0
+[3] 0
+[4] 0
+[5] 0
+[6] 19
+[7] 0
+[8] 0
+[9] 0
+[10] 0
+[11] 18
+[12] 17
+[13] 0
+[14] 16
+[15] 0
+[16] 0
+[17] 0
+[18] 0
+[19] 0
+[20] 0
+
+Ranking:
+
+[Start] [6] > [11] > [12] > [14] [End]
+original response rank: 6     11     12     14
+ clean response rank: [5, 10, 11, 13]
+
+chat_cnt: 276
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 277
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 278
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 279
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 280
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 281
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 282
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 283
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 1
+ miss_passage_cnt: 16
+ mismatch_query_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 30/43: 
+chat_cnt: 284
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 285
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 286
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 287
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 288
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 289
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 290
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 291
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 292
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+ mismatch_query_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 31/43: 
+chat_cnt: 293
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 294
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 295
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 296
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 297
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 298
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 299
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 300
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 301
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+ mismatch_query_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 32/43: 
+chat_cnt: 302
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 303
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 304
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 305
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 306
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 307
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 308
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 309
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 310
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+ mismatch_query_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 33/43: 
+chat_cnt: 311
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 312
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 313
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 314
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 315
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 1, current_mismatch_query_cnt: 0
+repetition, missing or mismatch: 
+ original response: 1. Antiviral medications like Famvir can decrease the duration of skin rash and pain.
+2. Famvir is an oral antiherpes drug effective when taken within the first 24 to 48 hours of symptoms.
+3. Xanax is prescribed for anxiety, panic disorder, and sometimes as a sleep aid.
+4. Famvir is an antiviral medication used for herpes and related viruses, and can be an alternative to acyclovir.
+5. Famvir is one of the major drugs used to treat genital herpes symptoms.
+6. Silver Sulfadiazine is used to prevent and treat infections of second and third degree burns.
+7. Silver Sulfadiazine is used to prevent and treat infections of second and third degree burns (duplicate of passage 6).
+8. A doctor's decision to prescribe narcotics long-term depends on the specific situation.
+9. Lexapro is prescribed for an unspecified purpose.
+10. Xanax is prescribed for anxiety, panic disorder, and sometimes as a sleep aid (duplicate of passage 3).
+11. Famvir treatment dose for genital herpes and cold sores.
+12. Antiviral medications like Famvir can decrease the duration of skin rash and pain (duplicate of passage 1).
+13. Famvir is one of the medicines available to treat shingles.
+14. Antiviral drugs like Famvir can be used to treat shingles during pregnancy.
+15. Famvir can be given as a single dose of medicine for cold sores.
+16. Famvir is an antiviral drug used in shingles treatment.
+17. Famvir can speed healing of cold sores if started within 6 hours of the beginning of a cold sore.
+18. Famciclovir is the active ingredient in Famvir tablets.
+19. Famvir is a generic but pricey antiviral medication.
+20. Famvir was tried for treating non-stop cold sores after taking Roaccutane.
+
+[Start] [11] > [2] > [1] > [5] > [13] > [16] > [14] > [15] > [17] > [4] > [19] > [18] > [20] > [3] > [10] > [6] > [7] > [9] > [8] [End]
+original response rank: 11     2     1     5     13     16     14     15     17     4     19     18     20     3     10     6     7     9     8
+ clean response rank: [10, 1, 0, 4, 12, 15, 13, 14, 16, 3, 18, 17, 19, 2, 9, 5, 6, 8, 7]
+
+chat_cnt: 316
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 317
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 318
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 319
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 320
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 1
+ miss_passage_cnt: 1
+ mismatch_query_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 34/43: 
+chat_cnt: 321
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 322
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 323
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 324
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 325
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 326
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 327
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 328
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 329
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+ mismatch_query_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 35/43: 
+chat_cnt: 330
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 331
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 332
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 333
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 334
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 335
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 336
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 337
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 338
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+ mismatch_query_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 36/43: 
+chat_cnt: 339
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 340
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 341
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 342
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 343
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 344
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 345
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 346
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 347
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+ mismatch_query_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 37/43: 
+chat_cnt: 348
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 349
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 350
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 351
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 352
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 353
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 354
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 355
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 356
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+ mismatch_query_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 38/43: 
+chat_cnt: 357
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 358
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 359
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 360
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 361
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 362
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 363
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 364
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 365
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+ mismatch_query_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 39/43: 
+chat_cnt: 366
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 367
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 368
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 369
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 370
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 371
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 372
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 373
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 374
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+ mismatch_query_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 40/43: 
+chat_cnt: 375
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 376
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 377
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 378
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 379
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 380
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 381
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 382
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 383
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+ mismatch_query_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 41/43: 
+chat_cnt: 384
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 385
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 386
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 387
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 388
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 389
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 390
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 391
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 392
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+ mismatch_query_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 42/43: 
+chat_cnt: 393
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 394
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 395
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 396
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 397
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 398
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 399
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 400
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 401
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+ mismatch_query_cnt: 0
+
+****************************************************************************************************
+Total Malformed Outputs Statistics:
+ Total Repetition Chat Count: 0, Average Repetition Query: 0.0
+ Total Repetition Passage Count: 0, Average Repetition Passage: 0.0
+ Total Missing Chat Count: 14, Average Missing Query: 0.03617571059431524
+ Total Missing Passage Count: 119, Average Missing Passage: 0.01537467700258398
+ Total Mismatch Chat Count: 0, Average Mismatch Query: 0.0
+
+Downloading https://search.maven.org/remotecontent?filepath=uk/ac/gla/dcs/terrierteam/jtreceval/0.0.5/jtreceval-0.0.5-jar-with-dependencies.jar to /data4/hop20001/.cache/pyserini/eval/jtreceval-0.0.5-jar-with-dependencies.jar...
+/data4/hop20001/.cache/pyserini/eval/jtreceval-0.0.5-jar-with-dependencies.jar already exists!
+Skipping download.
+Trunc /tmp/tmpwfeahyin
+Running command: ['java', '-jar', '/data4/hop20001/.cache/pyserini/eval/jtreceval-0.0.5-jar-with-dependencies.jar', '-m', 'ndcg_cut.10', '/tmp/tmpwfeahyin', '/tmp/tmptgz1my1k']
+Results:
+ndcg_cut_10           	all	0.7200
+Downloading https://search.maven.org/remotecontent?filepath=uk/ac/gla/dcs/terrierteam/jtreceval/0.0.5/jtreceval-0.0.5-jar-with-dependencies.jar to /data4/hop20001/.cache/pyserini/eval/jtreceval-0.0.5-jar-with-dependencies.jar...
+/data4/hop20001/.cache/pyserini/eval/jtreceval-0.0.5-jar-with-dependencies.jar already exists!
+Skipping download.
+Trunc /tmp/tmpzoo98v3v
+Running command: ['java', '-jar', '/data4/hop20001/.cache/pyserini/eval/jtreceval-0.0.5-jar-with-dependencies.jar', '-m', 'ndcg_cut.5', '/tmp/tmpzoo98v3v', '/tmp/tmptgz1my1k']
+Results:
+ndcg_cut_5            	all	0.7552
+Downloading https://search.maven.org/remotecontent?filepath=uk/ac/gla/dcs/terrierteam/jtreceval/0.0.5/jtreceval-0.0.5-jar-with-dependencies.jar to /data4/hop20001/.cache/pyserini/eval/jtreceval-0.0.5-jar-with-dependencies.jar...
+/data4/hop20001/.cache/pyserini/eval/jtreceval-0.0.5-jar-with-dependencies.jar already exists!
+Skipping download.
+Trunc /tmp/tmpmpqtj9oe
+Running command: ['java', '-jar', '/data4/hop20001/.cache/pyserini/eval/jtreceval-0.0.5-jar-with-dependencies.jar', '-m', 'ndcg_cut.1', '/tmp/tmpmpqtj9oe', '/tmp/tmptgz1my1k']
+Results:
+ndcg_cut_1            	all	0.8023

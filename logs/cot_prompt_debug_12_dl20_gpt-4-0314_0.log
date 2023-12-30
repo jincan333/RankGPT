@@ -1,0 +1,1532 @@
+{
+    "prompt_type": 12,
+    "dataset": "dl20",
+    "model": "gpt-4-0314",
+    "print_messages": 0
+}
+####################
+Evaluation on dl20
+####################
+  0%|          | 0/200 [00:00<?, ?it/s]  1%|          | 2/200 [00:00<00:19, 10.36it/s]  2%|▎         | 5/200 [00:00<00:13, 14.89it/s]  9%|▉         | 18/200 [00:00<00:03, 46.78it/s] 12%|█▎        | 25/200 [00:00<00:04, 42.69it/s] 16%|█▌        | 32/200 [00:00<00:03, 46.55it/s] 18%|█▊        | 37/200 [00:00<00:03, 43.01it/s] 24%|██▎       | 47/200 [00:01<00:02, 53.22it/s] 26%|██▋       | 53/200 [00:01<00:03, 43.43it/s] 37%|███▋      | 74/200 [00:01<00:01, 77.44it/s] 42%|████▏     | 84/200 [00:01<00:01, 67.04it/s] 50%|████▉     | 99/200 [00:01<00:01, 77.58it/s] 58%|█████▊    | 117/200 [00:01<00:00, 97.42it/s] 71%|███████   | 142/200 [00:01<00:00, 120.24it/s] 80%|████████  | 160/200 [00:02<00:00, 130.20it/s] 87%|████████▋ | 174/200 [00:02<00:00, 127.25it/s] 94%|█████████▍| 188/200 [00:02<00:00, 76.54it/s] 100%|██████████| 200/200 [00:02<00:00, 74.17it/s]
+****************************************************************************************************
+query 0/54: 
+****************************************************************************************************
+Message Example:
+ [{'role': 'system', 'content': 'You are RankGPT, an intelligent assistant that can rank passages based on their relevancy to the query.'}, {'role': 'user', 'content': 'I will provide you with 20 passages, each indicated by number identifier []. \nRank the passages based on their relevance to query: are naturalization records public information.'}, {'role': 'assistant', 'content': 'Okay, please provide the passages.'}, {'role': 'user', 'content': '[1] About City of Harker Heights, Bell County, TX Public Record Searches. Search the City of Harker Heights, public records using best found research sources online. This City zip code is 76548 with a total population of 26,700. Look up recorded information of Harker Heights, including demographics and local economy. Link to all levels of Harker Heights, government and their sites with services which provide public information.'}, {'role': 'assistant', 'content': 'Received passage [1].'}, {'role': 'user', 'content': '[2] All data is compiled from recorded deeds, plats, and other public records and data. Users of this data are hereby notified that the aforementioned public information sources should be consulted for verification of the information.'}, {'role': 'assistant', 'content': 'Received passage [2].'}, {'role': 'user', 'content': '[3] Public Records. The Freedom of Information Act, 5ILCS 140/1 et seq, is the Illinois Statute governing the inspection of public records. This Act provides for the public inspection of records in the possession of the City of Quincy. The Act also includes many exemptions to insure the confidentiality and privacy of certain records.'}, {'role': 'assistant', 'content': 'Received passage [3].'}, {'role': 'user', 'content': '[4] Government Employees and Email. Government employees have even less privacy than the little privacy a typical employee in the private sector may have. Under various public records acts and the Freedom of Information Act (FOIA), the public can gain access to almost anything a government employee writes down. Also, due to the nature of their job, courts are typically unwilling to find that government employees had a reasonable right to privacy in the first place.'}, {'role': 'assistant', 'content': 'Received passage [4].'}, {'role': 'user', 'content': '[5] Home Details: Public Facts. On each listing details page on Redfin, we show a Public Facts section that contains information about that property from public records. Redfin gets this information from a third party who gets it directly from local county assessor and recorder offices. We display this information to give you the most complete set of facts about a property and to supplement MLS-provided information about a home which can occasionally be incomplete or unclear.'}, {'role': 'assistant', 'content': 'Received passage [5].'}, {'role': 'user', 'content': "[6] Tra c Citations Are Considered Criminal Records PRESS RELEASE - FEB 2, 2016 10:35 PST - UPDATED: FEB 2, 2016 11:04 PST. SearchQuarry.com, a U.S.based online public records resource, acknowledges traffic citations are considered criminal records. Traffic citations can vary from infractions to misdemeanors depending on the nature of the violation. Traffic citations will stay on a person's criminal record for 3 years however a DUI can stay on a person's criminal record indefinitely. According to state and federal governments, traffic citations are considered criminal records. Search Quarry representatives highlight this information because many people donâ\x80\x99t realize that traffic citations are considered criminal records. Most traffic ..."}, {'role': 'assistant', 'content': 'Received passage [6].'}, {'role': 'user', 'content': '[7] Birth records are available from 1882, death records from 1874, and fetal death records from 1906. Texas law mandates that birth and death certificates are confidential records with restricted access. Texas Public Information Act Section 552.115 (a)(1): Birth records are restricted until 75 years after the file date. Texas Public Information Act Section 552.115 (a)(2): Death records are restricted until 25 years after the file date. Eligibility.'}, {'role': 'assistant', 'content': 'Received passage [7].'}, {'role': 'user', 'content': '[8] Freedom of Information Act. The Freedom of Information Act (FOIA) is the national law regarding the release of government agency public records. While using FOIA, you can: 1 Request any type of public record report from the agency. Determine the form you want the information in.'}, {'role': 'assistant', 'content': 'Received passage [8].'}, {'role': 'user', 'content': "[9] No legal advice or opinions will be given by the Recorder's Staff either in person or by telephone. Computers are available in the Recorders Office for public access. Public Records Searches. Employees of the Recorder's Office cannot search records. If you know the recording information, you may request a copy from our office. Otherwise, you may come into the office and access one of our thirteen (13) public computers."}, {'role': 'assistant', 'content': 'Received passage [9].'}, {'role': 'user', 'content': '[10] About City of Davis, Yolo County, CA Public Record Searches. Search the City of Davis, public records using best found research sources online. This City zip code is 95616 with a total population of 65,622. Look up recorded information of Davis, including demographics and local economy. Link to all levels of Davis, government and their sites with services which provide public information. Current economy, business and housing data.'}, {'role': 'assistant', 'content': 'Received passage [10].'}, {'role': 'user', 'content': '[11] Yes, in most cases Public Records are available to the public. Some documents, such as certain court records, confidential personal information, and other sensitive information may be kept sealed or is only available with a court order.'}, {'role': 'assistant', 'content': 'Received passage [11].'}, {'role': 'user', 'content': '[12] What are the different types of public records? Public records on your credit report contain information about credit-related legal matters. These are quick summaries of the most common types of public records. Public records are complicated, though, so make sure to do more research. Bankruptcy: A legal filing by individuals or businesses seeking certain types of relief from all or some their debt.'}, {'role': 'assistant', 'content': 'Received passage [12].'}, {'role': 'user', 'content': '[13] This database contains public information on felony offenders sentenced to the Department of Corrections. This information includes South Dakota offenders sentenced to prison. Information on offenders sentenced to county jail, probation, or any other form of supervision is not included. The information is derived from court records provided to the Department of Corrections and Department of Corrections records and is made available as a public service.'}, {'role': 'assistant', 'content': 'Received passage [13].'}, {'role': 'user', 'content': '[14] About City of Rockaway Beach, Tillamook County, OR Public Record Searches. Search the City of Rockaway Beach, public records using best found research sources online. This City zip code is 97136 with a total population of 1,312. Look up recorded information of Rockaway Beach, including demographics and local economy. Link to all levels of Rockaway Beach, government and their sites with services which provide public information. Current economy, business and housing data.'}, {'role': 'assistant', 'content': 'Received passage [14].'}, {'role': 'user', 'content': '[15] About City of La Crescenta, Los Angeles County, CA Public Record Searches. Search the City of La Crescenta, public records using best found research sources online. This City zip code is 91214. Look up recorded information of La Crescenta, including demographics and local economy. Link to all levels of La Crescenta, government and their sites with services which provide public information. Current economy, business and housing data.'}, {'role': 'assistant', 'content': 'Received passage [15].'}, {'role': 'user', 'content': '[16] City of College Station, TX Free Public Records Directory. Departments which record, maintain and provide official documents, certificates or information requested by the general public. City of College Station Criminal Records: Where and How to Request Criminal Record Checks. City of College Station Court Records: Criminal cases, civil filings, divorces, bankruptcy and judgments. City of College Station Warrant Records: Names and information of wanted persons by sheriffs and police departments. City of College Station Official Website: Government department official public web-portal. City of College Station Municipal Codes: City ordinances governing cities, villages, parishes and jurisdictions below state level.'}, {'role': 'assistant', 'content': 'Received passage [16].'}, {'role': 'user', 'content': "[17] Information resources on Westlaw include more than 40,000 databases of case law, state and federal statutes, administrative codes, newspaper and magazine articles, public records, law journals, law reviews, treatises, legal forms and other information resources.ost legal documents on Westlaw are indexed to the West Key Number System, which is West's master classification system of U.S. law. Westlaw supports natural language and Boolean searches."}, {'role': 'assistant', 'content': 'Received passage [17].'}, {'role': 'user', 'content': '[18] Information submitted through an Arlington County Government website is considered to be a Public Record under the Virginia Public Records Act and may be subject to release by the County in response to a request made under the Virginia Freedom of Information Act.'}, {'role': 'assistant', 'content': 'Received passage [18].'}, {'role': 'user', 'content': '[19] In 1932, the Public Health Service, working with the Tuskegee Institute, began a study to record the natural history of syphilis in hopes of justifying treatment programs for blacks.It was called the Tuskegee Study of Untreated Syphilis in the Negro Male..n 1932, the Public Health Service, working with the Tuskegee Institute, began a study to record the natural history of syphilis in hopes of justifying treatment programs for blacks.'}, {'role': 'assistant', 'content': 'Received passage [19].'}, {'role': 'user', 'content': '[20] Public access to arrest and booking records is seen as a critical safeguard of liberty. [citation needed] Uses of public records. With the advent of the Internet and the information age, access to public records in the United States to anyone who wishes to view them has dramatically increased.'}, {'role': 'assistant', 'content': 'Received passage [20].'}, {'role': 'user', 'content': 'Search Query: are naturalization records public information. \nRank the 20 passages above based on their relevance to the search query. Please think step by step to solve this task. First please rate the relevance between the query and each document from score 0 to 10 and explain the reason of rating the score. Then sort identifiers in descending order based on their relevance to the search query. Finally, summarize the rank. Please use [start] to begin summarize the rank and use [end] to indicate the end of the rank. All the passages should be included and listed using identifiers and make sure there is no repetitious and missing pasages. The format of the summarized rank should be [Start] [] > [] [End], e.g.,[Start] [1] > [2] [End]. In the summarized rank, only response the ranking results.'}]
+Permutation Example:
+ [1] Relevance Score: 1 - The passage is about public records in Harker Heights, but it does not mention naturalization records specifically.
+
+[2] Relevance Score: 2 - The passage mentions public records and data, but does not specifically mention naturalization records.
+
+[3] Relevance Score: 3 - The passage discusses the Freedom of Information Act and public records, but does not specifically mention naturalization records.
+
+[4] Relevance Score: 2 - The passage is about government employees and email, not directly related to naturalization records.
+
+[5] Relevance Score: 1 - The passage is about public facts on property listings, not related to naturalization records.
+
+[6] Relevance Score: 1 - The passage is about traffic citations as criminal records, not related to naturalization records.
+
+[7] Relevance Score: 1 - The passage is about birth and death records, not related to naturalization records.
+
+[8] Relevance Score: 4 - The passage discusses the Freedom of Information Act and public record requests, which could potentially include naturalization records, but does not mention them specifically.
+
+[9] Relevance Score: 2 - The passage is about public records searches in the Recorder's Office, but does not specifically mention naturalization records.
+
+[10] Relevance Score: 1 - The passage is about public records in Davis, but it does not mention naturalization records specifically.
+
+[11] Relevance Score: 3 - The passage mentions that public records are generally available to the public, but does not specifically mention naturalization records.
+
+[12] Relevance Score: 1 - The passage is about public records on credit reports, not related to naturalization records.
+
+[13] Relevance Score: 1 - The passage is about public information on felony offenders, not related to naturalization records.
+
+[14] Relevance Score: 1 - The passage is about public records in Rockaway Beach, but it does not mention naturalization records specifically.
+
+[15] Relevance Score: 1 - The passage is about public records in La Crescenta, but it does not mention naturalization records specifically.
+
+[16] Relevance Score: 2 - The passage is about public records in College Station, but does not specifically mention naturalization records.
+
+[17] Relevance Score: 2 - The passage is about Westlaw, a legal database, but does not specifically mention naturalization records.
+
+[18] Relevance Score: 3 - The passage mentions public records under the Virginia Public Records Act, but does not specifically mention naturalization records.
+
+[19] Relevance Score: 1 - The passage is about a study on syphilis, not related to naturalization records.
+
+[20] Relevance Score: 3 - The passage is about public access to arrest and booking records, and mentions the increased access to public records in general, but does not specifically mention naturalization records.
+
+[Start] [8] > [3] > [11] > [18] > [20] > [2] > [4] > [9] > [16] > [17] > [1] > [10] > [14] > [15] > [5] > [6] > [7] > [12] > [13] > [19] [End]
+****************************************************************************************************
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 1/54: 
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 20
+repetition or missing: 
+ original response: [1] Relevance Score: 0 - The passage discusses converting Word files to Google Docs format, but does not mention auto-saving.
+
+[2] Relevance Score: 0 - The passage is about sharing files in Google Drive, Docs, Sheets, and Slides, but does not mention auto-saving.
+
+[3] Relevance Score: 0 - The passage discusses copying Google Docs files to a CD, but does not mention auto-saving.
+
+[4] Relevance Score: 0 - The passage compares Google Sheets and Microsoft Excel, but does not mention auto-saving.
+
+[5] Relevance Score: 0 - The passage discusses saving images, documents, audio, and videos to Google Drive using a Chrome extension, but does not mention auto-saving.
+
+[6] Relevance Score: 0 - The passage suggests using keyboard shortcuts or installing the Google Docs app in Chrome, but does not mention auto-saving.
+
+[7] Relevance Score: 0 - The passage discusses Google Apps and Memeo Connect, but does not mention auto-saving.
+
+[8] Relevance Score: 0 - The passage is about sharing files in Google Drive, Docs, Sheets, and Slides, but does not mention auto-saving.
+
+[9] Relevance Score: 0 - The passage provides an overview of Google Docs, but does not mention auto-saving.
+
+[10] Relevance Score: 0 - The passage discusses printing and saving files using mobile Google Apps, but does not mention auto-saving.
+
+[11] Relevance Score: 0 - The passage explains what a gsheet file is, but does not mention auto-saving.
+
+[12] Relevance Score: 0 - The passage discusses uploading Word documents to Google Docs, but does not mention auto-saving.
+
+[13] Relevance Score: 0 - The passage explains how to upload files to Google Docs and change privacy settings, but does not mention auto-saving.
+
+[14] Relevance Score: 0 - The passage discusses deleting photos from auto backup album, but does not mention auto-saving in Google Docs.
+
+[15] Relevance Score: 0 - The passage discusses editing Microsoft Office files in Google Docs, Sheets, and Slides, but does not mention auto-saving.
+
+[16] Relevance Score: 0 - The passage talks about using resume templates in Google Docs, but does not mention auto-saving.
+
+[17] Relevance Score: 0 - The passage discusses saving Excel files in OpenDocument Spreadsheet format, but does not mention auto-saving.
+
+[18] Relevance Score: 0 - The passage explains how to import Excel sheets into Google Docs, but does not mention auto-saving.
+
+[19] Relevance Score: 0 - The passage discusses getting Abbreviation List add-on for Google Docs, but does not mention auto-saving.
+
+[20] Relevance Score: 0 - The passage provides instructions on how to create a new document in Google Docs, but does not mention auto-saving.
+
+[Start] None of the passages provided information about auto-saving in Google Docs. [End]
+original response rank: 
+ post response rank: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 18
+repetition or missing: 
+ original response: [1] Relevance Score: 0 - The passage is about embedding Google Docs forms on Facebook pages, not related to auto-saving.
+
+[2] Relevance Score: 0 - The passage discusses sharing spreadsheets and checking links, not auto-saving.
+
+[3] Relevance Score: 0 - The passage is about publishing Google Docs to the public, not auto-saving.
+
+[4] Relevance Score: 0 - The passage is about configuring a Windows user's desktop for Google Apps, not auto-saving.
+
+[5] Relevance Score: 0 - The passage is about sending pictures to Google Docs via email, not auto-saving.
+
+[6] Relevance Score: 0 - The passage is about disabling auto-update for Google Play Music app, not auto-saving in Google Docs.
+
+[7] Relevance Score: 0 - The passage is about converting columns or rows in Google Docs, not auto-saving.
+
+[8] Relevance Score: 0 - The passage is about creating a Google Docs icon on the desktop, not auto-saving.
+
+[9] Relevance Score: 0 - The passage is about the number of people who can edit a Google Docs file simultaneously, not auto-saving.
+
+[10] Relevance Score: 0 - The passage is about Google Classroom, not auto-saving in Google Docs.
+
+[11] Relevance Score: 8 - The passage mentions that documents are automatically saved to Google's servers and a revision history is kept.
+
+[12] Relevance Score: 7 - The passage mentions that documents save automatically in Google Docs.
+
+[13] Relevance Score: 0 - The passage is about viewing and editing Office files in Google Docs, not auto-saving.
+
+[14] Relevance Score: 0 - The passage is about handling Google Docs file types with Google Drive software, not auto-saving.
+
+[15] Relevance Score: 0 - The passage is about Google Docs file extension associations, not auto-saving.
+
+[16] Relevance Score: 0 - The passage is about uploading and viewing videos in Google Docs, not auto-saving.
+
+[17] Relevance Score: 0 - The passage is about using Excel to open or save OpenDocument Spreadsheet format, not auto-saving in Google Docs.
+
+[18] Relevance Score: 0 - The passage is about using Google Docs and Gmail to read PDF documents, not auto-saving.
+
+[19] Relevance Score: 0 - The passage is about uploading Word documents to Google Docs, not auto-saving.
+
+[20] Relevance Score: 0 - The passage is about converting Office files to Google Doc format, not auto-saving.
+
+[Start] [11] > [12] [End]
+original response rank: 11     12
+ post response rank: [10, 11, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 12, 13, 14, 15, 16, 17, 18, 19]
+
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 2
+ miss_passage_cnt: 38
+
+****************************************************************************************************
+****************************************************************************************************
+query 2/54: 
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 3/54: 
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 4/54: 
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 5/54: 
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 6/54: 
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 7/54: 
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 8/54: 
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 9/54: 
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 10/54: 
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 11/54: 
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 12/54: 
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 13/54: 
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 14/54: 
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 15/54: 
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 16/54: 
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 17/54: 
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 18/54: 
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 19/54: 
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 20
+repetition or missing: 
+ original response: Relevance scores:
+[1] - 0 (About a song by Reba McEntire)
+[2] - 0 (About Reba McEntire's marriage)
+[3] - 0 (About Reba McEntire's albums)
+[4] - 0 (About Reba McEntire's birth and family)
+[5] - 0 (About Reba McEntire's TV show)
+[6] - 0 (About Reba McEntire's albums and record labels)
+[7] - 0 (About Reba McEntire's plastic surgery)
+[8] - 0 (About Reba McEntire's career)
+[9] - 0 (About Reba McEntire's album)
+[10] - 0 (About Reba McEntire's son)
+[11] - 0 (About Reba McEntire's albums)
+[12] - 0 (About a concert with Reba McEntire)
+[13] - 0 (About Reba McEntire's songs)
+[14] - 0 (About Reba McEntire as Colonel Sanders)
+[15] - 0 (About Reba McEntire's acting career and family)
+[16] - 0 (About a song featuring Reba McEntire)
+[17] - 0 (About Reba McEntire's ex-husband)
+[18] - 0 (About Reba McEntire's album)
+[19] - 0 (About a music video with Reba McEntire)
+[20] - 0 (About Reba McEntire's concert)
+
+[Start] None of the provided passages are relevant to the search query about Reba McEntire's net worth. [End]
+original response rank: 
+ post response rank: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 1
+ miss_passage_cnt: 20
+
+****************************************************************************************************
+****************************************************************************************************
+query 20/54: 
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 21/54: 
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 22/54: 
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 23/54: 
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 16
+repetition or missing: 
+ original response: [1] Relevance Score: 0 - The passage discusses the meaning of evening, but does not mention "dog day afternoon."
+
+[2] Relevance Score: 0 - The passage talks about how long a dog can hold its pee/poop, not related to "dog day afternoon."
+
+[3] Relevance Score: 0 - The passage is about giving Benadryl to dogs, not related to "dog day afternoon."
+
+[4] Relevance Score: 0 - The passage discusses dog food and feeding, not related to "dog day afternoon."
+
+[5] Relevance Score: 0 - The passage is about applying Frontline to dogs after bathing, not related to "dog day afternoon."
+
+[6] Relevance Score: 10 - The passage explains the original meaning of "dog days" and how it is not related to dogs or lazy summer days.
+
+[7] Relevance Score: 8 - The passage mentions the modern dog days and their duration, but does not directly explain the meaning of "dog day afternoon."
+
+[8] Relevance Score: 0 - The passage discusses the moon's movement and its effect on moonrise times, not related to "dog day afternoon."
+
+[9] Relevance Score: 0 - The passage defines the term "afternoon," but does not mention "dog day afternoon."
+
+[10] Relevance Score: 9 - The passage explains the association of hot weather with Sirius, the brightest star in the constellation Canis Major, and the timing of Dog Days of Summer.
+
+[11] Relevance Score: 7 - The passage discusses the dog days of summer in the Southern Hemisphere and how the dates vary by location, but does not directly explain the meaning of "dog day afternoon."
+
+[12] Relevance Score: 0 - The passage is about Muslim prayers, not related to "dog day afternoon."
+
+[13] Relevance Score: 0 - The passage discusses dog calorie intake and weight maintenance, not related to "dog day afternoon."
+
+[14] Relevance Score: 0 - The passage is about the Nubian ibex and its activity during the day, not related to "dog day afternoon."
+
+[15] Relevance Score: 0 - The passage is a repetition of passage [8], discussing the moon's movement and its effect on moonrise times, not related to "dog day afternoon."
+
+[16] Relevance Score: 0 - The passage discusses sunlight requirements for plants, not related to "dog day afternoon."
+
+[17] Relevance Score: 0 - The passage is about good afternoon greetings, not related to "dog day afternoon."
+
+[18] Relevance Score: 0 - The passage is a repetition of passage [2], discussing how long a dog can hold its pee/poop, not related to "dog day afternoon."
+
+[19] Relevance Score: 0 - The passage discusses a dog's heat cycle, not related to "dog day afternoon."
+
+[20] Relevance Score: 0 - The passage discusses dog and cat calorie needs, not related to "dog day afternoon."
+
+[Start] [6] > [10] > [7] > [11] [End]
+original response rank: 6     10     7     11
+ post response rank: [5, 9, 6, 10, 0, 1, 2, 3, 4, 7, 8, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 1
+ miss_passage_cnt: 16
+
+****************************************************************************************************
+****************************************************************************************************
+query 24/54: 
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 25/54: 
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 26/54: 
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 27/54: 
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 28/54: 
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 29/54: 
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 30/54: 
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 31/54: 
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 32/54: 
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 19
+repetition or missing: 
+ original response: [1] Relevance Score: 0 - The passage is about Robert Kraft's business background and not related to his sons.
+
+[2] Relevance Score: 0 - The passage is about Robert Frost's son, not Robert Kraft.
+
+[3] Relevance Score: 0 - The passage is about Alan Alda and his father, not Robert Kraft.
+
+[4] Relevance Score: 0 - The passage is about calories in mayonnaise, not Robert Kraft's sons.
+
+[5] Relevance Score: 0 - The passage is about Robert Downey Jr.'s son, not Robert Kraft.
+
+[6] Relevance Score: 0 - The passage is about the New England Patriots' management, not Robert Kraft's sons.
+
+[7] Relevance Score: 0 - The passage is about Robert Kraft's father and family background, not his sons.
+
+[8] Relevance Score: 0 - The passage is about calories in mayonnaise, not Robert Kraft's sons.
+
+[9] Relevance Score: 0 - The passage is about Robert Kraft's fortune, not his sons.
+
+[10] Relevance Score: 0 - The passage is about the Kennedy family, not Robert Kraft.
+
+[11] Relevance Score: 10 - The passage is about Jonathan Kraft, Robert Kraft's son.
+
+[12] Relevance Score: 0 - The passage is about Bill Belichick, not Robert Kraft's sons.
+
+[13] Relevance Score: 0 - The passage is about Tom Brady and Robert Kraft, not Kraft's sons.
+
+[14] Relevance Score: 0 - The passage is about Robert Kraft's girlfriend, not his sons.
+
+[15] Relevance Score: 0 - The passage is about Tom Brady, not Robert Kraft's sons.
+
+[16] Relevance Score: 0 - The passage is about Robert Kraft's life after his wife's passing, not his sons.
+
+[17] Relevance Score: 0 - The passage is about calories in cheese, not Robert Kraft's sons.
+
+[18] Relevance Score: 0 - The passage is about Tom Brady and Robert Kraft, not Kraft's sons.
+
+[19] Relevance Score: 0 - The passage is about Horace Walpole, not Robert Kraft.
+
+[20] Relevance Score: 0 - The passage is about DC comics character Oliver Queen, not Robert Kraft.
+
+[Start] [11] [End]
+original response rank: 11
+ post response rank: [10, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 1
+ miss_passage_cnt: 19
+
+****************************************************************************************************
+****************************************************************************************************
+query 33/54: 
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 34/54: 
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 35/54: 
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 36/54: 
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 37/54: 
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 38/54: 
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 39/54: 
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 40/54: 
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 19
+repetition or missing: 
+ original response: [1] Relevance Score: 0 - The passage is about Natasha Richardson's death and her relation to Vanessa Redgrave, but it doesn't mention Vanessa Redgrave's age.
+
+[2] Relevance Score: 0 - The passage discusses Vanessa Redgrave and her brother's roles in films based on King Arthur, but it doesn't mention her age.
+
+[3] Relevance Score: 0 - The passage is about the film Deep Impact and its cast, including Vanessa Redgrave, but it doesn't mention her age.
+
+[4] Relevance Score: 0 - The passage is about Natasha Richardson's death and her relation to Vanessa Redgrave, but it doesn't mention Vanessa Redgrave's age.
+
+[5] Relevance Score: 0 - The passage is about Natasha Richardson's death and her relation to Vanessa Redgrave, but it doesn't mention Vanessa Redgrave's age.
+
+[6] Relevance Score: 0 - The passage is about a film with Vanessa Redgrave in the cast, but it doesn't mention her age.
+
+[7] Relevance Score: 0 - The passage is about Vanessa Redgrave's role in a play and its film adaptation, but it doesn't mention her age.
+
+[8] Relevance Score: 0 - The passage is about Natasha Richardson's death and her relation to Vanessa Redgrave, but it doesn't mention Vanessa Redgrave's age.
+
+[9] Relevance Score: 0 - The passage is about Natasha Richardson's death and her relation to Vanessa Redgrave, but it doesn't mention Vanessa Redgrave's age.
+
+[10] Relevance Score: 0 - The passage is about the film Deep Impact and its cast, including Vanessa Redgrave, but it doesn't mention her age.
+
+[11] Relevance Score: 0 - The passage is about Natasha Richardson and her relation to Vanessa Redgrave, but it doesn't mention Vanessa Redgrave's age.
+
+[12] Relevance Score: 0 - The passage is about Jemma Redgrave and her family's acting background, but it doesn't mention Vanessa Redgrave's age.
+
+[13] Relevance Score: 0 - The passage is about Natasha Richardson's injury and her relation to Vanessa Redgrave, but it doesn't mention Vanessa Redgrave's age.
+
+[14] Relevance Score: 0 - The passage is about Joely Richardson and her relation to Vanessa Redgrave, but it doesn't mention Vanessa Redgrave's age.
+
+[15] Relevance Score: 0 - The passage is about the film The House of the Spirits and its cast, including Vanessa Redgrave, but it doesn't mention her age.
+
+[16] Relevance Score: 0 - The passage is about the film Yanks and its cast, including Vanessa Redgrave, but it doesn't mention her age.
+
+[17] Relevance Score: 0 - The passage is about the TV series Call the Midwife and its cast, including Vanessa Redgrave, but it doesn't mention her age.
+
+[18] Relevance Score: 0 - The passage is about Charlton Heston and his favorite actress, Vanessa Redgrave, but it doesn't mention her age.
+
+[19] Relevance Score: 0 - The passage is about a play and its various productions, mentioning Lynn Redgrave, but it doesn't mention Vanessa Redgrave's age.
+
+[20] Relevance Score: 0 - The passage is about the film Deep Impact and its cast, including Vanessa Redgrave, but it doesn't mention her age.
+
+[Start] None of the passages provided information about Vanessa Redgrave's age. Therefore, all passages have a relevance score of 0, and no ranking can be provided. [End]
+original response rank: 0
+ post response rank: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 1
+ miss_passage_cnt: 19
+
+****************************************************************************************************
+****************************************************************************************************
+query 41/54: 
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 42/54: 
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 43/54: 
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 44/54: 
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 45/54: 
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 46/54: 
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 47/54: 
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 48/54: 
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 49/54: 
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 50/54: 
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 19
+repetition or missing: 
+ original response: [1] Relevance Score: 0 - The passage discusses dental hygienist salaries in California, Nevada, and Washington, but not Nebraska.
+
+[2] Relevance Score: 0 - The passage provides general information about dental hygienist salaries in the United States, but does not mention Nebraska specifically.
+
+[3] Relevance Score: 0 - The passage discusses dental hygienist salaries in the United Kingdom, not Nebraska.
+
+[4] Relevance Score: 0 - The passage discusses dental hygienist salaries in El Paso, not Nebraska.
+
+[5] Relevance Score: 0 - The passage discusses dental hygienist salaries in Shreveport, Louisiana, not Nebraska.
+
+[6] Relevance Score: 0 - The passage discusses dental hygienist salaries in Texas, not Nebraska.
+
+[7] Relevance Score: 0 - The passage provides general information about dental hygienist salaries in the United States, but does not mention Nebraska specifically.
+
+[8] Relevance Score: 0 - The passage discusses dental hygienist salaries in the United Kingdom, not Nebraska.
+
+[9] Relevance Score: 0 - The passage discusses dental hygienist salaries in the United Kingdom, not Nebraska.
+
+[10] Relevance Score: 0 - The passage provides general information about dental hygienist salaries in the United States, but does not mention Nebraska specifically.
+
+[11] Relevance Score: 0 - The passage discusses dental hygienist salaries in Australia, not Nebraska.
+
+[12] Relevance Score: 0 - The passage discusses dental hygienist salaries in various cities in Alaska, not Nebraska.
+
+[13] Relevance Score: 0 - The passage discusses dental hygienist salaries in the District of Columbia, California, and Washington State, not Nebraska.
+
+[14] Relevance Score: 0 - The passage discusses dental hygienist salaries in Pennsylvania, not Nebraska.
+
+[15] Relevance Score: 0 - The passage provides general information about dental hygienist salaries in the United States, but does not mention Nebraska specifically.
+
+[16] Relevance Score: 0 - The passage discusses dental hygienist salaries in Canada, not Nebraska.
+
+[17] Relevance Score: 0 - The passage discusses dental hygienist salaries in Kansas, not Nebraska.
+
+[18] Relevance Score: 0 - The passage discusses dental hygienist salaries in Pennsylvania, not Nebraska.
+
+[19] Relevance Score: 0 - The passage discusses dental hygienist salaries in Michigan, not Nebraska.
+
+[20] Relevance Score: 0 - The passage provides general information about dental hygienist salaries in the United States, but does not mention Nebraska specifically.
+
+[Start] Unfortunately, none of the provided passages are relevant to the search query about the average salary for dental hygienists in Nebraska. All passages received a relevance score of 0. [End]
+original response rank: 0
+ post response rank: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 20
+repetition or missing: 
+ original response: [1] Relevance Score: 0 - The passage is about dental hygienist salary in Oklahoma, not Nebraska.
+
+[2] Relevance Score: 0 - The passage provides general information about dental hygienist salaries in the United States, but does not mention Nebraska.
+
+[3] Relevance Score: 0 - The passage is about dental hygienist salary in Michigan, not Nebraska.
+
+[4] Relevance Score: 0 - The passage is about dental hygienist salary in Louisiana, not Nebraska.
+
+[5] Relevance Score: 0 - The passage provides general information about dental hygienist salaries in the United States, but does not mention Nebraska.
+
+[6] Relevance Score: 0 - The passage provides information about dental hygienist salaries in the District of Columbia, California, and Washington State, but does not mention Nebraska.
+
+[7] Relevance Score: 0 - The passage provides general information about dental hygienist salaries and job duties, but does not mention Nebraska.
+
+[8] Relevance Score: 0 - The passage is about dental hygienist salary in Houston, Texas, not Nebraska.
+
+[9] Relevance Score: 0 - The passage is about dental hygienist salary in New York City, not Nebraska.
+
+[10] Relevance Score: 0 - The passage provides percentile statistics for dental hygienist salaries and information about salaries in the United Kingdom, but does not mention Nebraska.
+
+[11] Relevance Score: 0 - The passage is about dental hygienist salary in Oregon, not Nebraska.
+
+[12] Relevance Score: 0 - The passage is about dental hygienist salary in California, not Nebraska.
+
+[13] Relevance Score: 0 - The passage is about dental hygienist salary in Indiana, not Nebraska.
+
+[14] Relevance Score: 0 - The passage is about dental hygienist salary in Orlando, Florida, not Nebraska.
+
+[15] Relevance Score: 0 - The passage provides general information about dental hygienist salaries in the United States, but does not mention Nebraska.
+
+[16] Relevance Score: 0 - The passage provides information about dental hygienist salaries in relation to other job titles, but does not mention Nebraska.
+
+[17] Relevance Score: 0 - The passage is about dental hygienist salary in Washington, not Nebraska.
+
+[18] Relevance Score: 0 - The passage is about dental hygienist salary in Houston, Texas, not Nebraska.
+
+[19] Relevance Score: 0 - The passage provides information about dental hygienist salaries in different work settings and in the United Kingdom, but does not mention Nebraska.
+
+[20] Relevance Score: 0 - The passage is about dental hygienist salary in south Texas, not Nebraska.
+
+[Start] None of the passages provided information about the average salary for dental hygienists in Nebraska. [End]
+original response rank: 
+ post response rank: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 20
+repetition or missing: 
+ original response: [1] Relevance Score: 0 - The passage discusses dental hygienist salaries in the District of Columbia, California, and Washington State, but not Nebraska.
+
+[2] Relevance Score: 0 - The passage focuses on dental hygienist salaries in New York City, not Nebraska.
+
+[3] Relevance Score: 0 - The passage discusses dental hygienist salaries in Missouri, not Nebraska.
+
+[4] Relevance Score: 0 - The passage discusses dental hygienist salaries in various states, but not Nebraska.
+
+[5] Relevance Score: 0 - The passage discusses dental hygienist salaries in general and in Canada, but not Nebraska.
+
+[6] Relevance Score: 0 - The passage discusses dental hygienist salaries in Hartford, CT, not Nebraska.
+
+[7] Relevance Score: 0 - The passage discusses dental hygienist salaries in California, not Nebraska.
+
+[8] Relevance Score: 0 - The passage discusses dental hygienist salaries in Gardner, not Nebraska.
+
+[9] Relevance Score: 0 - The passage discusses dental hygienist salaries in Missouri, not Nebraska.
+
+[10] Relevance Score: 0 - The passage discusses dental hygienist salaries in different industries, but not Nebraska.
+
+[11] Relevance Score: 0 - The passage discusses dental hygienist salaries in various states, but not Nebraska.
+
+[12] Relevance Score: 0 - The passage discusses dental hygienist salaries in various states, but not Nebraska.
+
+[13] Relevance Score: 0 - The passage discusses dental hygienist salaries in various states, but not Nebraska.
+
+[14] Relevance Score: 0 - The passage discusses dental hygienist salaries in various states, but not Nebraska.
+
+[15] Relevance Score: 0 - The passage discusses dental hygienist salaries in Canada, not Nebraska.
+
+[16] Relevance Score: 0 - The passage discusses dental hygienist salaries in the United Kingdom, not Nebraska.
+
+[17] Relevance Score: 0 - The passage discusses dental hygienist salaries in Shreveport, not Nebraska.
+
+[18] Relevance Score: 0 - The passage discusses dental hygienist salaries in Texas, not Nebraska.
+
+[19] Relevance Score: 0 - The passage discusses dental hygienist salaries in Oklahoma, not Nebraska.
+
+[20] Relevance Score: 0 - The passage discusses dental hygienist salaries in Kansas, not Nebraska.
+
+[Start] None of the passages provided information about the average salary for dental hygienists in Nebraska. [End]
+original response rank: 
+ post response rank: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 15
+repetition or missing: 
+ original response: [1] Relevance Score: 10 - This passage directly provides the average salary for dental hygienists in Nebraska, along with the salary range.
+
+[2] Relevance Score: 10 - This passage also directly provides the average salary for dental hygienists in Nebraska, according to the Bureau of Labor Statistics.
+
+[3] Relevance Score: 9 - This passage provides historical salary data for dental hygienists in Nebraska, but not the current average salary.
+
+[4] Relevance Score: 0 - This passage is about dental hygienist salaries in Tallahassee, not Nebraska.
+
+[5] Relevance Score: 0 - This passage is about dental hygienist salaries in Ann Arbor, MI, not Nebraska.
+
+[6] Relevance Score: 0 - This passage provides general dental hygienist salary information, but not specific to Nebraska.
+
+[7] Relevance Score: 0 - This passage is about dental hygienist salaries in Virginia, not Nebraska.
+
+[8] Relevance Score: 0 - This passage provides general dental hygienist salary information, but not specific to Nebraska.
+
+[9] Relevance Score: 0 - This passage is about dental hygienist salaries in New York City, not Nebraska.
+
+[10] Relevance Score: 0 - This passage is about dental hygienist salaries in the United Kingdom, not Nebraska.
+
+[11] Relevance Score: 5 - This passage discusses the growth in dental hygienists' salaries in Nebraska, but does not provide the average salary.
+
+[12] Relevance Score: 2 - This passage discusses the growth in the number of dental hygienists in Nebraska, but does not provide salary information.
+
+[13] Relevance Score: 0 - This passage is about dental hygienist salaries in South Bend, not Nebraska.
+
+[14] Relevance Score: 0 - This passage is about dental hygienist salaries in Michigan, not Nebraska.
+
+[15] Relevance Score: 0 - This passage is about dental hygienist salaries in Wisconsin, not Nebraska.
+
+[16] Relevance Score: 0 - This passage is about dental hygienist salaries in Louisiana, not Nebraska.
+
+[17] Relevance Score: 0 - This passage is about dental hygienist salaries in Washington, DC, not Nebraska.
+
+[18] Relevance Score: 0 - This passage is about dental hygienist salaries in New Jersey, not Nebraska.
+
+[19] Relevance Score: 0 - This passage is about dental hygienist salaries in Massachusetts, not Nebraska.
+
+[20] Relevance Score: 0 - This passage is about dental hygienist salaries in Texas, not Nebraska.
+
+[Start] [1] > [2] > [3] > [11] > [12] [End]
+original response rank: 1     2     3     11     12
+ post response rank: [0, 1, 2, 10, 11, 3, 4, 5, 6, 7, 8, 9, 12, 13, 14, 15, 16, 17, 18, 19]
+
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 4
+ miss_passage_cnt: 74
+
+****************************************************************************************************
+****************************************************************************************************
+query 51/54: 
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 20
+repetition or missing: 
+ original response: [1] Relevance Score: 0 - The passage is about a video by Tariq Aziz and has no information about Aziz Hashim.
+
+[2] Relevance Score: 0 - The passage is about Faisal Mosque and King Faisal bin Abdul-Aziz, not related to Aziz Hashim.
+
+[3] Relevance Score: 0 - The passage is about Dr. Abdul Aziz, a physician, not related to Aziz Hashim.
+
+[4] Relevance Score: 0 - The passage is about Aziz Ansari, not related to Aziz Hashim.
+
+[5] Relevance Score: 0 - The passage is about a character named Aziz in the Aladdin movie and TV series, not related to Aziz Hashim.
+
+[6] Relevance Score: 0 - The passage explains the meaning of the name Aziz, not related to Aziz Hashim.
+
+[7] Relevance Score: 0 - The passage explains the meaning of the name Abdul Aziz, not related to Aziz Hashim.
+
+[8] Relevance Score: 0 - The passage is about a photographer named Abdul Aziz al Otaibi, not related to Aziz Hashim.
+
+[9] Relevance Score: 0 - The passage is about Hazrat Umar bin Abdul Aziz, not related to Aziz Hashim.
+
+[10] Relevance Score: 0 - The passage is about Ali's mother and Banu Hashim, not related to Aziz Hashim.
+
+[11] Relevance Score: 0 - The passage is about Hashim Nzinga and the New Black Panther Party, not related to Aziz Hashim.
+
+[12] Relevance Score: 0 - The passage is about the Aziz mansion and a company registered in Delaware, not related to Aziz Hashim.
+
+[13] Relevance Score: 0 - The passage is about Abdul-Aziz Al-Hillo and military training camps, not related to Aziz Hashim.
+
+[14] Relevance Score: 0 - The passage is about Aziz Ansari and allegations against him, not related to Aziz Hashim.
+
+[15] Relevance Score: 0 - The passage is about Aziz Ansari's career, not related to Aziz Hashim.
+
+[16] Relevance Score: 0 - The passage is about al-Hakim, al-Aziz, and Fatimid caliphs, not related to Aziz Hashim.
+
+[17] Relevance Score: 0 - The passage is about a condolence message from the Minister of Foreign Affairs of Jordan to Adviser Mr. Sartaj Aziz, not related to Aziz Hashim.
+
+[18] Relevance Score: 0 - The passage is about Aziz Ansari's standup special, not related to Aziz Hashim.
+
+[19] Relevance Score: 0 - The passage is about Aziz Ansari and sexual misconduct allegations, not related to Aziz Hashim.
+
+[20] Relevance Score: 0 - The passage is about Mohamed Nazri bin Abdul Aziz, a Malaysian politician, not related to Aziz Hashim.
+
+[Start] None of the passages provided information about Aziz Hashim. [End]
+original response rank: 
+ post response rank: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 1
+ miss_passage_cnt: 20
+
+****************************************************************************************************
+****************************************************************************************************
+query 52/54: 
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 53/54: 
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+
+****************************************************************************************************
+Total Malformed Outputs Statistics:
+ Total Repetition Chat Count: 0, Average Repetition Query: 0.0
+ Total Repetition Passage Count: 0, Average Repetition Passage: 0.0
+ Total Missing Chat Count: 11, Average Missing Query: 0.02263374485596708
+ Total Missing Passage Count: 206, Average Missing Passage: 0.02119341563786008
+
+Downloading https://search.maven.org/remotecontent?filepath=uk/ac/gla/dcs/terrierteam/jtreceval/0.0.5/jtreceval-0.0.5-jar-with-dependencies.jar to /data4/hop20001/.cache/pyserini/eval/jtreceval-0.0.5-jar-with-dependencies.jar...
+/data4/hop20001/.cache/pyserini/eval/jtreceval-0.0.5-jar-with-dependencies.jar already exists!
+Skipping download.
+Trunc /tmp/tmp17c1zs8w
+Running command: ['java', '-jar', '/data4/hop20001/.cache/pyserini/eval/jtreceval-0.0.5-jar-with-dependencies.jar', '-m', 'ndcg_cut.10', '/tmp/tmp17c1zs8w', '/tmp/tmpfda5atyh']
+Results:
+ndcg_cut_10           	all	0.7133
+Downloading https://search.maven.org/remotecontent?filepath=uk/ac/gla/dcs/terrierteam/jtreceval/0.0.5/jtreceval-0.0.5-jar-with-dependencies.jar to /data4/hop20001/.cache/pyserini/eval/jtreceval-0.0.5-jar-with-dependencies.jar...
+/data4/hop20001/.cache/pyserini/eval/jtreceval-0.0.5-jar-with-dependencies.jar already exists!
+Skipping download.
+Trunc /tmp/tmpnfha4hyj
+Running command: ['java', '-jar', '/data4/hop20001/.cache/pyserini/eval/jtreceval-0.0.5-jar-with-dependencies.jar', '-m', 'ndcg_cut.5', '/tmp/tmpnfha4hyj', '/tmp/tmpfda5atyh']
+Results:
+ndcg_cut_5            	all	0.7379
+Downloading https://search.maven.org/remotecontent?filepath=uk/ac/gla/dcs/terrierteam/jtreceval/0.0.5/jtreceval-0.0.5-jar-with-dependencies.jar to /data4/hop20001/.cache/pyserini/eval/jtreceval-0.0.5-jar-with-dependencies.jar...
+/data4/hop20001/.cache/pyserini/eval/jtreceval-0.0.5-jar-with-dependencies.jar already exists!
+Skipping download.
+Trunc /tmp/tmpl2z8xsqh
+Running command: ['java', '-jar', '/data4/hop20001/.cache/pyserini/eval/jtreceval-0.0.5-jar-with-dependencies.jar', '-m', 'ndcg_cut.1', '/tmp/tmpl2z8xsqh', '/tmp/tmpfda5atyh']
+Results:
+ndcg_cut_1            	all	0.8179

@@ -1,0 +1,1706 @@
+{
+    "prompt_type": 16,
+    "dataset": "dl20",
+    "model": "gpt-3.5-turbo",
+    "print_messages": 0,
+    "correct_malform": 1,
+    "debug": 0
+}
+####################
+Evaluation on dl20
+####################
+  0%|          | 0/200 [00:00<?, ?it/s]  1%|          | 2/200 [00:00<00:19, 10.40it/s]  2%|▎         | 5/200 [00:00<00:12, 15.58it/s]  9%|▉         | 18/200 [00:00<00:03, 47.13it/s] 12%|█▎        | 25/200 [00:00<00:03, 44.51it/s] 16%|█▌        | 31/200 [00:00<00:03, 46.42it/s] 18%|█▊        | 36/200 [00:00<00:04, 37.66it/s] 24%|██▎       | 47/200 [00:01<00:03, 48.60it/s] 26%|██▋       | 53/200 [00:01<00:03, 42.24it/s] 37%|███▋      | 74/200 [00:01<00:01, 73.07it/s] 42%|████▏     | 83/200 [00:01<00:01, 63.07it/s] 50%|████▉     | 99/200 [00:01<00:01, 77.98it/s] 58%|█████▊    | 117/200 [00:01<00:00, 97.34it/s] 71%|███████   | 142/200 [00:02<00:00, 120.08it/s] 80%|████████  | 160/200 [00:02<00:00, 125.18it/s] 88%|████████▊ | 175/200 [00:02<00:00, 123.11it/s] 94%|█████████▍| 188/200 [00:02<00:00, 83.62it/s] 100%|██████████| 200/200 [00:02<00:00, 74.45it/s]
+****************************************************************************************************
+query 0/54: 
+chat_cnt: 1
+****************************************************************************************************
+Message Example:
+ [{'role': 'system', 'content': 'You are RankGPT, an intelligent assistant that can rank passages based on their relevancy to the query.'}, {'role': 'user', 'content': 'I will provide you with 20 passages, each indicated by number identifier []. \nRank the passages based on their relevance to query: are naturalization records public information.'}, {'role': 'assistant', 'content': 'Okay, please provide the passages.'}, {'role': 'user', 'content': '[1] About City of Harker Heights, Bell County, TX Public Record Searches. Search the City of Harker Heights, public records using best found research sources online. This City zip code is 76548 with a total population of 26,700. Look up recorded information of Harker Heights, including demographics and local economy. Link to all levels of Harker Heights, government and their sites with services which provide public information.'}, {'role': 'assistant', 'content': 'Received passage [1].'}, {'role': 'user', 'content': '[2] All data is compiled from recorded deeds, plats, and other public records and data. Users of this data are hereby notified that the aforementioned public information sources should be consulted for verification of the information.'}, {'role': 'assistant', 'content': 'Received passage [2].'}, {'role': 'user', 'content': '[3] Public Records. The Freedom of Information Act, 5ILCS 140/1 et seq, is the Illinois Statute governing the inspection of public records. This Act provides for the public inspection of records in the possession of the City of Quincy. The Act also includes many exemptions to insure the confidentiality and privacy of certain records.'}, {'role': 'assistant', 'content': 'Received passage [3].'}, {'role': 'user', 'content': '[4] Government Employees and Email. Government employees have even less privacy than the little privacy a typical employee in the private sector may have. Under various public records acts and the Freedom of Information Act (FOIA), the public can gain access to almost anything a government employee writes down. Also, due to the nature of their job, courts are typically unwilling to find that government employees had a reasonable right to privacy in the first place.'}, {'role': 'assistant', 'content': 'Received passage [4].'}, {'role': 'user', 'content': '[5] Home Details: Public Facts. On each listing details page on Redfin, we show a Public Facts section that contains information about that property from public records. Redfin gets this information from a third party who gets it directly from local county assessor and recorder offices. We display this information to give you the most complete set of facts about a property and to supplement MLS-provided information about a home which can occasionally be incomplete or unclear.'}, {'role': 'assistant', 'content': 'Received passage [5].'}, {'role': 'user', 'content': "[6] Tra c Citations Are Considered Criminal Records PRESS RELEASE - FEB 2, 2016 10:35 PST - UPDATED: FEB 2, 2016 11:04 PST. SearchQuarry.com, a U.S.based online public records resource, acknowledges traffic citations are considered criminal records. Traffic citations can vary from infractions to misdemeanors depending on the nature of the violation. Traffic citations will stay on a person's criminal record for 3 years however a DUI can stay on a person's criminal record indefinitely. According to state and federal governments, traffic citations are considered criminal records. Search Quarry representatives highlight this information because many people donâ\x80\x99t realize that traffic citations are considered criminal records. Most traffic ..."}, {'role': 'assistant', 'content': 'Received passage [6].'}, {'role': 'user', 'content': '[7] Birth records are available from 1882, death records from 1874, and fetal death records from 1906. Texas law mandates that birth and death certificates are confidential records with restricted access. Texas Public Information Act Section 552.115 (a)(1): Birth records are restricted until 75 years after the file date. Texas Public Information Act Section 552.115 (a)(2): Death records are restricted until 25 years after the file date. Eligibility.'}, {'role': 'assistant', 'content': 'Received passage [7].'}, {'role': 'user', 'content': '[8] Freedom of Information Act. The Freedom of Information Act (FOIA) is the national law regarding the release of government agency public records. While using FOIA, you can: 1 Request any type of public record report from the agency. Determine the form you want the information in.'}, {'role': 'assistant', 'content': 'Received passage [8].'}, {'role': 'user', 'content': "[9] No legal advice or opinions will be given by the Recorder's Staff either in person or by telephone. Computers are available in the Recorders Office for public access. Public Records Searches. Employees of the Recorder's Office cannot search records. If you know the recording information, you may request a copy from our office. Otherwise, you may come into the office and access one of our thirteen (13) public computers."}, {'role': 'assistant', 'content': 'Received passage [9].'}, {'role': 'user', 'content': '[10] About City of Davis, Yolo County, CA Public Record Searches. Search the City of Davis, public records using best found research sources online. This City zip code is 95616 with a total population of 65,622. Look up recorded information of Davis, including demographics and local economy. Link to all levels of Davis, government and their sites with services which provide public information. Current economy, business and housing data.'}, {'role': 'assistant', 'content': 'Received passage [10].'}, {'role': 'user', 'content': '[11] Yes, in most cases Public Records are available to the public. Some documents, such as certain court records, confidential personal information, and other sensitive information may be kept sealed or is only available with a court order.'}, {'role': 'assistant', 'content': 'Received passage [11].'}, {'role': 'user', 'content': '[12] What are the different types of public records? Public records on your credit report contain information about credit-related legal matters. These are quick summaries of the most common types of public records. Public records are complicated, though, so make sure to do more research. Bankruptcy: A legal filing by individuals or businesses seeking certain types of relief from all or some their debt.'}, {'role': 'assistant', 'content': 'Received passage [12].'}, {'role': 'user', 'content': '[13] This database contains public information on felony offenders sentenced to the Department of Corrections. This information includes South Dakota offenders sentenced to prison. Information on offenders sentenced to county jail, probation, or any other form of supervision is not included. The information is derived from court records provided to the Department of Corrections and Department of Corrections records and is made available as a public service.'}, {'role': 'assistant', 'content': 'Received passage [13].'}, {'role': 'user', 'content': '[14] About City of Rockaway Beach, Tillamook County, OR Public Record Searches. Search the City of Rockaway Beach, public records using best found research sources online. This City zip code is 97136 with a total population of 1,312. Look up recorded information of Rockaway Beach, including demographics and local economy. Link to all levels of Rockaway Beach, government and their sites with services which provide public information. Current economy, business and housing data.'}, {'role': 'assistant', 'content': 'Received passage [14].'}, {'role': 'user', 'content': '[15] About City of La Crescenta, Los Angeles County, CA Public Record Searches. Search the City of La Crescenta, public records using best found research sources online. This City zip code is 91214. Look up recorded information of La Crescenta, including demographics and local economy. Link to all levels of La Crescenta, government and their sites with services which provide public information. Current economy, business and housing data.'}, {'role': 'assistant', 'content': 'Received passage [15].'}, {'role': 'user', 'content': '[16] City of College Station, TX Free Public Records Directory. Departments which record, maintain and provide official documents, certificates or information requested by the general public. City of College Station Criminal Records: Where and How to Request Criminal Record Checks. City of College Station Court Records: Criminal cases, civil filings, divorces, bankruptcy and judgments. City of College Station Warrant Records: Names and information of wanted persons by sheriffs and police departments. City of College Station Official Website: Government department official public web-portal. City of College Station Municipal Codes: City ordinances governing cities, villages, parishes and jurisdictions below state level.'}, {'role': 'assistant', 'content': 'Received passage [16].'}, {'role': 'user', 'content': "[17] Information resources on Westlaw include more than 40,000 databases of case law, state and federal statutes, administrative codes, newspaper and magazine articles, public records, law journals, law reviews, treatises, legal forms and other information resources.ost legal documents on Westlaw are indexed to the West Key Number System, which is West's master classification system of U.S. law. Westlaw supports natural language and Boolean searches."}, {'role': 'assistant', 'content': 'Received passage [17].'}, {'role': 'user', 'content': '[18] Information submitted through an Arlington County Government website is considered to be a Public Record under the Virginia Public Records Act and may be subject to release by the County in response to a request made under the Virginia Freedom of Information Act.'}, {'role': 'assistant', 'content': 'Received passage [18].'}, {'role': 'user', 'content': '[19] In 1932, the Public Health Service, working with the Tuskegee Institute, began a study to record the natural history of syphilis in hopes of justifying treatment programs for blacks.It was called the Tuskegee Study of Untreated Syphilis in the Negro Male..n 1932, the Public Health Service, working with the Tuskegee Institute, began a study to record the natural history of syphilis in hopes of justifying treatment programs for blacks.'}, {'role': 'assistant', 'content': 'Received passage [19].'}, {'role': 'user', 'content': '[20] Public access to arrest and booking records is seen as a critical safeguard of liberty. [citation needed] Uses of public records. With the advent of the Internet and the information age, access to public records in the United States to anyone who wishes to view them has dramatically increased.'}, {'role': 'assistant', 'content': 'Received passage [20].'}, {'role': 'user', 'content': 'Search Query: are naturalization records public information. \nRank the 20 passages above based on their relevance to the search query. Please think step by step .... First please explain the reasons why you think the query and each passage are relevant or not. Then rate the relevance between the query and each passage from score 0 to 19 with all passages have distinctive scores. After that, please sort identifiers in descending order based on their relevance to the search query. Finally, please summarize the rank and use [start] to begin the summarization and use [end] to indicate the end of it. All the passages should be included and listed using identifiers and make sure there is no repetitious and missing passages. The format of the summarization should be [Start] [] > [] [End], e.g., [Start] [1] > [2] [End]. In the summarization, only response the ranking results.'}]
+Permutation Example:
+ Sure! Here is the ranking of the passages based on their relevance to the query "are naturalization records public information":
+
+1. Passage [7]: This passage specifically mentions the confidentiality and restricted access to birth and death certificates, indicating that certain public records are not accessible to the public. Relevance score: 19.
+
+2. Passage [2]: Although this passage mentions public records, it does not directly address naturalization records. Relevance score: 10.
+
+3. Passage [11]: This passage acknowledges that public records are generally available to the public but does not specifically mention naturalization records. Relevance score: 9.
+
+4. Passage [8]: While this passage discusses the Freedom of Information Act and the release of government agency records, it does not specifically mention naturalization records. Relevance score: 8.
+
+5. Passage [1]: This passage discusses public records and accessing public information, but it does not specifically mention naturalization records. Relevance score: 7.
+
+6. Passage [5]: This passage mentions public facts obtained from public records, but it does not specifically mention naturalization records. Relevance score: 6.
+
+7. Passage [9]: This passage discusses public access to computers in the Recorder's Office but does not directly address naturalization records. Relevance score: 5.
+
+8. Passage [10]: This passage discusses public record searches in the City of Davis, but it does not specifically mention naturalization records. Relevance score: 4.
+
+9. Passage [15]: This passage discusses public record searches in the City of La Crescenta, but it does not specifically mention naturalization records. Relevance score: 3.
+
+10. Passage [16]: This passage discusses public record searches in the City of College Station, but it does not specifically mention naturalization records. Relevance score: 2.
+
+11. Passage [18]: This passage mentions public records under the Virginia Public Records Act, but it does not specifically mention naturalization records. Relevance score: 1.
+
+12. Passage [3]: This passage discusses the inspection of public records under the Illinois Statute, but it does not specifically mention naturalization records. Relevance score: 0.
+
+13. Passage [4]: This passage discusses the limited privacy of government employees and the accessibility of their written records, but it does not specifically mention naturalization records. Relevance score: 17.
+
+14. Passage [6]: This passage discusses traffic citations as criminal records, which is not directly related to naturalization records. Relevance score: 16.
+
+15. Passage [12]: This passage mentions public records on credit reports, but it does not specifically mention naturalization records. Relevance score: 15.
+
+16. Passage [13]: This passage discusses public information on felony offenders, which is not directly related to naturalization records. Relevance score: 14.
+
+17. Passage [17]: This passage discusses the Westlaw database and its resources, but it does not specifically mention naturalization records. Relevance score: 13.
+
+18. Passage [19]: This passage discusses the Tuskegee Study of Untreated Syphilis and does not directly address naturalization records. Relevance score: 12.
+
+19. Passage [14]: This passage discusses public record searches in the City of Rockaway Beach, but it does not specifically mention naturalization records. Relevance score: 11.
+
+20. Passage [20]: This passage mentions public access to arrest and booking records, which is not directly related to naturalization records. Relevance score: 18.
+
+[Start] [7] > [4] > [2] > [1] > [5] > [9] > [10] > [15] > [16] > [18] > [3] > [11] > [6] > [12] > [13] > [17] > [19] > [14] > [20] [End].
+****************************************************************************************************
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 1, current_mismatch_query_cnt: 0
+chat_cnt: 2
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 3
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 4
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 5
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 6
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 7
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 8
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 9
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 10
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 1
+ miss_passage_cnt: 1
+ mismatch_query_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 1/54: 
+chat_cnt: 11
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 1, current_mismatch_query_cnt: 0
+chat_cnt: 12
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 13
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 14
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 15
+current_rep_passage_cnt: 1, current_miss_passage_cnt: 1, current_mismatch_query_cnt: 0
+chat_cnt: 16
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 17
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 18
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 19
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 20
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 21
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+current query statistics:
+rep_query_cnt: 1
+ rep_passage_cnt: 1
+ miss_query_cnt: 2
+ miss_passage_cnt: 2
+ mismatch_query_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 2/54: 
+chat_cnt: 22
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 23
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 24
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 25
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 26
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 27
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 28
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 29
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 30
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+ mismatch_query_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 3/54: 
+chat_cnt: 31
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 32
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 33
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 34
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 35
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 36
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 37
+current_rep_passage_cnt: 1, current_miss_passage_cnt: 2, current_mismatch_query_cnt: 0
+chat_cnt: 38
+current_rep_passage_cnt: 1, current_miss_passage_cnt: 1, current_mismatch_query_cnt: 0
+chat_cnt: 39
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 40
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 41
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+current query statistics:
+rep_query_cnt: 2
+ rep_passage_cnt: 2
+ miss_query_cnt: 2
+ miss_passage_cnt: 3
+ mismatch_query_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 4/54: 
+chat_cnt: 42
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 43
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 44
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 45
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 46
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 47
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 48
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 49
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 50
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+ mismatch_query_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 5/54: 
+chat_cnt: 51
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 52
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 53
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 54
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 55
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 56
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 57
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 58
+current_rep_passage_cnt: 39, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 1
+chat_cnt: 59
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 60
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+current query statistics:
+rep_query_cnt: 1
+ rep_passage_cnt: 39
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+ mismatch_query_cnt: 1
+
+****************************************************************************************************
+****************************************************************************************************
+query 6/54: 
+chat_cnt: 61
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 1, current_mismatch_query_cnt: 0
+chat_cnt: 62
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 63
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 64
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 65
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 66
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 67
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 68
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 69
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 70
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 1, current_mismatch_query_cnt: 0
+chat_cnt: 71
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 2
+ miss_passage_cnt: 2
+ mismatch_query_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 7/54: 
+chat_cnt: 72
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 73
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 74
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 1, current_mismatch_query_cnt: 0
+chat_cnt: 75
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 76
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 77
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 78
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 79
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 80
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 81
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 1
+ miss_passage_cnt: 1
+ mismatch_query_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 8/54: 
+chat_cnt: 82
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 83
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 84
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 85
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 86
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 87
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 88
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 1, current_mismatch_query_cnt: 0
+chat_cnt: 89
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 90
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 91
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 1
+ miss_passage_cnt: 1
+ mismatch_query_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 9/54: 
+chat_cnt: 92
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 1, current_mismatch_query_cnt: 0
+chat_cnt: 93
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 94
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 95
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 1, current_mismatch_query_cnt: 0
+chat_cnt: 96
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 97
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 98
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 99
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 100
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 101
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 102
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 2
+ miss_passage_cnt: 2
+ mismatch_query_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 10/54: 
+chat_cnt: 103
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 104
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 105
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 106
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 107
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 1, current_mismatch_query_cnt: 0
+chat_cnt: 108
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 109
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 110
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 111
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 112
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 1
+ miss_passage_cnt: 1
+ mismatch_query_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 11/54: 
+chat_cnt: 113
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 114
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 115
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 116
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 117
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 118
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 119
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 120
+current_rep_passage_cnt: 43, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 1
+chat_cnt: 121
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 1, current_mismatch_query_cnt: 0
+chat_cnt: 122
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 123
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+current query statistics:
+rep_query_cnt: 1
+ rep_passage_cnt: 43
+ miss_query_cnt: 1
+ miss_passage_cnt: 1
+ mismatch_query_cnt: 1
+
+****************************************************************************************************
+****************************************************************************************************
+query 12/54: 
+chat_cnt: 124
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 125
+current_rep_passage_cnt: 28, current_miss_passage_cnt: 4, current_mismatch_query_cnt: 1
+chat_cnt: 126
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 127
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 128
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 129
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 130
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 131
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 1, current_mismatch_query_cnt: 0
+chat_cnt: 132
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 133
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 134
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+current query statistics:
+rep_query_cnt: 1
+ rep_passage_cnt: 28
+ miss_query_cnt: 2
+ miss_passage_cnt: 5
+ mismatch_query_cnt: 1
+
+****************************************************************************************************
+****************************************************************************************************
+query 13/54: 
+chat_cnt: 135
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 136
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 137
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 138
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 139
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 140
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 141
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 142
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 143
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+ mismatch_query_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 14/54: 
+chat_cnt: 144
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 145
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 146
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 147
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 148
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 149
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 150
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 151
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 152
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+ mismatch_query_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 15/54: 
+chat_cnt: 153
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 154
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 155
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 156
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 157
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 158
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 159
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 160
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 161
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+ mismatch_query_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 16/54: 
+chat_cnt: 162
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 163
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 164
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 165
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 166
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 167
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 168
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 169
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 1, current_mismatch_query_cnt: 0
+chat_cnt: 170
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 171
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 1, current_mismatch_query_cnt: 0
+chat_cnt: 172
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 2
+ miss_passage_cnt: 2
+ mismatch_query_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 17/54: 
+chat_cnt: 173
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 174
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 175
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 176
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 177
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 178
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 179
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 180
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 181
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+ mismatch_query_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 18/54: 
+chat_cnt: 182
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 183
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 184
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 185
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 186
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 187
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 188
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 189
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 190
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+ mismatch_query_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 19/54: 
+chat_cnt: 191
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 192
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 193
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 2, current_mismatch_query_cnt: 0
+chat_cnt: 194
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 195
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 1, current_mismatch_query_cnt: 0
+chat_cnt: 196
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 197
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 198
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 199
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 200
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 201
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 2
+ miss_passage_cnt: 3
+ mismatch_query_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 20/54: 
+chat_cnt: 202
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 203
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 204
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 205
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 206
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 207
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 208
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 209
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 210
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+ mismatch_query_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 21/54: 
+chat_cnt: 211
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 212
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 213
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 214
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 215
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 216
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 2, current_mismatch_query_cnt: 0
+chat_cnt: 217
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 218
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 219
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 220
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 1
+ miss_passage_cnt: 2
+ mismatch_query_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 22/54: 
+chat_cnt: 221
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 222
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 223
+current_rep_passage_cnt: 47, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 1
+chat_cnt: 224
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 225
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 226
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 227
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 1, current_mismatch_query_cnt: 0
+chat_cnt: 228
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 229
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 230
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 231
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+current query statistics:
+rep_query_cnt: 1
+ rep_passage_cnt: 47
+ miss_query_cnt: 1
+ miss_passage_cnt: 1
+ mismatch_query_cnt: 1
+
+****************************************************************************************************
+****************************************************************************************************
+query 23/54: 
+chat_cnt: 232
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 233
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 234
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 235
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 236
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 237
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 238
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 239
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 240
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+ mismatch_query_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 24/54: 
+chat_cnt: 241
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 242
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 1, current_mismatch_query_cnt: 0
+chat_cnt: 243
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 244
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 245
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 246
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 247
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 248
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 249
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 250
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 1
+ miss_passage_cnt: 1
+ mismatch_query_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 25/54: 
+chat_cnt: 251
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 252
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 253
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 254
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 255
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 256
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 257
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 258
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 259
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+ mismatch_query_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 26/54: 
+chat_cnt: 260
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 261
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 262
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 263
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 264
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 265
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 1, current_mismatch_query_cnt: 0
+chat_cnt: 266
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 267
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 1, current_mismatch_query_cnt: 0
+chat_cnt: 268
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 269
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 1, current_mismatch_query_cnt: 0
+chat_cnt: 270
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 271
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 3
+ miss_passage_cnt: 3
+ mismatch_query_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 27/54: 
+chat_cnt: 272
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 273
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 274
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 1, current_mismatch_query_cnt: 0
+chat_cnt: 275
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 276
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 277
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 278
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 279
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 280
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 281
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 1
+ miss_passage_cnt: 1
+ mismatch_query_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 28/54: 
+chat_cnt: 282
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 283
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 284
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 285
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 286
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 287
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 288
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 289
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 290
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+ mismatch_query_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 29/54: 
+chat_cnt: 291
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 292
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 293
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 294
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 295
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 296
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 1, current_mismatch_query_cnt: 0
+chat_cnt: 297
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 298
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 299
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 300
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 1
+ miss_passage_cnt: 1
+ mismatch_query_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 30/54: 
+chat_cnt: 301
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 302
+current_rep_passage_cnt: 38, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 1
+chat_cnt: 303
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 304
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 305
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 306
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 307
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 308
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 13, current_mismatch_query_cnt: 0
+chat_cnt: 309
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 310
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 311
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+current query statistics:
+rep_query_cnt: 1
+ rep_passage_cnt: 38
+ miss_query_cnt: 1
+ miss_passage_cnt: 13
+ mismatch_query_cnt: 1
+
+****************************************************************************************************
+****************************************************************************************************
+query 31/54: 
+chat_cnt: 312
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 313
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 314
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 315
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 316
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 317
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 318
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 319
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 320
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+ mismatch_query_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 32/54: 
+chat_cnt: 321
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 322
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 323
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 324
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 325
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 326
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 327
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 328
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 329
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+ mismatch_query_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 33/54: 
+chat_cnt: 330
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 331
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 332
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 1, current_mismatch_query_cnt: 0
+chat_cnt: 333
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 334
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 335
+current_rep_passage_cnt: 25, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 1
+chat_cnt: 336
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 337
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 338
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 339
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 1, current_mismatch_query_cnt: 0
+chat_cnt: 340
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 341
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+current query statistics:
+rep_query_cnt: 1
+ rep_passage_cnt: 25
+ miss_query_cnt: 2
+ miss_passage_cnt: 2
+ mismatch_query_cnt: 1
+
+****************************************************************************************************
+****************************************************************************************************
+query 34/54: 
+chat_cnt: 342
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 343
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 344
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 345
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 346
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 347
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 348
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 349
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 350
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+ mismatch_query_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 35/54: 
+chat_cnt: 351
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 352
+current_rep_passage_cnt: 16, current_miss_passage_cnt: 17, current_mismatch_query_cnt: 0
+chat_cnt: 353
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 354
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 355
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 356
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 357
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 358
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 2, current_mismatch_query_cnt: 0
+chat_cnt: 359
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 360
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 361
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+current query statistics:
+rep_query_cnt: 1
+ rep_passage_cnt: 16
+ miss_query_cnt: 2
+ miss_passage_cnt: 19
+ mismatch_query_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 36/54: 
+chat_cnt: 362
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 363
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 1, current_mismatch_query_cnt: 0
+chat_cnt: 364
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 365
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 366
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 367
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 368
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 369
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 370
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 371
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 1
+ miss_passage_cnt: 1
+ mismatch_query_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 37/54: 
+chat_cnt: 372
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 373
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 374
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 375
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 376
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 377
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 1, current_mismatch_query_cnt: 0
+chat_cnt: 378
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 379
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 380
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 381
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 1
+ miss_passage_cnt: 1
+ mismatch_query_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 38/54: 
+chat_cnt: 382
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 383
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 384
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 385
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 386
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 387
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 1, current_mismatch_query_cnt: 0
+chat_cnt: 388
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 389
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 390
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 391
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 1
+ miss_passage_cnt: 1
+ mismatch_query_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 39/54: 
+chat_cnt: 392
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 1, current_mismatch_query_cnt: 0
+chat_cnt: 393
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 394
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 395
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 396
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 397
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 398
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 1, current_mismatch_query_cnt: 0
+chat_cnt: 399
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 400
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 401
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 402
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 2
+ miss_passage_cnt: 2
+ mismatch_query_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 40/54: 
+chat_cnt: 403
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 404
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 405
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 406
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 407
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 408
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 409
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 410
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 411
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+ mismatch_query_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 41/54: 
+chat_cnt: 412
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 413
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 414
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 415
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 416
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 417
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 1, current_mismatch_query_cnt: 0
+chat_cnt: 418
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 419
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 420
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 421
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 1
+ miss_passage_cnt: 1
+ mismatch_query_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 42/54: 
+chat_cnt: 422
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 423
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 424
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 425
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 426
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 427
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 428
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 429
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 430
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+ mismatch_query_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 43/54: 
+chat_cnt: 431
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 432
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 433
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 434
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 435
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 436
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 437
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 438
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 1, current_mismatch_query_cnt: 0
+chat_cnt: 439
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 440
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 1
+ miss_passage_cnt: 1
+ mismatch_query_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 44/54: 
+chat_cnt: 441
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 442
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 443
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 444
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 445
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 1, current_mismatch_query_cnt: 0
+chat_cnt: 446
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 447
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 448
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 449
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 450
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 1, current_mismatch_query_cnt: 0
+chat_cnt: 451
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 2
+ miss_passage_cnt: 2
+ mismatch_query_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 45/54: 
+chat_cnt: 452
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 453
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 454
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 455
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 456
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 457
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 458
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 459
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 460
+current_rep_passage_cnt: 19, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 1
+chat_cnt: 461
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+current query statistics:
+rep_query_cnt: 1
+ rep_passage_cnt: 19
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+ mismatch_query_cnt: 1
+
+****************************************************************************************************
+****************************************************************************************************
+query 46/54: 
+chat_cnt: 462
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 463
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 464
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 465
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 466
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 467
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 468
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 469
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 470
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+ mismatch_query_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 47/54: 
+chat_cnt: 471
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 472
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 473
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 474
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 475
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 476
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 477
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 478
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 479
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+ mismatch_query_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 48/54: 
+chat_cnt: 480
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 481
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 482
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 483
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 484
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 485
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 486
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 487
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 488
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 1, current_mismatch_query_cnt: 0
+chat_cnt: 489
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 1
+ miss_passage_cnt: 1
+ mismatch_query_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 49/54: 
+chat_cnt: 490
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 491
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 492
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 493
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 494
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 1, current_mismatch_query_cnt: 0
+chat_cnt: 495
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 496
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 497
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 498
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 499
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 1
+ miss_passage_cnt: 1
+ mismatch_query_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 50/54: 
+chat_cnt: 500
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 501
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 502
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 503
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 504
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 505
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 506
+current_rep_passage_cnt: 1, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 507
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 508
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 509
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+current query statistics:
+rep_query_cnt: 1
+ rep_passage_cnt: 1
+ miss_query_cnt: 0
+ miss_passage_cnt: 0
+ mismatch_query_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 51/54: 
+chat_cnt: 510
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 511
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 9, current_mismatch_query_cnt: 0
+chat_cnt: 512
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 513
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 514
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 515
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 516
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 517
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 518
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 519
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 1
+ miss_passage_cnt: 9
+ mismatch_query_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 52/54: 
+chat_cnt: 520
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 1, current_mismatch_query_cnt: 0
+chat_cnt: 521
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 522
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 523
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 524
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 525
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 526
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 527
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 528
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 529
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 1
+ miss_passage_cnt: 1
+ mismatch_query_cnt: 0
+
+****************************************************************************************************
+****************************************************************************************************
+query 53/54: 
+chat_cnt: 530
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 531
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 532
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 533
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 534
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 535
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 536
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 18, current_mismatch_query_cnt: 0
+chat_cnt: 537
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 538
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+chat_cnt: 539
+current_rep_passage_cnt: 0, current_miss_passage_cnt: 0, current_mismatch_query_cnt: 0
+current query statistics:
+rep_query_cnt: 0
+ rep_passage_cnt: 0
+ miss_query_cnt: 1
+ miss_passage_cnt: 18
+ mismatch_query_cnt: 0
+
+****************************************************************************************************
+Total Malformed Outputs Statistics:
+ Total Repetition Chat Count: 12, Average Repetition Query: 0.024691358024691357
+ Total Repetition Passage Count: 259, Average Repetition Passage: 0.026646090534979423
+ Total Missing Chat Count: 46, Average Missing Query: 0.09465020576131687
+ Total Missing Passage Count: 106, Average Missing Passage: 0.010905349794238683
+ Total Mismatch Chat Count: 7, Average Mismatch Query: 0.01440329218106996
+
+Downloading https://search.maven.org/remotecontent?filepath=uk/ac/gla/dcs/terrierteam/jtreceval/0.0.5/jtreceval-0.0.5-jar-with-dependencies.jar to /data4/hop20001/.cache/pyserini/eval/jtreceval-0.0.5-jar-with-dependencies.jar...
+/data4/hop20001/.cache/pyserini/eval/jtreceval-0.0.5-jar-with-dependencies.jar already exists!
+Skipping download.
+Trunc /tmp/tmppd8zdmmj
+Running command: ['java', '-jar', '/data4/hop20001/.cache/pyserini/eval/jtreceval-0.0.5-jar-with-dependencies.jar', '-m', 'ndcg_cut.10', '/tmp/tmppd8zdmmj', '/tmp/tmpevnuyv36']
+Results:
+ndcg_cut_10           	all	0.6461
+Downloading https://search.maven.org/remotecontent?filepath=uk/ac/gla/dcs/terrierteam/jtreceval/0.0.5/jtreceval-0.0.5-jar-with-dependencies.jar to /data4/hop20001/.cache/pyserini/eval/jtreceval-0.0.5-jar-with-dependencies.jar...
+/data4/hop20001/.cache/pyserini/eval/jtreceval-0.0.5-jar-with-dependencies.jar already exists!
+Skipping download.
+Trunc /tmp/tmp4vk4tedk
+Running command: ['java', '-jar', '/data4/hop20001/.cache/pyserini/eval/jtreceval-0.0.5-jar-with-dependencies.jar', '-m', 'ndcg_cut.5', '/tmp/tmp4vk4tedk', '/tmp/tmpevnuyv36']
+Results:
+ndcg_cut_5            	all	0.6935
+Downloading https://search.maven.org/remotecontent?filepath=uk/ac/gla/dcs/terrierteam/jtreceval/0.0.5/jtreceval-0.0.5-jar-with-dependencies.jar to /data4/hop20001/.cache/pyserini/eval/jtreceval-0.0.5-jar-with-dependencies.jar...
+/data4/hop20001/.cache/pyserini/eval/jtreceval-0.0.5-jar-with-dependencies.jar already exists!
+Skipping download.
+Trunc /tmp/tmpmdz905qn
+Running command: ['java', '-jar', '/data4/hop20001/.cache/pyserini/eval/jtreceval-0.0.5-jar-with-dependencies.jar', '-m', 'ndcg_cut.1', '/tmp/tmpmdz905qn', '/tmp/tmpevnuyv36']
+Results:
+ndcg_cut_1            	all	0.7870
