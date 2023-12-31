@@ -1,12 +1,13 @@
 #!/bin/bash
 prefix='correct_malform_debug'
-prompt_type=19
+prompt_type=16
 dataset='dl19'
 # gpt-3.5-turbo   gpt-4-0314
 model='gpt-4-0314'
+seed=2
 correct_malform=1
 print_messages=0
-log_filename=logs/${prefix}_${prompt_type}_${dataset}_${model}_${correct_malform}_${print_messages}.log
+log_filename=logs/${prefix}_${prompt_type}_${dataset}_${model}_${correct_malform}_${print_messages}_seed${seed}.log
 nohup python -u test.py \
     --prompt_type ${prompt_type} \
     --dataset ${dataset} \

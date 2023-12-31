@@ -309,8 +309,8 @@ def receive_permutation(item, permutation, rank_start=0, rank_end=100):
     print(f'current_rep_passage_cnt: {current_rep_passage_cnt}, current_miss_passage_cnt: {current_miss_passage_cnt}, current_mismatch_query_cnt: {current_mismatch_query_cnt}')
     if correct_malform and (current_rep_passage_cnt > 0 or current_miss_passage_cnt > 0 or current_mismatch_query_cnt > 0):
         print(
-            'repetition, missing or mismatch: \n',
-           f'original response: {permutation}\n'
+            'repetition, missing, or mismatch: \n',
+           f'original response:\n {permutation}\n'
            f'original response rank: {clean_response(permutation)}\n',
            f'clean response rank: {response}\n')
         return item, 0
